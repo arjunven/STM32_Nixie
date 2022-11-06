@@ -328,6 +328,10 @@
     [
       "8ecdbb98-5b2a-4725-a227-62b58d0c66f3",
       "MCU"
+    ],
+    [
+      "47fb6452-bb5d-491d-bdc1-b44524035875",
+      "Nixie"
     ]
   ],
   "text_variables": {}
