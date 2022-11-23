@@ -37,14 +37,27 @@
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1" (page "2"))
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3" (page "3"))
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875" (page "4"))
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a" (page "5"))
   )
 
   (symbol_instances
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR?") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR?") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N?") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/592da241-0f55-4f7a-a38f-5ee5a4570347"
       (reference "N?") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
     )
-    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/dfc4a792-6825-4000-958b-6cbb8aa83118"
-      (reference "R?") (unit 1) (value "R_US") (footprint "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder")
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R?") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R?") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/53a1442c-3c5b-48fe-a89e-ea740fbbd2e1"
       (reference "U?") (unit 1) (value "STM32F100C4Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
