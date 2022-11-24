@@ -234,7 +234,7 @@
   (symbol (lib_id "MCU_ST_STM32F1:STM32F100C4Tx") (at 148.59 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 53a1442c-3c5b-48fe-a89e-ea740fbbd2e1)
-    (property "Reference" "U?" (id 0) (at 153.1494 124.46 0)
+    (property "Reference" "U3" (id 0) (at 153.1494 124.46 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "STM32F100C4Tx" (id 1) (at 153.1494 127 0)

@@ -38,35 +38,75 @@
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3" (page "3"))
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875" (page "4"))
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a" (page "5"))
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/57e270b7-6a98-4b9f-813f-f82d4d386c31" (page "6"))
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/de2dbb22-8262-4ca8-8582-8137a808f38f" (page "7"))
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/32ca130f-3f8f-4402-b982-06304b6c82b9" (page "8"))
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/12196d80-5ac5-4797-a091-55986a632980" (page "9"))
   )
 
   (symbol_instances
-    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/402349ff-badd-4f2a-8909-b603b1a5c0fc"
-      (reference "#PWR?") (unit 1) (value "180V") (footprint "")
-    )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/402349ff-badd-4f2a-8909-b603b1a5c0fc"
-      (reference "#PWR?") (unit 1) (value "180V") (footprint "")
+      (reference "#PWR0101") (unit 1) (value "180V") (footprint "")
     )
-    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/592da241-0f55-4f7a-a38f-5ee5a4570347"
-      (reference "N?") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR0102") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/57e270b7-6a98-4b9f-813f-f82d4d386c31/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR0103") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/de2dbb22-8262-4ca8-8582-8137a808f38f/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR0104") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/32ca130f-3f8f-4402-b982-06304b6c82b9/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR0105") (unit 1) (value "180V") (footprint "")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/12196d80-5ac5-4797-a091-55986a632980/402349ff-badd-4f2a-8909-b603b1a5c0fc"
+      (reference "#PWR0106") (unit 1) (value "180V") (footprint "")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/592da241-0f55-4f7a-a38f-5ee5a4570347"
-      (reference "N?") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+      (reference "N1") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N2") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/57e270b7-6a98-4b9f-813f-f82d4d386c31/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N3") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/de2dbb22-8262-4ca8-8582-8137a808f38f/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N4") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/32ca130f-3f8f-4402-b982-06304b6c82b9/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N5") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/12196d80-5ac5-4797-a091-55986a632980/592da241-0f55-4f7a-a38f-5ee5a4570347"
+      (reference "N6") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
-      (reference "R?") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
+      (reference "R1") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/3e78434a-9247-40fc-b232-4ebf5e38827a/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
-      (reference "R?") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
+      (reference "R2") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
-    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/53a1442c-3c5b-48fe-a89e-ea740fbbd2e1"
-      (reference "U?") (unit 1) (value "STM32F100C4Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/57e270b7-6a98-4b9f-813f-f82d4d386c31/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R3") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
-    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/b3a9dbd4-2aab-41ed-8695-0bb972a07a2c"
-      (reference "U?") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/de2dbb22-8262-4ca8-8582-8137a808f38f/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R4") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/32ca130f-3f8f-4402-b982-06304b6c82b9/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R5") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/12196d80-5ac5-4797-a091-55986a632980/61c0e39a-3638-4f86-9aeb-4a0622cdf654"
+      (reference "R6") (unit 1) (value "R_17K4_1P_1/4W_1206") (footprint "Resistor_SMD:R_1206_3216Metric")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/c5519631-1a61-407e-8a88-4a9f7dd4528e"
-      (reference "U?") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
+      (reference "U1") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
+    )
+    (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/b3a9dbd4-2aab-41ed-8695-0bb972a07a2c"
+      (reference "U2") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/53a1442c-3c5b-48fe-a89e-ea740fbbd2e1"
+      (reference "U3") (unit 1) (value "STM32F100C4Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
   )
 )
