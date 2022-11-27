@@ -385,7 +385,7 @@
   (symbol (lib_id "arjun_symbols:RES_17K4_1P_1{slash}4W_1206") (at 170.18 101.6 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1c1d90db-8415-4384-b3f9-69eaa7068eef)
-    (property "Reference" "R5" (id 0) (at 166.37 98.425 90)
+    (property "Reference" "R1" (id 0) (at 166.37 98.425 90)
       (effects (font (size 1.27 1.27)) (justify top))
     )
     (property "Value" "RES_17K4_1P_1/4W_1206" (id 1) (at 175.26 109.22 0)

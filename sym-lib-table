@@ -1,4 +1,2 @@
 (sym_lib_table
-  (lib (name "2022-11-26_05-39-25")(type "Legacy")(uri "/Users/arjun/Downloads/ul_MC14504BDTR2G/KiCAD/2022-11-26_05-39-25/2022-11-26_05-39-25.lib")(options "")(descr ""))
-  (lib (name "USB4085-GF-A_REVA4")(type "KiCad")(uri "/Users/arjun/Downloads/USB4085-GF-A_REVA4/USB4085-GF-A_REVA4.kicad_sym")(options "")(descr ""))
 )
