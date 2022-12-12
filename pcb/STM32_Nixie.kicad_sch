@@ -311,11 +311,14 @@
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/b3a9dbd4-2aab-41ed-8695-0bb972a07a2c"
       (reference "U2") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
     )
-    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/53a1442c-3c5b-48fe-a89e-ea740fbbd2e1"
-      (reference "U3") (unit 1) (value "STM32F100C4Tx") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
-    )
     (path "/307c8046-6a25-4c40-9f6b-0df19175f959/873f0f90-e048-49bb-a409-954f7e5ec30b"
       (reference "U4") (unit 1) (value "IC_LVL_MC14504BDTR2G") (footprint "arjun_footprints:MC14504BDTR2G")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/fbc2651c-4065-4451-b357-12462d9334c9"
+      (reference "U?") (unit 1) (value "IC_MCU_STM32F100C4T6B_48LQFP") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/112b520c-8a9f-4f02-838a-ff2913d3cba9"
+      (reference "U?") (unit 2) (value "IC_MCU_STM32F100C4T6B_48LQFP") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
     )
   )
 )
