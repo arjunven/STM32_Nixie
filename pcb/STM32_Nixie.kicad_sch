@@ -221,8 +221,23 @@
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/d1ff4851-ee28-445c-98cf-30e55bddd64d"
       (reference "#PWR023") (unit 1) (value "GND") (footprint "")
     )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/052ba003-a589-4825-9cfd-ae72b7d1692b"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/56bc28fb-cd35-45b4-a3eb-9f07dc3d46d4"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/6d098e31-b911-4a43-8637-42ea586623eb"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/8d0a0ca8-291c-4a00-a748-cb48ae4006bc"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/a26903c9-1dfa-4e16-a7e0-6c97502b1a2d"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/f499e494-a53e-4291-99a0-6eaae57325f3"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/e8462fc5-4e20-47f0-b694-f2581c81e4d6"
       (reference "C1") (unit 1) (value "CAP_CER_4u7_50V_X5R_0805") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -250,6 +265,24 @@
     )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/9ec7ddd8-3b45-409c-8737-5884b85fc3e6"
       (reference "C9") (unit 1) (value "CAP_CER_4700p_250V_X7R_0805") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/992595d2-d7c4-4039-8877-814b1c7167b1"
+      (reference "C?") (unit 1) (value "CAP_CER_0u1_50V_X7R_0603") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c2512c6d-034a-4a53-8dc3-93098e66e98d"
+      (reference "C?") (unit 1) (value "CAP_CER_1u_25V_X5R_0603") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c9f019ae-0e4a-43b9-974f-84f59e0ab1ba"
+      (reference "C?") (unit 1) (value "CAP_CER_0u1_50V_X7R_0603") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/cbae02e1-0bba-4500-9041-e30d64d4e6e7"
+      (reference "C?") (unit 1) (value "CAP_CER_0u1_50V_X7R_0603") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/eab2c26d-58eb-4990-b6be-ed7ca5353e56"
+      (reference "C?") (unit 1) (value "CAP_CER_0u1_50V_X7R_0603") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/fd217264-8055-4452-98c4-5e41a64cf0d5"
+      (reference "C?") (unit 1) (value "CAP_CER_10u_16V_X5R_0805") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/9e2566b2-8bb2-4325-9fcd-ddf0523b4c41"
       (reference "J1") (unit 1) (value "CONN_USBC_RCPT_USB2.0_USB4085-GF-A") (footprint "arjun_footprints:GCT_USB4085-GF-A_REVA4")
