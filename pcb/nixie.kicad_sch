@@ -330,10 +330,15 @@
     (uuid ee631495-fe06-41d6-a6f2-6d5e15dbd078)
   )
 
-  (text "Vstrike = 170V\nVmax = 200V\n170V < Vsupply = 180V < 200V\nVsustain = 145V\nI = 2mA\nRa = (180V-145V)/2mA = 17.5k\nP_Ra = 35V*2mA = 70mW"
+  (text "Vstrike = 170V\nVmax = 200V\n170V < Vsupply = 180V < 200V\nVsustain = 145V\nI = 2mA (Shift register has 100mA max shift current, so we're good there)\nRa = (180V-145V)/2mA = 17.5k\nP_Ra = 35V*2mA = 70mW"
     (at 160.02 83.82 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 156f6bc0-893b-4daf-b053-3c7c9ee058fb)
+  )
+  (text "https://threeneurons.wordpress.com/nixie-power-supply/"
+    (at 160.02 66.04 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid bc080678-b084-423e-a240-262d65289ea0)
   )
 
   (label "NIXIE_A" (at 152.4 101.6 0)
@@ -385,7 +390,7 @@
   (symbol (lib_id "arjun_symbols:RES_17K4_1P_1{slash}4W_1206") (at 170.18 101.6 270) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 1c1d90db-8415-4384-b3f9-69eaa7068eef)
-    (property "Reference" "R4" (id 0) (at 166.37 98.425 90)
+    (property "Reference" "R6" (id 0) (at 166.37 98.425 90)
       (effects (font (size 1.27 1.27)) (justify top))
     )
     (property "Value" "RES_17K4_1P_1/4W_1206" (id 1) (at 175.26 109.22 0)
@@ -464,7 +469,7 @@
   (symbol (lib_id "arjun_symbols:+180V") (at 180.34 93.98 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid d423e5f8-be0e-4aa8-aab2-8d638af3da06)
-    (property "Reference" "#PWR015" (id 0) (at 180.34 97.79 0)
+    (property "Reference" "#PWR018" (id 0) (at 180.34 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+180V" (id 1) (at 180.34 90.424 0))

@@ -1383,10 +1383,14 @@
     (uuid ff24b957-e15a-4fe7-893a-589eeb61cf21)
   )
 
-  (text "CLK transitions on falling edge\nTransfer of data from the Shift register to the latch occurs when the nLE input is high. \nThe data in the latch is stored when nLE is low i.e. outputs are Latched (active low)\nnBL LOW sets all outputs off - pulled down to ensure all Nixie's off by default.\nnPOL LOW inverts all outputs (keep HI for normal operation)\n"
+  (text "CLK transitions on falling edge\nTransfer of data from the Shift register to the latch occurs when the nLE input is high. (When active low the data is latched and not shown to the output.)\nThe data in the latch is stored when nLE is low i.e. outputs are Latched (active low)\nnBL LOW sets all outputs off - pulled down to ensure all Nixie's off by default.\nnPOL LOW inverts all outputs (keep HI for normal operation)\n"
     (at 15.24 25.4 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 091b97e3-380b-45d1-9cb3-53c19b920371)
+  )
+  (text "!!ADD DOTS\n" (at 320.04 111.76 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 0b1f601b-5f73-4c36-a1d7-95d96cd2b1b9)
   )
 
   (label "M2_7" (at 243.84 180.34 0)
