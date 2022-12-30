@@ -945,10 +945,6 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 357834ba-ca73-4cbd-8ba0-8236e708a56d)
   )
-  (text "DNP" (at 31.75 152.4 0)
-    (effects (font (size 1.27 1.27) (thickness 0.254) bold) (justify left bottom))
-    (uuid 51532591-fb84-4741-8d97-511f88856faa)
-  )
 
   (label "USB_D_N" (at 50.8 88.9 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1106,6 +1102,7 @@
     (property "Temp Co" "X7R" (id 11) (at 35.56 157.48 90)
       (effects (font (size 0.762 0.762)) (justify left))
     )
+    (property "DNP" "DNP" (id 12) (at 33.02 152.4 90))
     (pin "1" (uuid cd0740b1-5366-4fb0-8d5d-3c85752e61e2))
     (pin "2" (uuid 5a8b0e20-9355-4bd0-ac3c-496800059415))
   )

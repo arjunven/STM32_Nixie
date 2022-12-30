@@ -366,11 +366,23 @@
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/61b5b415-d9d5-4aa8-a626-a1ebbc2eb033"
       (reference "#PWR039") (unit 1) (value "GND") (footprint "")
     )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/80efdaf2-d5a3-4a81-adba-53a920337fb2"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/94413c1a-988b-4fe0-9e4f-82a46b39c491"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c260bd7e-1970-44f1-8460-f04872940c93"
       (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/cf3a7745-9e48-408c-810d-2662e07bc0fd"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/e278a8ec-5721-40bf-b2cb-6783be8e79cc"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/e98dab80-82d5-44b0-b230-3d2a8dc0b464"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
     )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/82d4e7bc-49e8-418b-8c34-f46f3717b905"
       (reference "BAT1") (unit 1) (value "BS-7") (footprint "arjun_footprints:Battery_Holder_Coin_2032_BS-7")
@@ -441,6 +453,9 @@
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/bea2fbe2-f567-481e-90f0-85d9663358e6"
       (reference "J?") (unit 1) (value "CON_SAMTEC_14P_2R_1m27_P_KEY_FTSH-107-01-L-DV-K-TR") (footprint "arjun_footprints:CON_FTSH-107-01-x-DV-K")
     )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/271153ea-9406-4185-bebd-7bb424efc536"
+      (reference "JP?") (unit 1) (value "SolderJumper_3_Bridged12") (footprint "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels")
+    )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/592da241-0f55-4f7a-a38f-5ee5a4570347"
       (reference "N1") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
     )
@@ -500,6 +515,15 @@
     )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/b09ec80a-5085-48f2-8849-f8aae6d3ef1b"
       (reference "R14") (unit 1) (value "RES_0R_1/8W_0805") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/4bdcf741-9b10-451e-b4b3-0d8c758e628e"
+      (reference "R?") (unit 1) (value "RES_10K_1P_1/10W_0603") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/4d1cfcde-8dbf-411d-acac-ae2b684de1a4"
+      (reference "R?") (unit 1) (value "RES_10K_1P_1/10W_0603") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/8b537fd6-9959-4c0c-af54-290b92d638d2"
+      (reference "SW?") (unit 1) (value "SW_SPDT_12V_100mA_OS102011MS2QN1") (footprint "arjun_footprints:SW_OS102011MS2QN1")
     )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/461981fc-199c-4e16-9421-bb4b14f2f77f"
       (reference "TP1") (unit 1) (value "RTC_OUT") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")

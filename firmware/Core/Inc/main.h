@@ -79,6 +79,12 @@ void Error_Handler(void);
 #define DIM_POT_GPIO_Port GPIOB
 #define HV_EN_Pin GPIO_PIN_12
 #define HV_EN_GPIO_Port GPIOB
+#define PB_SET_Pin GPIO_PIN_13
+#define PB_SET_GPIO_Port GPIOB
+#define PB_INC_Pin GPIO_PIN_14
+#define PB_INC_GPIO_Port GPIOB
+#define PB_DEC_Pin GPIO_PIN_15
+#define PB_DEC_GPIO_Port GPIOB
 #define UART_BL_TX_Pin GPIO_PIN_9
 #define UART_BL_TX_GPIO_Port GPIOA
 #define UART_BL_RX_Pin GPIO_PIN_10
