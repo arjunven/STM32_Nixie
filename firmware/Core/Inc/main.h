@@ -83,6 +83,10 @@ void Error_Handler(void);
 #define UART_BL_TX_GPIO_Port GPIOA
 #define UART_BL_RX_Pin GPIO_PIN_10
 #define UART_BL_RX_GPIO_Port GPIOA
+#define HB_LED2_Pin GPIO_PIN_15
+#define HB_LED2_GPIO_Port GPIOA
+#define HB_LED1_Pin GPIO_PIN_4
+#define HB_LED1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

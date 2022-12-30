@@ -351,6 +351,30 @@
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/db1af9b7-4ac1-4670-83cd-f0c969657066"
       (reference "#PWR034") (unit 1) (value "CH_GND") (footprint "")
     )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c3192196-adec-44f5-a81f-ae46d29c05a4"
+      (reference "#PWR035") (unit 1) (value "+3.3VA") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c57767d2-4f5d-40af-8b65-a12a9de94a44"
+      (reference "#PWR036") (unit 1) (value "+3.3VBAT") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/beaef570-ffc8-4167-90af-65d0399d493d"
+      (reference "#PWR037") (unit 1) (value "+3.3VA") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/2cd38507-0f1b-4084-bc35-74edac0b984f"
+      (reference "#PWR038") (unit 1) (value "+3.3VBAT") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/61b5b415-d9d5-4aa8-a626-a1ebbc2eb033"
+      (reference "#PWR039") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/c260bd7e-1970-44f1-8460-f04872940c93"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/cf3a7745-9e48-408c-810d-2662e07bc0fd"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/82d4e7bc-49e8-418b-8c34-f46f3717b905"
+      (reference "BAT1") (unit 1) (value "BS-7") (footprint "arjun_footprints:Battery_Holder_Coin_2032_BS-7")
+    )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/e8462fc5-4e20-47f0-b694-f2581c81e4d6"
       (reference "C1") (unit 1) (value "CAP_CER_4u7_50V_X5R_0805") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
@@ -408,8 +432,14 @@
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/9ec7ddd8-3b45-409c-8737-5884b85fc3e6"
       (reference "C19") (unit 1) (value "CAP_CER_4700p_250V_X7R_0805") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/f1a32571-49a9-4e57-8b0e-76d78478425a"
+      (reference "FB1") (unit 1) (value "FER_1K_600mA_0603") (footprint "Inductor_SMD:L_0603_1608Metric")
+    )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/9e2566b2-8bb2-4325-9fcd-ddf0523b4c41"
       (reference "J1") (unit 1) (value "CONN_USBC_RCPT_USB2.0_USB4085-GF-A") (footprint "arjun_footprints:GCT_USB4085-GF-A_REVA4")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/bea2fbe2-f567-481e-90f0-85d9663358e6"
+      (reference "J?") (unit 1) (value "CON_SAMTEC_14P_2R_1m27_P_KEY_FTSH-107-01-L-DV-K-TR") (footprint "arjun_footprints:CON_FTSH-107-01-x-DV-K")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/47fb6452-bb5d-491d-bdc1-b44524035875/592da241-0f55-4f7a-a38f-5ee5a4570347"
       (reference "N1") (unit 1) (value "IN-14") (footprint "arjun_footprints:IN-14")
@@ -470,6 +500,9 @@
     )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/b09ec80a-5085-48f2-8849-f8aae6d3ef1b"
       (reference "R14") (unit 1) (value "RES_0R_1/8W_0805") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/461981fc-199c-4e16-9421-bb4b14f2f77f"
+      (reference "TP1") (unit 1) (value "RTC_OUT") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/c5519631-1a61-407e-8a88-4a9f7dd4528e"
       (reference "U1") (unit 1) (value "IC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
