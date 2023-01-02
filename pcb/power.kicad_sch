@@ -945,6 +945,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 357834ba-ca73-4cbd-8ba0-8236e708a56d)
   )
+  (text "Add ESD protection" (at 71.12 109.22 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid c0f4fc15-0f07-4eba-952a-427aedc64842)
+  )
 
   (label "USB_D_N" (at 50.8 88.9 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
