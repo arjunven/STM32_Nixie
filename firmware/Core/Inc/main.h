@@ -59,8 +59,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define HV_MON_BUF_Pin GPIO_PIN_1
-#define HV_MON_BUF_GPIO_Port GPIOA
+#define ENC_A_Pin GPIO_PIN_0
+#define ENC_A_GPIO_Port GPIOA
+#define ENC_B_Pin GPIO_PIN_1
+#define ENC_B_GPIO_Port GPIOA
 #define UART_VCP_TX_Pin GPIO_PIN_2
 #define UART_VCP_TX_GPIO_Port GPIOA
 #define UART_VCP_RX_Pin GPIO_PIN_3
@@ -73,18 +75,14 @@ void Error_Handler(void);
 #define PWM_nBL_GPIO_Port GPIOA
 #define SPI_PICO_Pin GPIO_PIN_7
 #define SPI_PICO_GPIO_Port GPIOA
-#define nPOL_Pin GPIO_PIN_0
-#define nPOL_GPIO_Port GPIOB
-#define DIM_POT_Pin GPIO_PIN_1
-#define DIM_POT_GPIO_Port GPIOB
+#define HV_MON_BUF_Pin GPIO_PIN_1
+#define HV_MON_BUF_GPIO_Port GPIOB
 #define HV_EN_Pin GPIO_PIN_12
 #define HV_EN_GPIO_Port GPIOB
-#define PB_SET_Pin GPIO_PIN_13
-#define PB_SET_GPIO_Port GPIOB
-#define PB_INC_Pin GPIO_PIN_14
-#define PB_INC_GPIO_Port GPIOB
-#define PB_DEC_Pin GPIO_PIN_15
-#define PB_DEC_GPIO_Port GPIOB
+#define ENC_PB_Pin GPIO_PIN_13
+#define ENC_PB_GPIO_Port GPIOB
+#define nPOL_Pin GPIO_PIN_14
+#define nPOL_GPIO_Port GPIOB
 #define UART_BL_TX_Pin GPIO_PIN_9
 #define UART_BL_TX_GPIO_Port GPIOA
 #define UART_BL_RX_Pin GPIO_PIN_10
