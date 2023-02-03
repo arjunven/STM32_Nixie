@@ -4,10 +4,10 @@ RECTANGLE Normal -64 -56 80 56
 WINDOW 0 8 -56 Bottom 2
 WINDOW 3 8 56 Top 2
 WINDOW 39 8 80 Top 2
-SYMATTR Prefix X
 SYMATTR Value TLV61046A_TRANS
-SYMATTR ModelFile /Users/arjun/Documents/Home/source/STM32_Nixie/simulation/TLV61046A_TRANS.lib
 SYMATTR SpiceLine STEADY=0
+SYMATTR Prefix X
+SYMATTR ModelFile /Users/arjun/source/STM32_Nixie/simulation/TLV61046A_TRANS.lib
 PIN -64 -32 LEFT 8
 PINATTR PinName VIN
 PINATTR SpiceOrder 1
