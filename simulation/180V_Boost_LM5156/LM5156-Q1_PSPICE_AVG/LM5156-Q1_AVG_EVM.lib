@@ -1,0 +1,75 @@
+**$ENCRYPTED_LIB
+**$INTERFACE
+*$
+* LM5156-Q1
+*****************************************************************************
+* (C) Copyright 2021 Texas Instruments Incorporated. All rights reserved.                                            
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer
+*****************************************************************************
+*
+* This model is subject to change without notice. Texas Instruments
+* Incorporated is not responsible for updating this model.
+*
+*****************************************************************************
+*
+** Released by: Texas Instruments Inc.
+* Part: LM5156-Q1
+* Date: 28JUN2021
+* Model Type: AVERAGE
+* Simulator: PSPICE
+* Simulator Version: 17.2
+* EVM Order Number: LM5156EVM-BST
+* EVM Users Guide: SNVU696–February 2020
+* Datasheet: SNVSBI7B –January 2020–REVISED January 2021
+* Topologies supported: Boost
+*
+* Model Version: Final 1.00
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Final 1.00
+* Release to Web.
+*
+*****************************************************************************
+*
+* Model Usage Notes:
+* 
+* 1. Since this is an average model used for AC analysis, 
+*    only the pins affecting AC analysis are modeled.
+* 2. The model takes the inductance (L), Current sense Resistors(R4, R5 & R6)
+*    and Mosfet ON resistance (Ron) as parameters.
+*    Pass appropriate values to these parameters based
+*    on the application circuit. 
+* 3. The operating quiescent current and thermal properties 
+*    have not been modeled.
+* 4. The dithering feature is not modeled.
+*
+*****************************************************************************
+*$
+.SUBCKT CESR IN OUT
++ PARAMs:  C=100u ESR=0.01
+$CDNENCSTART_ADV2
+17f62b1fb318c25603aeb85644ae98a5d179ef807807791f6459efacb9d7ffc37a831b146dc0f06bb1ef275619162e6d8f7ad0dc708bf15ae1a1d5bd0ae623b2
+e6866184bd5ca209a663abe9cae90e187f0da5119e826a219e29ad3e5823527594b8db340b950b0c85bd1f071e76a9042357ae6c4439398a6819fa497fd11668
+b3d14203e2b89916bba7734b044212ab5060d8b1129e8ddc7bfbc4318584c187feaf2019b487ce5be380fe1809535f01e38f6c46b67dc086ad0b8f7db30edd20
+$CDNENCFINISH_ADV2
+.ENDS CESR
+*$
+.SUBCKT LDCR IN OUT
++ PARAMs:  L=1u DCR=0.01
+$CDNENCSTART_ADV2
+17f62b1fb318c25603aeb85644ae98a5d179ef807807791f6459efacb9d7ffc37a831b146dc0f06bb1ef275619162e6d8f7ad0dc708bf15ae1a1d5bd0ae623b2
+85ec28b2680a0c981891ac83f19241ee7f0da5119e826a219e29ad3e5823527594b8db340b950b0c85bd1f071e76a9042357ae6c4439398a6819fa497fd11668
+d4e26f470a247fcc8da829f0d0b9e7d65060d8b1129e8ddc7bfbc4318584c187feaf2019b487ce5be380fe1809535f01e38f6c46b67dc086ad0b8f7db30edd20
+$CDNENCFINISH_ADV2
+.ENDS LDCR
+*$
+

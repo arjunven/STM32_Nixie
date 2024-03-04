@@ -1,0 +1,82 @@
+(ExpressProject "LM5156-Q1_AVG"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lm5156-q1dss_avg.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File "lm5156-q1_avg.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\lm5156-q1_avg-pspicefiles\bode_plot\bode_plot.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\lm5156-q1_avg-pspicefiles\bode_plot\ac.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm5156-q1_avg-pspicefiles\bode_plot\ac.sim"
+        (DisplayName "Bode_Plot-AC")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File
+           "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1_avg.lib"
+        (Type "Schematic Library"))
+      (File
+           "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1_avg_evm.lib"
+        (Type "Schematic Library")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "a0486404")
+  (PartMRUSelector
+    (LM5156-Q1DSS_AVG
+      (FullPartName "LM5156-Q1DSS_AVG.Normal")
+      (LibraryName
+         "C:\USERS\A0486404\TI DRIVE\MYFILES\MODELING\LM5156\AVERAGE\LM5156-Q1_PSPICE_AVG\LM5156-Q1DSS_AVG.OLB")
+      (DeviceIndex "0"))
+    (LM5155-Q1DSS_AVG
+      (FullPartName "LM5155QDSSRQ1.Normal")
+      (LibraryName ".\LM5155-Q1DSS_AVG.OLB")
+      (DeviceIndex "0")))
+  (ISPCBBASICLICENSE "false")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1_avg.dsn")
+      (Path "Design Resources"
+         "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1_avg.dsn"
+         "Bode_Plot")
+      (Path "Design Resources"
+         "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1_avg.dsn"
+         "Design Cache")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "C:\Users\a0486404\TI Drive\myFiles\Modeling\LM5156\Average\LM5156-Q1_PSPICE_AVG\lm5156-q1dss_avg.olb")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 420"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 537")
+        (Scroll "0 0")
+        (Zoom "121")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\A0486404\TI DRIVE\MYFILES\MODELING\LM5156\AVERAGE\LM5156-Q1_PSPICE_AVG\LM5156-Q1_AVG.DSN")
+      (Schematic "Bode_Plot")
+      (Page "PAGE1"))))

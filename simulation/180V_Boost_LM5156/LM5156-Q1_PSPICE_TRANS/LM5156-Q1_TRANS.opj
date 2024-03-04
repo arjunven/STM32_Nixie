@@ -1,0 +1,101 @@
+(ExpressProject "LM5156-Q1_TRANS"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2023 S009-[07/10/23]")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lm5156-q1dss_trans.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\lm5156-q1_trans.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
+  (Folder "Outputs")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm5156-q1_trans-pspicefiles\startup\trans.sim"
+        (DisplayName "Startup-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm5156-q1_trans-pspicefiles\steady_state\trans.sim"
+        (DisplayName "Steady_State-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm5156-q1_trans-pspicefiles\flyback_startup\trans.sim"
+        (DisplayName "Flyback_Startup-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\lm5156-q1_trans-pspicefiles\sepic_startup\trans.sim"
+        (DisplayName "SEPIC_Startup-trans")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\lm5156-q1_trans-pspicefiles\startup\trans.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\lm5156-q1_trans.lib"
+        (Type "PSpiceLibrary"))
+      (File ".\lm5156-q1_trans_evm.lib"
+        (Type "PSpiceLibrary")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (MPSSessionName "a0235201")
+  (PartMRUSelector
+    (POWER_NMOS_P
+      (FullPartName "POWER_NMOS_P.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (LM5156-Q1DSS_TRANS
+      (FullPartName "LM5156-Q1DSS_TRANS.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\LM5156-Q1\LM5156-Q1_PSPICE_TRANS\LM5156-Q1DSS_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LM5155-Q1DSS_TRANS
+      (FullPartName "LM5155QDSSRQ1.Normal")
+      (LibraryName
+         "C:\ELABTRANS_WS\ELABTRANS_DS\PART_NUMBERS\LM5155-Q1\ACTIVE_WORK_SANKALP\EXPERIMENTS\RELEASE_PROJECT\ENCR\LM5155-Q1DSS_TRANS.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.2\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (ISPCBBASICLICENSE "false")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\a0235201\Desktop\LM5156-Q1_PSPICE_TRANS\lm5156-q1_trans.dsn")
+      (Select "Design Resources"
+         "C:\Users\a0235201\Desktop\LM5156-Q1_PSPICE_TRANS\lm5156-q1_trans.dsn"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -23 0 200 0 875"))
+      (Tab 0)))
+  (Folder "Logs"))
