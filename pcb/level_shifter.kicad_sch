@@ -4,6 +4,11 @@
 
   (paper "A4")
 
+  (title_block
+    (date "2024-05-14")
+    (rev "1")
+  )
+
   (lib_symbols
     (symbol "arjun_symbols:CAP_CER_0u1_50V_X7R_0603" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "C" (id 0) (at 3.048 -1.016 0)
