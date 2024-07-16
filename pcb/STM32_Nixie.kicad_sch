@@ -914,6 +914,9 @@
     (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/11a01d7c-03f4-4357-abd3-08189dc2e83b"
       (reference "D3") (unit 1) (value "LED_GREEN_0603") (footprint "LED_SMD:LED_0603_1608Metric")
     )
+    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/439969e1-6954-4451-9e37-a46ae6e0fb7b"
+      (reference "D?") (unit 1) (value "LED_RED_0603") (footprint "LED_SMD:LED_0603_1608Metric")
+    )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/9ff1a288-eeb2-4e85-b12c-ae7a5d737238"
       (reference "FB1") (unit 1) (value "FER_1K_0A6_0603") (footprint "Inductor_SMD:L_0603_1608Metric")
     )
@@ -1141,6 +1144,9 @@
     )
     (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/84b8d0c6-3431-4d2c-ace9-2165e82bcc93"
       (reference "R56") (unit 1) (value "RES_10K_1P_1/10W_0603") (footprint "Resistor_SMD:R_0603_1608Metric")
+    )
+    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/63f1e869-10e5-4eef-91d8-56741cdaef9c"
+      (reference "R?") (unit 1) (value "RES_3K3_1P_1/10W_0603") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/f07b1648-daa4-4991-bc04-ece7d3c88607"
       (reference "S1") (unit 1) (value "SW_TACT_PTS645SM43SMTR92_LFS") (footprint "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645")
