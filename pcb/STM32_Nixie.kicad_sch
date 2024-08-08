@@ -1249,20 +1249,20 @@
     (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/461981fc-199c-4e16-9421-bb4b14f2f77f"
       (reference "TP1") (unit 1) (value "RTC_OUT") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
     )
-    (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/0e188862-ba49-4e89-ba27-975eba221aa3"
-      (reference "TP?") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
-    )
-    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/17dc6b5c-1c2a-4b19-8f56-2fdfff259811"
-      (reference "TP?") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
-    )
-    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/6930bbd7-b962-4070-9b46-800d9508ad1e"
-      (reference "TP?") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
-    )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/6e96e4c2-209a-4f7f-98c6-4e4ce8d2f994"
-      (reference "TP?") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
+      (reference "TP2") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
     )
     (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/b9c3691b-e2ac-490a-a376-134a6b3b9ca6"
-      (reference "TP?") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
+      (reference "TP3") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
+    )
+    (path "/b6f49995-0eb9-4525-a397-4f1a1965a188/0e188862-ba49-4e89-ba27-975eba221aa3"
+      (reference "TP4") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
+    )
+    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/17dc6b5c-1c2a-4b19-8f56-2fdfff259811"
+      (reference "TP5") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
+    )
+    (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/6930bbd7-b962-4070-9b46-800d9508ad1e"
+      (reference "TP6") (unit 1) (value "TP_KEYSTONE_5019") (footprint "arjun_footprints:TestPoint_Keystone_5019_Minature")
     )
     (path "/f14ed119-44a4-4dba-a5a7-78813bb44ce1/cd04ffbb-d169-4465-9b0c-c22c39907f5b"
       (reference "U1") (unit 1) (value "IC_SR_MC_HV5622PG-G") (footprint "arjun_footprints:HV5622PG-G")
@@ -1294,10 +1294,10 @@
     (path "/c489a08b-e150-4d56-8df0-484cd36f24a0/1773b8fd-bd7c-4e24-a654-22b6e3980f18"
       (reference "U9") (unit 1) (value "IC_LSW_TI_TPS2552D") (footprint "arjun_footprints:SOT-23-6_TI")
     )
-    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/1fb68902-787e-4d92-a42c-50e8ef4b7b7c"
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/61badf09-62f9-4325-b57b-6f7575e4e272"
       (reference "X1") (unit 1) (value "XTAL_8M_20PPM_18pF_ECS-80-18-30-JGN-TR") (footprint "arjun_footprints:SMD-2_5x3.2mm_ECS")
     )
-    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/03abd1c3-640d-4ad6-bb92-873a91fa87aa"
+    (path "/8ecdbb98-5b2a-4725-a227-62b58d0c66f3/b6045b49-5f4f-4974-b28a-dcefe5d3a995"
       (reference "X2") (unit 1) (value "XTAL_32K768_10PPM_7pF_ECS-.327-7-34B-C-TR") (footprint "arjun_footprints:SMD-2_3.2x1.5mm_ECS")
     )
   )
