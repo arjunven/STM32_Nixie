@@ -1,1161 +1,3491 @@
-(kicad_sch (version 20211123) (generator eeschema)
-
-  (uuid 1bcd8815-daf7-449a-a47d-bdd1f361b11d)
-
-  (paper "A4")
-
-  (title_block
-    (date "2024-05-14")
-    (rev "1")
-  )
-
-  (lib_symbols
-    (symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "SW" (id 0) (at 6.35 3.81 0)
-        (effects (font (size 1.524 1.524)))
-      )
-      (property "Value" "ENC_SPST_24PPR_PEC12R-4225F-S0024_1" (id 1) (at 52.07 2.54 0)
-        (effects (font (size 1.524 1.524)) hide)
-      )
-      (property "Footprint" "arjun_footprints:ENC_SPST_PEC12R-4x25F-Sxxx" (id 2) (at 27.94 -12.7 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" (id 3) (at 27.94 -10.16 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "Vendor" "Digi-Key" (id 4) (at 27.94 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "VendorPN" "PEC12R-4225F-S0024-ND" (id 5) (at 27.94 -7.62 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "Manufacturer" "Bourns Inc." (id 6) (at 27.94 10.16 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "ManufacturerPN" "PEC12R-4225F-S0024" (id 7) (at 8.89 -13.97 0)
-        (effects (font (size 1.016 1.016)))
-      )
-      (property "Category" "Sensors, Transducers" (id 8) (at 27.94 -2.54 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "Family" "Encoders" (id 9) (at 27.94 0 0)
-        (effects (font (size 1.524 1.524)) (justify left) hide)
-      )
-      (property "ki_description" "Rotary Encoder Mechanical 24 Quadrature (Incremental) Vertical, with Momentary SPST" (id 10) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1_0_1"
-        (polyline
-          (pts
-            (xy 10.16 0)
-            (xy 15.24 0)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 2.54 0)
-            (xy 6.35 0)
-            (xy 10.16 1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (rectangle (start 2.54 2.54) (end 15.24 -12.7)
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type background))
-        )
-      )
-      (symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1_1_1"
-        (pin passive line (at 0 0 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 17.78 0 180) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 17.78 -5.08 180) (length 2.54)
-          (name "CH_A" (effects (font (size 1.27 1.27))))
-          (number "A" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 17.78 -10.16 180) (length 2.54)
-          (name "CH_B" (effects (font (size 1.27 1.27))))
-          (number "B" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -5.08 0) (length 2.54)
-          (name "COM" (effects (font (size 1.27 1.27))))
-          (number "C" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -10.16 0) (length 2.54)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "M" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "arjun_symbols:CAP_CER_0u01_50V_X7R_0603" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (id 0) (at 3.048 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "CAP_CER_0u01_50V_X7R_0603" (id 1) (at 7.62 4.445 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 7.62 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf" (id 3) (at 7.62 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Manufacturer" "Samsung Electro-Mechanics" (id 4) (at 7.62 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ManufacturerPN" "CL10B103KB8NNNC" (id 5) (at 7.62 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Vendor" "Digi-Key" (id 6) (at 7.62 -10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "VendorPN" "1276-1009-1-ND" (id 7) (at 7.62 -12.7 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Capacitance" "0.01µF" (id 8) (at 3.048 -2.54 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Voltage" "50V" (id 9) (at 3.048 -4.064 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Package" "0603" (id 10) (at 3.048 -7.112 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Temp Co" "X7R" (id 11) (at 3.048 -5.588 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "ki_keywords" "cap capacitor" (id 12) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "10000 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" (id 13) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (id 14) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "CAP_CER_0u01_50V_X7R_0603_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -4.572)
-            (xy 2.032 -4.572)
-          )
-          (stroke (width 0.508) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 -3.048)
-            (xy 2.032 -3.048)
-          )
-          (stroke (width 0.508) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "CAP_CER_0u01_50V_X7R_0603_1_1"
-        (pin passive line (at 0 0 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "arjun_symbols:CAP_CER_0u1_50V_X7R_0603" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
-      (property "Reference" "C" (id 0) (at 3.048 -1.016 0)
-        (effects (font (size 1.27 1.27)) (justify left))
-      )
-      (property "Value" "CAP_CER_0u1_50V_X7R_0603" (id 1) (at 7.62 4.445 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 7.62 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf" (id 3) (at 7.62 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Manufacturer" "Samsung Electro-Mechanics" (id 4) (at 7.62 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ManufacturerPN" "CL10B104KB8NNNC" (id 5) (at 7.62 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Vendor" "Digi-Key" (id 6) (at 7.62 -10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "VendorPN" "1276-1000-1-ND" (id 7) (at 7.62 -12.7 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Capacitance" "0.1µF" (id 8) (at 3.048 -2.54 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Voltage" "50V" (id 9) (at 3.048 -4.064 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Package" "0603" (id 10) (at 3.048 -7.112 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "Temp Co" "X7R" (id 11) (at 3.048 -5.588 0)
-        (effects (font (size 0.762 0.762)) (justify left))
-      )
-      (property "ki_keywords" "cap capacitor" (id 12) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)" (id 13) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "C_*" (id 14) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "CAP_CER_0u1_50V_X7R_0603_0_1"
-        (polyline
-          (pts
-            (xy -2.032 -4.572)
-            (xy 2.032 -4.572)
-          )
-          (stroke (width 0.508) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy -2.032 -3.048)
-            (xy 2.032 -3.048)
-          )
-          (stroke (width 0.508) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "CAP_CER_0u1_50V_X7R_0603_1_1"
-        (pin passive line (at 0 0 270) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 90) (length 2.794)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "arjun_symbols:RES_10K_1P_1{slash}10W_0603" (pin_numbers hide) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "R" (id 0) (at -3.175 -3.81 90)
-        (effects (font (size 1.27 1.27)) (justify top))
-      )
-      (property "Value" "RES_10K_1P_1{slash}10W_0603" (id 1) (at 7.62 5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 7.62 2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 7.62 -7.62 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Manufacturer" "YAGEO" (id 4) (at 7.62 -2.54 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 7.62 -5.08 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Vendor" "Digi-Key" (id 6) (at 7.62 -10.16 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 7.62 -12.7 0)
-        (effects (font (size 1.27 1.27)) (justify left) hide)
-      )
-      (property "Resistance" "10k" (id 8) (at 2.032 -5.588 90)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Tolerance" "±1% " (id 9) (at 2.032 -1.524 90)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Package" "0603" (id 10) (at 3.556 -5.588 90)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "Power" "1/10W" (id 11) (at 3.556 -1.778 90)
-        (effects (font (size 0.762 0.762)))
-      )
-      (property "ki_keywords" "R res resistor" (id 12) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film" (id 13) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_fp_filters" "R_*" (id 14) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "RES_10K_1P_1{slash}10W_0603_0_1"
-        (polyline
-          (pts
-            (xy 0 -6.096)
-            (xy 0 -6.35)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.524)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -4.572)
-            (xy 1.016 -4.953)
-            (xy 0 -5.334)
-            (xy -1.016 -5.715)
-            (xy 0 -6.096)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -3.048)
-            (xy 1.016 -3.429)
-            (xy 0 -3.81)
-            (xy -1.016 -4.191)
-            (xy 0 -4.572)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 -1.524)
-            (xy 1.016 -1.905)
-            (xy 0 -2.286)
-            (xy -1.016 -2.667)
-            (xy 0 -3.048)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "RES_10K_1P_1{slash}10W_0603_1_1"
-        (pin passive line (at 0 0 270) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -7.62 90) (length 1.27)
-          (name "~" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3.3V" (id 1) (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3.3V_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "+3.3V_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (id 0) (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND" (id 1) (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (id 2) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default) (color 0 0 0 0))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-  )
-
-  (junction (at 182.88 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid 000a4508-9d37-42ad-9dea-8dec2ec046b5)
-  )
-  (junction (at 134.62 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid 1c9ad88d-ec1f-41e9-a91a-779d8587e9a2)
-  )
-  (junction (at 99.06 106.68) (diameter 0) (color 0 0 0 0)
-    (uuid 5d45c7dd-118a-4213-95c6-8ba64d9f1d91)
-  )
-  (junction (at 193.04 111.76) (diameter 0) (color 0 0 0 0)
-    (uuid 673a989d-9dac-4122-abe9-6dfd41893d46)
-  )
-  (junction (at 121.92 101.6) (diameter 0) (color 0 0 0 0)
-    (uuid 86bebcc9-c4ef-4f42-836e-27adc3f4dc51)
-  )
-  (junction (at 99.06 111.76) (diameter 0) (color 0 0 0 0)
-    (uuid c65128ce-7014-4dde-8795-2c089997298d)
-  )
-  (junction (at 172.72 101.6) (diameter 0) (color 0 0 0 0)
-    (uuid ebb60a9e-2ea0-4493-8801-a05b87db194d)
-  )
-  (junction (at 144.78 111.76) (diameter 0) (color 0 0 0 0)
-    (uuid f966d80b-9e81-4180-af9d-244175504a70)
-  )
-
-  (wire (pts (xy 182.88 106.68) (xy 182.88 114.3))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 23cc359a-1d9f-429d-ab6b-ae72cce676ba)
-  )
-  (wire (pts (xy 121.92 101.6) (xy 147.32 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 27006774-3ef8-4eb1-9255-74ffd9f85565)
-  )
-  (wire (pts (xy 154.94 101.6) (xy 172.72 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 375b78c1-6078-4923-8661-0b9cf689282c)
-  )
-  (wire (pts (xy 144.78 111.76) (xy 162.56 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 376c1803-1d83-4ecb-95ee-f760b5a48e01)
-  )
-  (wire (pts (xy 172.72 101.6) (xy 203.2 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 3916aecb-a7e7-4f88-85ae-8ec1a22f2dbe)
-  )
-  (wire (pts (xy 99.06 111.76) (xy 99.06 114.3))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 395fb3b0-64c6-4cc9-b90e-8f34f804d8d5)
-  )
-  (wire (pts (xy 170.18 111.76) (xy 193.04 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 629a3dd2-0d9a-4533-8d12-fcce8ed03771)
-  )
-  (wire (pts (xy 119.38 111.76) (xy 144.78 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 63546b4c-376b-43b5-87d5-4cdd0639464b)
-  )
-  (wire (pts (xy 99.06 106.68) (xy 99.06 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 846bb075-bb76-4185-adc5-21bba2d71bbb)
-  )
-  (wire (pts (xy 193.04 121.92) (xy 193.04 124.46))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 9482a278-459f-45c5-bc80-649c970607ae)
-  )
-  (wire (pts (xy 99.06 111.76) (xy 101.6 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 964f22ed-837f-4512-aa95-18e73ed7ab02)
-  )
-  (wire (pts (xy 99.06 101.6) (xy 99.06 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 97de07aa-2502-4f33-be19-38dfcbe171d0)
-  )
-  (wire (pts (xy 182.88 106.68) (xy 203.2 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 9a6feaad-f9d1-4748-8f42-32dfba563888)
-  )
-  (wire (pts (xy 119.38 101.6) (xy 121.92 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid 9db4cf11-2a08-42be-a7e0-5c6511b59cdf)
-  )
-  (wire (pts (xy 144.78 96.52) (xy 144.78 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid abaad4b5-596b-4a0b-bd0a-d5c692c7378e)
-  )
-  (wire (pts (xy 134.62 106.68) (xy 154.94 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid b0ffd60b-ec1e-4e56-96dd-70cdcf0f198d)
-  )
-  (wire (pts (xy 193.04 111.76) (xy 193.04 114.3))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid bf4f3403-4e12-4c83-bdfc-768e761d502f)
-  )
-  (wire (pts (xy 119.38 106.68) (xy 134.62 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid c8871406-a624-4690-a2a3-c8c0adc62a7f)
-  )
-  (wire (pts (xy 134.62 96.52) (xy 134.62 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid c9a25cbf-ec5f-490f-a496-525975340719)
-  )
-  (wire (pts (xy 172.72 121.92) (xy 172.72 124.46))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid d34e1931-9795-4851-b1a6-224575d7b66e)
-  )
-  (wire (pts (xy 101.6 101.6) (xy 99.06 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid e2b8a27c-79be-4740-91a9-d2cc86fa0add)
-  )
-  (wire (pts (xy 121.92 96.52) (xy 121.92 101.6))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ea7149cd-e9bd-4c94-b842-d911a0880f79)
-  )
-  (wire (pts (xy 99.06 106.68) (xy 101.6 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ebf23abd-8773-4cd3-8b09-1f33a775bc62)
-  )
-  (wire (pts (xy 193.04 111.76) (xy 203.2 111.76))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f5e58756-4489-4711-8a1b-683fbec54e63)
-  )
-  (wire (pts (xy 182.88 121.92) (xy 182.88 124.46))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f646f633-adef-431d-aad0-277898cf7052)
-  )
-  (wire (pts (xy 162.56 106.68) (xy 182.88 106.68))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid f722b23b-c6ea-447a-9819-0fc9ad6f4742)
-  )
-  (wire (pts (xy 172.72 101.6) (xy 172.72 114.3))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid ff959c61-e3a9-4d99-9c07-53186a0a71db)
-  )
-
-  (text "Place pull-up and RCs near MCU pins." (at 152.4 93.98 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 0c459a3c-6296-4fbc-9ecf-3249ee765a3e)
-  )
-  (text "Rotary Encoder w/Pushbutton" (at 121.92 68.58 0)
-    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
-    (uuid 41c8465e-b10b-4de8-9b3f-2248d0789bed)
-  )
-  (text "Main user input" (at 142.24 71.12 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 6941a028-1545-47fe-adc1-1f4cca7017b1)
-  )
-
-  (label "ENC_B" (at 127 111.76 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 76f5c254-9cd6-43b0-befb-870c23428c06)
-  )
-  (label "nENC_PB" (at 124.46 101.6 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid f4bead70-ec5d-4f59-9b6f-32a09ed24410)
-  )
-  (label "ENC_A" (at 127 106.68 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid fe0cfff5-da9b-4bba-8e5d-180953ead833)
-  )
-
-  (hierarchical_label "ENC_A_R" (shape output) (at 203.2 106.68 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 6a6ca441-28ef-4274-a705-82da02ce472c)
-  )
-  (hierarchical_label "nENC_PB_R" (shape output) (at 203.2 101.6 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid dadb391d-bfe6-4661-ac2b-922be848d950)
-  )
-  (hierarchical_label "ENC_B_R" (shape output) (at 203.2 111.76 0)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid db188d76-3035-402f-b785-a21dfe5874bf)
-  )
-
-  (symbol (lib_id "power:GND") (at 172.72 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 19018160-5b5b-47ae-84ef-f67b309cee66)
-    (property "Reference" "#PWR074" (id 0) (at 172.72 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 172.72 128.27 0))
-    (property "Footprint" "" (id 2) (at 172.72 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 172.72 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 8817b669-bb45-47c2-b6f4-75c0d8a05bc9))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 162.56 106.68 270) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 22d573b9-e0c9-48fd-a554-d503604a681d)
-    (property "Reference" "R38" (id 0) (at 158.75 103.505 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 167.64 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 165.1 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 154.94 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 160.02 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 157.48 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 152.4 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 149.86 114.3 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 156.972 108.712 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 161.036 108.712 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 156.972 110.236 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 160.782 110.236 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid 74d6cd64-d183-4b5f-a016-04c01e9a4ede))
-    (pin "2" (uuid 70f11141-dece-4923-8281-6c738c7df4ab))
-  )
-
-  (symbol (lib_id "power:GND") (at 182.88 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 351dfe6b-16a0-4dba-9ac7-f48d92dbd7ed)
-    (property "Reference" "#PWR075" (id 0) (at 182.88 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 182.88 128.27 0))
-    (property "Footprint" "" (id 2) (at 182.88 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 182.88 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6b26b361-bfaf-44f2-8138-62a019e378e1))
-  )
-
-  (symbol (lib_name "ENC_SPST_24PPR_PEC12R-4225F-S0024_1") (lib_id "arjun_symbols:ENC_SPST_24PPR_PEC12R-4225F-S0024") (at 101.6 101.6 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 3c00b1bc-379e-41be-921f-b00aeb4a7088)
-    (property "Reference" "SW1" (id 0) (at 107.95 97.79 0)
-      (effects (font (size 1.524 1.524)))
-    )
-    (property "Value" "ENC_SPST_24PPR_PEC12R-4225F-S0024" (id 1) (at 153.67 99.06 0)
-      (effects (font (size 1.524 1.524)) hide)
-    )
-    (property "Footprint" "arjun_footprints:ENC_SPST_PEC12R-4x25F-Sxxx" (id 2) (at 129.54 114.3 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf" (id 3) (at 129.54 111.76 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 4) (at 129.54 106.68 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "PEC12R-4225F-S0024-ND" (id 5) (at 129.54 109.22 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (property "Manufacturer" "Bourns Inc." (id 6) (at 129.54 91.44 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "PEC12R-4225F-S0024" (id 7) (at 110.49 115.57 0)
-      (effects (font (size 1.016 1.016)))
-    )
-    (property "Category" "Sensors, Transducers" (id 8) (at 129.54 104.14 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (property "Family" "Encoders" (id 9) (at 129.54 101.6 0)
-      (effects (font (size 1.524 1.524)) (justify left) hide)
-    )
-    (pin "1" (uuid 7153a176-a167-49fb-804a-65f480aa79e9))
-    (pin "2" (uuid 551b5634-3de5-4f20-a584-b6b8edbbe1ea))
-    (pin "A" (uuid f60393ba-8943-43b7-b0b8-335a6f0d8cf6))
-    (pin "B" (uuid 2cde45ff-612f-4ab6-99be-9433ec7a44e1))
-    (pin "C" (uuid 8174af7f-80e7-483c-bf1c-d6eaf4d61f99))
-    (pin "M" (uuid 692b31df-5eaa-4bde-a29b-a0031d91a59e))
-  )
-
-  (symbol (lib_id "arjun_symbols:CAP_CER_0u01_50V_X7R_0603") (at 193.04 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 4552bd68-7e86-463c-ba01-3ba48b18d938)
-    (property "Reference" "C49" (id 0) (at 196.088 115.316 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CAP_CER_0u01_50V_X7R_0603" (id 1) (at 200.66 109.855 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 200.66 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf" (id 3) (at 200.66 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (id 4) (at 200.66 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "CL10B103KB8NNNC" (id 5) (at 200.66 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 200.66 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "1276-1009-1-ND" (id 7) (at 200.66 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Capacitance" "0.01µF" (id 8) (at 196.088 116.84 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Voltage" "50V" (id 9) (at 196.088 118.364 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Package" "0603" (id 10) (at 196.088 121.412 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Temp Co" "X7R" (id 11) (at 196.088 119.888 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (pin "1" (uuid c2b718c1-0f61-4cfa-afec-dc04665dd8bb))
-    (pin "2" (uuid ad54dcbb-89d6-447a-99b0-52b202c8a237))
-  )
-
-  (symbol (lib_id "power:GND") (at 193.04 124.46 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 47d8c42e-645b-4356-a938-8a84eae8836c)
-    (property "Reference" "#PWR076" (id 0) (at 193.04 130.81 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 193.04 128.27 0))
-    (property "Footprint" "" (id 2) (at 193.04 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 193.04 124.46 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9507e8ed-17bb-4227-92f7-649117d6fb9f))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 134.62 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 47e1e6e2-cd19-4e54-ab53-5d73e6984888)
-    (property "Reference" "R35" (id 0) (at 131.445 92.71 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 142.24 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 142.24 86.36 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 142.24 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 142.24 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 142.24 93.98 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 142.24 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 142.24 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 136.652 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 136.652 90.424 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 138.176 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 138.176 90.678 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid 4e102f1d-0823-4da6-8c16-7efdefabc4d2))
-    (pin "2" (uuid 1aa51862-8aea-42f1-9376-96b1227ecc00))
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 134.62 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 5959c917-a90c-46b2-b99d-437e6ede76e2)
-    (property "Reference" "#PWR072" (id 0) (at 134.62 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (id 1) (at 134.62 85.344 0))
-    (property "Footprint" "" (id 2) (at 134.62 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 134.62 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c57873ae-282a-42bc-9c4d-db595a57203e))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 144.78 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 5d6e53eb-9333-4cc5-a8b9-529f63aa4c5e)
-    (property "Reference" "R36" (id 0) (at 141.605 92.71 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 152.4 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 152.4 86.36 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 152.4 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 152.4 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 152.4 93.98 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 152.4 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 152.4 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 146.812 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 146.812 90.424 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 148.336 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 148.336 90.678 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid d860179c-4716-4d82-b043-6524122345d7))
-    (pin "2" (uuid e779f6a6-0785-4b47-a469-23ceb4a29f8d))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 154.94 101.6 270) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 636a8bd8-74f5-4655-b696-0bd4e9ac7aa8)
-    (property "Reference" "R37" (id 0) (at 151.13 98.425 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 160.02 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 157.48 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 147.32 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 152.4 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 149.86 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 144.78 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 142.24 109.22 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 149.352 103.632 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 153.416 103.632 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 149.352 105.156 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 153.162 105.156 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid 295c1351-1b80-4fec-a877-15c5a492b921))
-    (pin "2" (uuid 25a5268a-b9a3-4cea-af6b-beaf828093dc))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 170.18 111.76 270) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 73d0b36d-8919-47d8-879f-77119241e8cc)
-    (property "Reference" "R39" (id 0) (at 166.37 108.585 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 175.26 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 172.72 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 162.56 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 167.64 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 165.1 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 160.02 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 157.48 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 164.592 113.792 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 168.656 113.792 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 164.592 115.316 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 168.402 115.316 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid a82eabde-c7c8-4b84-b9fc-9c327e99c470))
-    (pin "2" (uuid 5ef36cc9-b733-4935-a8fa-99a713cd5cb0))
-  )
-
-  (symbol (lib_id "arjun_symbols:CAP_CER_0u01_50V_X7R_0603") (at 182.88 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 8596294f-c74b-4e50-b6cc-c3dc23669cc2)
-    (property "Reference" "C48" (id 0) (at 185.928 115.316 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CAP_CER_0u01_50V_X7R_0603" (id 1) (at 190.5 109.855 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 190.5 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf" (id 3) (at 190.5 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (id 4) (at 190.5 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "CL10B103KB8NNNC" (id 5) (at 190.5 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 190.5 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "1276-1009-1-ND" (id 7) (at 190.5 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Capacitance" "0.01µF" (id 8) (at 185.928 116.84 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Voltage" "50V" (id 9) (at 185.928 118.364 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Package" "0603" (id 10) (at 185.928 121.412 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Temp Co" "X7R" (id 11) (at 185.928 119.888 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (pin "1" (uuid c95e86fb-26fc-4e1d-a73c-4e1efe4394c8))
-    (pin "2" (uuid 54f38006-e55b-4447-9069-a6d597e480cb))
-  )
-
-  (symbol (lib_id "arjun_symbols:RES_10K_1P_1{slash}10W_0603") (at 121.92 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 8aa479a8-4aeb-4d59-a85f-fc41d653df67)
-    (property "Reference" "R34" (id 0) (at 118.745 92.71 90)
-      (effects (font (size 1.27 1.27)) (justify top))
-    )
-    (property "Value" "RES_10K_1P_1/10W_0603" (id 1) (at 129.54 83.82 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Resistor_SMD:R_0603_1608Metric" (id 2) (at 129.54 86.36 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf" (id 3) (at 129.54 96.52 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "YAGEO" (id 4) (at 129.54 91.44 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "RC0603FR-0710KL" (id 5) (at 129.54 93.98 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 129.54 99.06 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "311-10.0KHRCT-ND" (id 7) (at 129.54 101.6 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Resistance" "10k" (id 8) (at 123.952 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Tolerance" "±1% " (id 9) (at 123.952 90.424 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Package" "0603" (id 10) (at 125.476 94.488 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (property "Power" "1/10W" (id 11) (at 125.476 90.678 90)
-      (effects (font (size 0.762 0.762)))
-    )
-    (pin "1" (uuid 90426f62-e4ff-41ee-b3ea-00d4695205b5))
-    (pin "2" (uuid 1b4036cb-e4d7-45ac-b468-c252ec6e594f))
-  )
-
-  (symbol (lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603") (at 172.72 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 923a8127-1685-46d9-b544-a208a99889e2)
-    (property "Reference" "C47" (id 0) (at 175.768 115.316 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "CAP_CER_0u1_50V_X7R_0603" (id 1) (at 180.34 109.855 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 180.34 111.76 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf" (id 3) (at 180.34 121.92 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Manufacturer" "Samsung Electro-Mechanics" (id 4) (at 180.34 116.84 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "ManufacturerPN" "CL10B104KB8NNNC" (id 5) (at 180.34 119.38 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Vendor" "Digi-Key" (id 6) (at 180.34 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "VendorPN" "1276-1000-1-ND" (id 7) (at 180.34 127 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Capacitance" "0.1µF" (id 8) (at 175.768 116.84 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Voltage" "50V" (id 9) (at 175.768 118.364 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Package" "0603" (id 10) (at 175.768 121.412 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (property "Temp Co" "X7R" (id 11) (at 175.768 119.888 0)
-      (effects (font (size 0.762 0.762)) (justify left))
-    )
-    (pin "1" (uuid 063175bb-4d2b-4ea7-953c-65d0698af488))
-    (pin "2" (uuid caeda458-ca06-4a75-9da3-049e6cd341de))
-  )
-
-  (symbol (lib_id "power:GND") (at 99.06 114.3 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid 93f56527-ed39-45e7-a1af-7c9fbc290d95)
-    (property "Reference" "#PWR070" (id 0) (at 99.06 120.65 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 99.06 118.11 0))
-    (property "Footprint" "" (id 2) (at 99.06 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 99.06 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d0cf398a-93fc-4a5b-88af-9493e072b99f))
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 121.92 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid e2b85829-8087-4caf-9ed9-28a9ad4f2e8b)
-    (property "Reference" "#PWR071" (id 0) (at 121.92 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (id 1) (at 121.92 85.344 0))
-    (property "Footprint" "" (id 2) (at 121.92 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 121.92 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 2a1bc720-6617-40f5-802b-dfa05e41b01f))
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 144.78 88.9 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid f952946d-ec4b-49ef-8ff1-1d14625955d8)
-    (property "Reference" "#PWR073" (id 0) (at 144.78 92.71 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (id 1) (at 144.78 85.344 0))
-    (property "Footprint" "" (id 2) (at 144.78 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 144.78 88.9 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 790ec4b7-368d-4ae1-8056-e61e4da81ae4))
-  )
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "1bcd8815-daf7-449a-a47d-bdd1f361b11d")
+	(paper "A4")
+	(title_block
+		(date "2024-05-14")
+		(rev "1")
+	)
+	(lib_symbols
+		(symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 6.35 3.81 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "ENC_SPST_24PPR_PEC12R-4225F-S0024_1"
+				(at 52.07 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "arjun_footprints:ENC_SPST_PEC12R-4x25F-Sxxx"
+				(at 27.94 -12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+				(at 27.94 -10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "Rotary Encoder Mechanical 24 Quadrature (Incremental) Vertical, with Momentary SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 27.94 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "VendorPN" "PEC12R-4225F-S0024-ND"
+				(at 27.94 -7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Bourns Inc."
+				(at 27.94 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ManufacturerPN" "PEC12R-4225F-S0024"
+				(at 8.89 -13.97 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Category" "Sensors, Transducers"
+				(at 27.94 -2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Encoders"
+				(at 27.94 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1_0_1"
+				(polyline
+					(pts
+						(xy 10.16 0) (xy 15.24 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 6.35 0) (xy 10.16 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.54 2.54)
+					(end 15.24 -12.7)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "ENC_SPST_24PPR_PEC12R-4225F-S0024_1_1_1"
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -5.08 180)
+					(length 2.54)
+					(name "CH_A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -10.16 180)
+					(length 2.54)
+					(name "CH_B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "M"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "arjun_symbols:CAP_CER_0u01_50V_X7R_0603"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.048 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CAP_CER_0u01_50V_X7R_0603"
+				(at 7.62 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 7.62 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "10000 pF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 7.62 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ManufacturerPN" "CL10B103KB8NNNC"
+				(at 7.62 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 7.62 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "VendorPN" "1276-1009-1-ND"
+				(at 7.62 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Capacitance" "0.01µF"
+				(at 3.048 -2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 3.048 -4.064 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "0603"
+				(at 3.048 -7.112 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Temp Co" "X7R"
+				(at 3.048 -5.588 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_0u01_50V_X7R_0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -4.572) (xy 2.032 -4.572)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_0u01_50V_X7R_0603_1_1"
+				(pin passive line
+					(at 0 0 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "arjun_symbols:CAP_CER_0u1_50V_X7R_0603"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 3.048 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CAP_CER_0u1_50V_X7R_0603"
+				(at 7.62 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+				(at 7.62 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "0.1 µF ±10% 50V Ceramic Capacitor X7R 0603 (1608 Metric)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Samsung Electro-Mechanics"
+				(at 7.62 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ManufacturerPN" "CL10B104KB8NNNC"
+				(at 7.62 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 7.62 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "VendorPN" "1276-1000-1-ND"
+				(at 7.62 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Capacitance" "0.1µF"
+				(at 3.048 -2.54 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Voltage" "50V"
+				(at 3.048 -4.064 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Package" "0603"
+				(at 3.048 -7.112 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "Temp Co" "X7R"
+				(at 3.048 -5.588 0)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+					(justify left)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CAP_CER_0u1_50V_X7R_0603_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -4.572) (xy 2.032 -4.572)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -3.048) (xy 2.032 -3.048)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "CAP_CER_0u1_50V_X7R_0603_1_1"
+				(pin passive line
+					(at 0 0 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "arjun_symbols:RES_10K_1P_1/10W_0603"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at -3.175 -3.81 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify top)
+				)
+			)
+			(property "Value" "RES_10K_1P_1{slash}10W_0603"
+				(at 7.62 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+				(at 7.62 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+				(at 7.62 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "10 kOhms ±1% 0.1W, 1/10W Chip Resistor 0603 (1608 Metric) Moisture Resistant Thick Film"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "YAGEO"
+				(at 7.62 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ManufacturerPN" "RC0603FR-0710KL"
+				(at 7.62 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 7.62 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "VendorPN" "311-10.0KHRCT-ND"
+				(at 7.62 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Resistance" "10k"
+				(at 2.032 -5.588 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Tolerance" "±1% "
+				(at 2.032 -1.524 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Package" "0603"
+				(at 3.556 -5.588 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "Power" "1/10W"
+				(at 3.556 -1.778 90)
+				(effects
+					(font
+						(size 0.762 0.762)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RES_10K_1P_1/10W_0603_0_1"
+				(polyline
+					(pts
+						(xy 0 -6.096) (xy 0 -6.35)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.524) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -4.572) (xy 1.016 -4.953) (xy 0 -5.334) (xy -1.016 -5.715) (xy 0 -6.096)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -3.048) (xy 1.016 -3.429) (xy 0 -3.81) (xy -1.016 -4.191) (xy 0 -4.572)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.524) (xy 1.016 -1.905) (xy 0 -2.286) (xy -1.016 -2.667) (xy 0 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "RES_10K_1P_1/10W_0603_1_1"
+				(pin passive line
+					(at 0 0 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "+3.3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 182.88 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "000a4508-9d37-42ad-9dea-8dec2ec046b5")
+	)
+	(junction
+		(at 134.62 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c9ad88d-ec1f-41e9-a91a-779d8587e9a2")
+	)
+	(junction
+		(at 99.06 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d45c7dd-118a-4213-95c6-8ba64d9f1d91")
+	)
+	(junction
+		(at 193.04 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "673a989d-9dac-4122-abe9-6dfd41893d46")
+	)
+	(junction
+		(at 121.92 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86bebcc9-c4ef-4f42-836e-27adc3f4dc51")
+	)
+	(junction
+		(at 99.06 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c65128ce-7014-4dde-8795-2c089997298d")
+	)
+	(junction
+		(at 172.72 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebb60a9e-2ea0-4493-8801-a05b87db194d")
+	)
+	(junction
+		(at 144.78 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f966d80b-9e81-4180-af9d-244175504a70")
+	)
+	(wire
+		(pts
+			(xy 182.88 106.68) (xy 182.88 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23cc359a-1d9f-429d-ab6b-ae72cce676ba")
+	)
+	(wire
+		(pts
+			(xy 121.92 101.6) (xy 147.32 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27006774-3ef8-4eb1-9255-74ffd9f85565")
+	)
+	(wire
+		(pts
+			(xy 154.94 101.6) (xy 172.72 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "375b78c1-6078-4923-8661-0b9cf689282c")
+	)
+	(wire
+		(pts
+			(xy 144.78 111.76) (xy 162.56 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "376c1803-1d83-4ecb-95ee-f760b5a48e01")
+	)
+	(wire
+		(pts
+			(xy 172.72 101.6) (xy 203.2 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3916aecb-a7e7-4f88-85ae-8ec1a22f2dbe")
+	)
+	(wire
+		(pts
+			(xy 99.06 111.76) (xy 99.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395fb3b0-64c6-4cc9-b90e-8f34f804d8d5")
+	)
+	(wire
+		(pts
+			(xy 170.18 111.76) (xy 193.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "629a3dd2-0d9a-4533-8d12-fcce8ed03771")
+	)
+	(wire
+		(pts
+			(xy 119.38 111.76) (xy 144.78 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63546b4c-376b-43b5-87d5-4cdd0639464b")
+	)
+	(wire
+		(pts
+			(xy 99.06 106.68) (xy 99.06 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "846bb075-bb76-4185-adc5-21bba2d71bbb")
+	)
+	(wire
+		(pts
+			(xy 193.04 121.92) (xy 193.04 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9482a278-459f-45c5-bc80-649c970607ae")
+	)
+	(wire
+		(pts
+			(xy 99.06 111.76) (xy 101.6 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "964f22ed-837f-4512-aa95-18e73ed7ab02")
+	)
+	(wire
+		(pts
+			(xy 99.06 101.6) (xy 99.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97de07aa-2502-4f33-be19-38dfcbe171d0")
+	)
+	(wire
+		(pts
+			(xy 182.88 106.68) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a6feaad-f9d1-4748-8f42-32dfba563888")
+	)
+	(wire
+		(pts
+			(xy 119.38 101.6) (xy 121.92 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db4cf11-2a08-42be-a7e0-5c6511b59cdf")
+	)
+	(wire
+		(pts
+			(xy 144.78 96.52) (xy 144.78 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abaad4b5-596b-4a0b-bd0a-d5c692c7378e")
+	)
+	(wire
+		(pts
+			(xy 134.62 106.68) (xy 154.94 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0ffd60b-ec1e-4e56-96dd-70cdcf0f198d")
+	)
+	(wire
+		(pts
+			(xy 193.04 111.76) (xy 193.04 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf4f3403-4e12-4c83-bdfc-768e761d502f")
+	)
+	(wire
+		(pts
+			(xy 119.38 106.68) (xy 134.62 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8871406-a624-4690-a2a3-c8c0adc62a7f")
+	)
+	(wire
+		(pts
+			(xy 134.62 96.52) (xy 134.62 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9a25cbf-ec5f-490f-a496-525975340719")
+	)
+	(wire
+		(pts
+			(xy 172.72 121.92) (xy 172.72 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d34e1931-9795-4851-b1a6-224575d7b66e")
+	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 99.06 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b8a27c-79be-4740-91a9-d2cc86fa0add")
+	)
+	(wire
+		(pts
+			(xy 121.92 96.52) (xy 121.92 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea7149cd-e9bd-4c94-b842-d911a0880f79")
+	)
+	(wire
+		(pts
+			(xy 99.06 106.68) (xy 101.6 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebf23abd-8773-4cd3-8b09-1f33a775bc62")
+	)
+	(wire
+		(pts
+			(xy 193.04 111.76) (xy 203.2 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5e58756-4489-4711-8a1b-683fbec54e63")
+	)
+	(wire
+		(pts
+			(xy 182.88 121.92) (xy 182.88 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f646f633-adef-431d-aad0-277898cf7052")
+	)
+	(wire
+		(pts
+			(xy 162.56 106.68) (xy 182.88 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f722b23b-c6ea-447a-9819-0fc9ad6f4742")
+	)
+	(wire
+		(pts
+			(xy 172.72 101.6) (xy 172.72 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff959c61-e3a9-4d99-9c07-53186a0a71db")
+	)
+	(text "Place pull-up and RCs near MCU pins."
+		(exclude_from_sim no)
+		(at 152.4 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c459a3c-6296-4fbc-9ecf-3249ee765a3e")
+	)
+	(text "Rotary Encoder w/Pushbutton"
+		(exclude_from_sim no)
+		(at 121.92 68.58 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.508)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "41c8465e-b10b-4de8-9b3f-2248d0789bed")
+	)
+	(text "Main user input"
+		(exclude_from_sim no)
+		(at 142.24 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6941a028-1545-47fe-adc1-1f4cca7017b1")
+	)
+	(label "ENC_B"
+		(at 127 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "76f5c254-9cd6-43b0-befb-870c23428c06")
+	)
+	(label "nENC_PB"
+		(at 124.46 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4bead70-ec5d-4f59-9b6f-32a09ed24410")
+	)
+	(label "ENC_A"
+		(at 127 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fe0cfff5-da9b-4bba-8e5d-180953ead833")
+	)
+	(hierarchical_label "ENC_A_R"
+		(shape output)
+		(at 203.2 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6a6ca441-28ef-4274-a705-82da02ce472c")
+	)
+	(hierarchical_label "nENC_PB_R"
+		(shape output)
+		(at 203.2 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dadb391d-bfe6-4661-ac2b-922be848d950")
+	)
+	(hierarchical_label "ENC_B_R"
+		(shape output)
+		(at 203.2 111.76 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db188d76-3035-402f-b785-a21dfe5874bf")
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 172.72 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19018160-5b5b-47ae-84ef-f67b309cee66")
+		(property "Reference" "#PWR074"
+			(at 172.72 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.72 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8817b669-bb45-47c2-b6f4-75c0d8a05bc9")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR074")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 162.56 106.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22d573b9-e0c9-48fd-a554-d503604a681d")
+		(property "Reference" "R38"
+			(at 158.75 103.505 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 167.64 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 165.1 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 162.56 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 160.02 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 157.48 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 152.4 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 149.86 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 156.972 108.712 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 161.036 108.712 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 156.972 110.236 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 160.782 110.236 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "74d6cd64-d183-4b5f-a016-04c01e9a4ede")
+		)
+		(pin "2"
+			(uuid "70f11141-dece-4923-8281-6c738c7df4ab")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "351dfe6b-16a0-4dba-9ac7-f48d92dbd7ed")
+		(property "Reference" "#PWR075"
+			(at 182.88 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b26b361-bfaf-44f2-8138-62a019e378e1")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "ENC_SPST_24PPR_PEC12R-4225F-S0024_1")
+		(lib_id "arjun_symbols:ENC_SPST_24PPR_PEC12R-4225F-S0024")
+		(at 101.6 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3c00b1bc-379e-41be-921f-b00aeb4a7088")
+		(property "Reference" "SW1"
+			(at 107.95 97.79 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "ENC_SPST_24PPR_PEC12R-4225F-S0024"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "arjun_footprints:ENC_SPST_PEC12R-4x25F-Sxxx"
+			(at 129.54 114.3 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/Product-Datasheets/PEC12R.pdf"
+			(at 129.54 111.76 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 101.6 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 129.54 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "PEC12R-4225F-S0024-ND"
+			(at 129.54 109.22 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bourns Inc."
+			(at 129.54 91.44 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "PEC12R-4225F-S0024"
+			(at 110.49 115.57 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Category" "Sensors, Transducers"
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Encoders"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7153a176-a167-49fb-804a-65f480aa79e9")
+		)
+		(pin "2"
+			(uuid "551b5634-3de5-4f20-a584-b6b8edbbe1ea")
+		)
+		(pin "A"
+			(uuid "f60393ba-8943-43b7-b0b8-335a6f0d8cf6")
+		)
+		(pin "B"
+			(uuid "2cde45ff-612f-4ab6-99be-9433ec7a44e1")
+		)
+		(pin "C"
+			(uuid "8174af7f-80e7-483c-bf1c-d6eaf4d61f99")
+		)
+		(pin "M"
+			(uuid "692b31df-5eaa-4bde-a29b-a0031d91a59e")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:CAP_CER_0u01_50V_X7R_0603")
+		(at 193.04 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4552bd68-7e86-463c-ba01-3ba48b18d938")
+		(property "Reference" "C49"
+			(at 196.088 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAP_CER_0u01_50V_X7R_0603"
+			(at 200.66 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 200.66 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf"
+			(at 200.66 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 200.66 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "CL10B103KB8NNNC"
+			(at 200.66 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 200.66 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "1276-1009-1-ND"
+			(at 200.66 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Capacitance" "0.01µF"
+			(at 196.088 116.84 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 196.088 118.364 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "0603"
+			(at 196.088 121.412 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Temp Co" "X7R"
+			(at 196.088 119.888 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "c2b718c1-0f61-4cfa-afec-dc04665dd8bb")
+		)
+		(pin "2"
+			(uuid "ad54dcbb-89d6-447a-99b0-52b202c8a237")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 193.04 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47d8c42e-645b-4356-a938-8a84eae8836c")
+		(property "Reference" "#PWR076"
+			(at 193.04 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 193.04 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 193.04 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9507e8ed-17bb-4227-92f7-649117d6fb9f")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 134.62 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "47e1e6e2-cd19-4e54-ab53-5d73e6984888")
+		(property "Reference" "R35"
+			(at 131.445 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 142.24 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 142.24 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 142.24 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 142.24 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 142.24 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 142.24 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 142.24 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 136.652 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 136.652 90.424 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 138.176 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 138.176 90.678 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4e102f1d-0823-4da6-8c16-7efdefabc4d2")
+		)
+		(pin "2"
+			(uuid "1aa51862-8aea-42f1-9376-96b1227ecc00")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 134.62 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5959c917-a90c-46b2-b99d-437e6ede76e2")
+		(property "Reference" "#PWR072"
+			(at 134.62 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 134.62 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 134.62 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c57873ae-282a-42bc-9c4d-db595a57203e")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 144.78 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d6e53eb-9333-4cc5-a8b9-529f63aa4c5e")
+		(property "Reference" "R36"
+			(at 141.605 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 152.4 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 152.4 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 152.4 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 152.4 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 152.4 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 152.4 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 146.812 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 146.812 90.424 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 148.336 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 148.336 90.678 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d860179c-4716-4d82-b043-6524122345d7")
+		)
+		(pin "2"
+			(uuid "e779f6a6-0785-4b47-a469-23ceb4a29f8d")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 154.94 101.6 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "636a8bd8-74f5-4655-b696-0bd4e9ac7aa8")
+		(property "Reference" "R37"
+			(at 151.13 98.425 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 160.02 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 157.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 147.32 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 154.94 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 152.4 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 149.86 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 144.78 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 142.24 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 149.352 103.632 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 153.416 103.632 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 149.352 105.156 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 153.162 105.156 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "295c1351-1b80-4fec-a877-15c5a492b921")
+		)
+		(pin "2"
+			(uuid "25a5268a-b9a3-4cea-af6b-beaf828093dc")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 170.18 111.76 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73d0b36d-8919-47d8-879f-77119241e8cc")
+		(property "Reference" "R39"
+			(at 166.37 108.585 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 175.26 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 172.72 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 162.56 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 167.64 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 165.1 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 160.02 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 157.48 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 164.592 113.792 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 168.656 113.792 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 164.592 115.316 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 168.402 115.316 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a82eabde-c7c8-4b84-b9fc-9c327e99c470")
+		)
+		(pin "2"
+			(uuid "5ef36cc9-b733-4935-a8fa-99a713cd5cb0")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:CAP_CER_0u01_50V_X7R_0603")
+		(at 182.88 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8596294f-c74b-4e50-b6cc-c3dc23669cc2")
+		(property "Reference" "C48"
+			(at 185.928 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAP_CER_0u01_50V_X7R_0603"
+			(at 190.5 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 190.5 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B103KB8NNNC_Spec.pdf"
+			(at 190.5 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 190.5 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "CL10B103KB8NNNC"
+			(at 190.5 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 190.5 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "1276-1009-1-ND"
+			(at 190.5 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Capacitance" "0.01µF"
+			(at 185.928 116.84 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 185.928 118.364 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "0603"
+			(at 185.928 121.412 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Temp Co" "X7R"
+			(at 185.928 119.888 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "c95e86fb-26fc-4e1d-a73c-4e1efe4394c8")
+		)
+		(pin "2"
+			(uuid "54f38006-e55b-4447-9069-a6d597e480cb")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
+		(at 121.92 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8aa479a8-4aeb-4d59-a85f-fc41d653df67")
+		(property "Reference" "R34"
+			(at 118.745 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify top)
+			)
+		)
+		(property "Value" "RES_10K_1P_1/10W_0603"
+			(at 129.54 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 129.54 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 129.54 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 129.54 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 129.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 129.54 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-10.0KHRCT-ND"
+			(at 129.54 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "10k"
+			(at 123.952 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Tolerance" "±1% "
+			(at 123.952 90.424 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Package" "0603"
+			(at 125.476 94.488 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(property "Power" "1/10W"
+			(at 125.476 90.678 90)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "90426f62-e4ff-41ee-b3ea-00d4695205b5")
+		)
+		(pin "2"
+			(uuid "1b4036cb-e4d7-45ac-b468-c252ec6e594f")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
+		(at 172.72 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "923a8127-1685-46d9-b544-a208a99889e2")
+		(property "Reference" "C47"
+			(at 175.768 115.316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
+			(at 180.34 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 180.34 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
+			(at 180.34 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 172.72 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 180.34 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "CL10B104KB8NNNC"
+			(at 180.34 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 180.34 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "1276-1000-1-ND"
+			(at 180.34 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Capacitance" "0.1µF"
+			(at 175.768 116.84 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 175.768 118.364 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "0603"
+			(at 175.768 121.412 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Temp Co" "X7R"
+			(at 175.768 119.888 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "063175bb-4d2b-4ea7-953c-65d0698af488")
+		)
+		(pin "2"
+			(uuid "caeda458-ca06-4a75-9da3-049e6cd341de")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "93f56527-ed39-45e7-a1af-7c9fbc290d95")
+		(property "Reference" "#PWR070"
+			(at 99.06 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d0cf398a-93fc-4a5b-88af-9493e072b99f")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 121.92 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e2b85829-8087-4caf-9ed9-28a9ad4f2e8b")
+		(property "Reference" "#PWR071"
+			(at 121.92 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 121.92 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a1bc720-6617-40f5-802b-dfa05e41b01f")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR071")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 144.78 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f952946d-ec4b-49ef-8ff1-1d14625955d8")
+		(property "Reference" "#PWR073"
+			(at 144.78 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 144.78 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 144.78 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "790ec4b7-368d-4ae1-8056-e61e4da81ae4")
+		)
+		(instances
+			(project ""
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/7f1e094c-d2d9-45ca-af31-f2b20e969c41"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
 )
