@@ -5396,6 +5396,54 @@
 		)
 		(uuid "caf72413-cbfd-4426-9e46-9c1947ce0c30")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 359.41 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 154 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5013dd7f-3c10-4ec1-a756-cc9c3b52ac7f")
+		(property "Netclass" "HV"
+			(at 360.1085 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 359.41 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 154 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "942d3706-04f4-4a3f-90ff-97e68097a61f")
+		(property "Netclass" "HV"
+			(at 360.1085 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
 		(lib_id "arjun_symbols:RES_150K_1P_1/4W_1206")
 		(at 368.3 124.46 270)

@@ -483,8 +483,42 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(255, 156, 0)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "HV_SW",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(255, 13, 2)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -492,7 +526,20 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/Nixie Display/DOT1_A": "HV",
+      "/Nixie Display/DOT2_A": "HV",
+      "/Nixie Display/H1/NIXIE_A": "HV",
+      "/Nixie Display/H2/NIXIE_A": "HV",
+      "/Nixie Display/M1/NIXIE_A": "HV",
+      "/Nixie Display/M2/NIXIE_A": "HV",
+      "/Nixie Display/S1/NIXIE_A": "HV",
+      "/Nixie Display/S2/NIXIE_A": "HV",
+      "/Power/D_SNUB": "HV_SW",
+      "/Power/Q_SNUB": "HV_SW",
+      "/Power/SW_180V": "HV_SW",
+      "180V": "HV"
+    },
     "netclass_patterns": []
   },
   "pcbnew": {

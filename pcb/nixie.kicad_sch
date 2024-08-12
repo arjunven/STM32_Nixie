@@ -1035,6 +1035,30 @@
 		)
 		(uuid "fed8610e-dce5-4c09-81f6-a6eac32156f5")
 	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape dot)
+		(at 160.02 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 154 0 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "47a0439d-35bc-428d-a3af-9322fa867700")
+		(property "Netclass" "HV"
+			(at 160.7185 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(symbol
 		(lib_id "arjun_symbols:RES_17K4_1P_1/4W_1206")
 		(at 170.18 101.6 270)
@@ -1044,7 +1068,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c1d90db-8415-4384-b3f9-69eaa7068eef")
-		(property "Reference" "R11"
+		(property "Reference" "R16"
 			(at 166.37 98.425 90)
 			(effects
 				(font
@@ -1208,7 +1232,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "592da241-0f55-4f7a-a38f-5ee5a4570347")
-		(property "Reference" "N3"
+		(property "Reference" "N8"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -1346,7 +1370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d423e5f8-be0e-4aa8-aab2-8d638af3da06")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR037"
 			(at 180.34 97.79 0)
 			(effects
 				(font

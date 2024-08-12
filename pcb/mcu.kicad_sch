@@ -13711,12 +13711,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 149.86 33.02 0)
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
+			(at 157.48 58.42 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -13770,16 +13771,6 @@
 		)
 		(property "Family" "Tactile Switches"
 			(at 149.86 58.42 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-			(at 157.48 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14693,12 +14684,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 274.32 22.86 0)
+		(property "Description" "BATTERY HOLDER COIN 20MM PC PIN"
+			(at 279.4 -2.54 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -14754,16 +14746,6 @@
 		)
 		(property "DK_Detail_Page" "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447"
 			(at 279.4 0 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "BATTERY HOLDER COIN 20MM PC PIN"
-			(at 279.4 -2.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18219,12 +18201,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 50.8 25.4 0)
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
+			(at 58.42 50.8 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -18278,16 +18261,6 @@
 		)
 		(property "Family" "Tactile Switches"
 			(at 50.8 50.8 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-			(at 58.42 50.8 0)
 			(effects
 				(font
 					(size 1.524 1.524)
