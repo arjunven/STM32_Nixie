@@ -8853,13 +8853,19 @@
 		(uuid "18a505b4-af11-4519-8ff0-14d4ef762336")
 	)
 	(junction
+		(at 261.62 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1de12309-28f2-451f-a560-7b66a2f54ee6")
+	)
+	(junction
 		(at 30.48 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f81a92b-1696-4847-9461-3132053383ac")
 	)
 	(junction
-		(at 190.5 22.86)
+		(at 177.8 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23d478c6-4c10-4805-bc67-032f3dd75472")
@@ -8871,13 +8877,13 @@
 		(uuid "270ccd64-a2dd-4b38-b940-fe2b5b4bc668")
 	)
 	(junction
-		(at 160.02 45.72)
+		(at 148.59 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31cebfb8-111f-459b-851d-ef534f8f495c")
 	)
 	(junction
-		(at 243.84 22.86)
+		(at 231.14 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "33c100cc-22b3-4bd7-a9cc-0109f85a645c")
@@ -8889,7 +8895,7 @@
 		(uuid "34a0753b-fecc-4cce-bbb6-d8690e3c4354")
 	)
 	(junction
-		(at 210.82 22.86)
+		(at 198.12 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "364f410b-6885-44b6-99c4-bb75b5e6b329")
@@ -8907,7 +8913,7 @@
 		(uuid "46ff6e5e-a5f8-4bb1-ba5b-0f4212896a4a")
 	)
 	(junction
-		(at 149.86 45.72)
+		(at 138.43 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b62ad82-a4f9-48a1-a637-92095d29b9d1")
@@ -8931,13 +8937,13 @@
 		(uuid "8ebf6915-0383-48c6-9457-4d152c72600b")
 	)
 	(junction
-		(at 200.66 22.86)
+		(at 187.96 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c173f68-02e3-452c-b108-af0def1a3ea6")
 	)
 	(junction
-		(at 210.82 35.56)
+		(at 198.12 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0d27f68-591d-4a6d-a019-1561f3b19d39")
@@ -8949,7 +8955,7 @@
 		(uuid "b54e738f-a27b-465f-9b89-4cdb837086f0")
 	)
 	(junction
-		(at 243.84 35.56)
+		(at 231.14 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b5564210-b471-4e83-8843-bcc7d4fd6636")
@@ -8967,13 +8973,13 @@
 		(uuid "b7d0644e-f4ad-4aba-81e5-e3b75d9dd026")
 	)
 	(junction
-		(at 160.02 30.48)
+		(at 148.59 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c5e556a5-c4ea-4dd9-b7ba-11e5b1ad81ea")
 	)
 	(junction
-		(at 144.78 30.48)
+		(at 133.35 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cea773de-79cb-46da-819d-52cd00781567")
@@ -8991,13 +8997,19 @@
 		(uuid "d971f98a-a573-48f2-b12f-152ec9f4eac3")
 	)
 	(junction
-		(at 200.66 35.56)
+		(at 261.62 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daee7d31-3adb-4889-b99a-a5b909c61e4b")
+	)
+	(junction
+		(at 187.96 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e319263a-52d8-4bac-9dc9-b841c4d70357")
 	)
 	(junction
-		(at 254 22.86)
+		(at 241.3 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e56dcaa2-4450-42c0-bd7c-6d0e2de1cefc")
@@ -9021,13 +9033,13 @@
 		(uuid "f4883bf8-827c-4bf9-be3b-8582b9ac7049")
 	)
 	(junction
-		(at 149.86 30.48)
+		(at 138.43 30.48)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f93e5f3c-162f-49df-a690-36f539f20b17")
 	)
 	(junction
-		(at 190.5 35.56)
+		(at 177.8 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fbe8ad1a-4974-4f7c-94ef-67cc83c4b0a0")
@@ -9112,7 +9124,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 30.48) (xy 149.86 33.02)
+			(xy 138.43 30.48) (xy 138.43 33.02)
 		)
 		(stroke
 			(width 0)
@@ -9172,7 +9184,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 25.4) (xy 190.5 22.86)
+			(xy 177.8 25.4) (xy 177.8 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9242,7 +9254,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 45.72) (xy 160.02 48.26)
+			(xy 148.59 45.72) (xy 148.59 48.26)
 		)
 		(stroke
 			(width 0)
@@ -9252,7 +9264,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 20.32) (xy 190.5 22.86)
+			(xy 177.8 20.32) (xy 177.8 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9272,7 +9284,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 25.4) (xy 243.84 22.86)
+			(xy 231.14 25.4) (xy 231.14 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9282,7 +9294,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 22.86) (xy 210.82 25.4)
+			(xy 198.12 22.86) (xy 198.12 25.4)
 		)
 		(stroke
 			(width 0)
@@ -9299,6 +9311,16 @@
 			(type default)
 		)
 		(uuid "21a14361-c4df-49fc-83bd-0c0d31a9de48")
+	)
+	(wire
+		(pts
+			(xy 261.62 21.59) (xy 261.62 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21f5a835-e441-44bc-964b-4da4143cdfa0")
 	)
 	(wire
 		(pts
@@ -9352,7 +9374,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 35.56) (xy 200.66 35.56)
+			(xy 177.8 35.56) (xy 187.96 35.56)
 		)
 		(stroke
 			(width 0)
@@ -9382,7 +9404,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 33.02) (xy 210.82 35.56)
+			(xy 198.12 33.02) (xy 198.12 35.56)
 		)
 		(stroke
 			(width 0)
@@ -9452,7 +9474,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 40.64) (xy 160.02 45.72)
+			(xy 148.59 40.64) (xy 148.59 45.72)
 		)
 		(stroke
 			(width 0)
@@ -9482,7 +9504,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 20.32) (xy 254 22.86)
+			(xy 241.3 20.32) (xy 241.3 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9492,7 +9514,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 33.02) (xy 243.84 35.56)
+			(xy 231.14 33.02) (xy 231.14 35.56)
 		)
 		(stroke
 			(width 0)
@@ -9509,6 +9531,16 @@
 			(type default)
 		)
 		(uuid "3cdcfe1b-66f7-4309-82b4-0f8c6ec53e9a")
+	)
+	(wire
+		(pts
+			(xy 261.62 35.56) (xy 261.62 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d2c839a-2bc9-46ae-8ded-4c607836a485")
 	)
 	(wire
 		(pts
@@ -9552,7 +9584,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 35.56) (xy 220.98 33.02)
+			(xy 208.28 35.56) (xy 208.28 33.02)
 		)
 		(stroke
 			(width 0)
@@ -9562,7 +9594,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 22.86) (xy 200.66 25.4)
+			(xy 187.96 22.86) (xy 187.96 25.4)
 		)
 		(stroke
 			(width 0)
@@ -9642,6 +9674,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 20.32) (xy 261.62 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0731f9-c98e-4d21-b740-c1aead3cae00")
+	)
+	(wire
+		(pts
 			(xy 213.36 63.5) (xy 213.36 66.04)
 		)
 		(stroke
@@ -9662,7 +9704,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 35.56) (xy 254 35.56)
+			(xy 231.14 35.56) (xy 241.3 35.56)
 		)
 		(stroke
 			(width 0)
@@ -9712,7 +9754,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 30.48) (xy 167.64 30.48)
+			(xy 148.59 30.48) (xy 156.21 30.48)
 		)
 		(stroke
 			(width 0)
@@ -9732,7 +9774,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 35.56) (xy 190.5 38.1)
+			(xy 177.8 35.56) (xy 177.8 38.1)
 		)
 		(stroke
 			(width 0)
@@ -9892,7 +9934,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 45.72) (xy 160.02 45.72)
+			(xy 138.43 45.72) (xy 148.59 45.72)
 		)
 		(stroke
 			(width 0)
@@ -9902,7 +9944,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 43.18) (xy 149.86 45.72)
+			(xy 138.43 43.18) (xy 138.43 45.72)
 		)
 		(stroke
 			(width 0)
@@ -9922,7 +9964,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 30.48) (xy 160.02 30.48)
+			(xy 138.43 30.48) (xy 148.59 30.48)
 		)
 		(stroke
 			(width 0)
@@ -9962,7 +10004,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 22.86) (xy 200.66 22.86)
+			(xy 177.8 22.86) (xy 187.96 22.86)
 		)
 		(stroke
 			(width 0)
@@ -9972,7 +10014,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 33.02) (xy 254 35.56)
+			(xy 241.3 33.02) (xy 241.3 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10022,7 +10064,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 35.56) (xy 210.82 35.56)
+			(xy 187.96 35.56) (xy 198.12 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10062,7 +10104,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 35.56) (xy 220.98 35.56)
+			(xy 198.12 35.56) (xy 208.28 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10079,6 +10121,16 @@
 			(type default)
 		)
 		(uuid "9b7b41ea-1d9b-4926-8c41-17db90aa7f90")
+	)
+	(wire
+		(pts
+			(xy 269.24 34.29) (xy 269.24 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b8c7b41-8097-4f22-a817-28a9ef1554ef")
 	)
 	(wire
 		(pts
@@ -10132,7 +10184,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 33.02) (xy 190.5 35.56)
+			(xy 177.8 33.02) (xy 177.8 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10162,7 +10214,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 22.86) (xy 243.84 22.86)
+			(xy 228.6 22.86) (xy 231.14 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10182,7 +10234,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 45.72) (xy 149.86 45.72)
+			(xy 133.35 45.72) (xy 138.43 45.72)
 		)
 		(stroke
 			(width 0)
@@ -10192,7 +10244,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 27.94) (xy 144.78 30.48)
+			(xy 133.35 27.94) (xy 133.35 30.48)
 		)
 		(stroke
 			(width 0)
@@ -10212,7 +10264,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 20.32) (xy 231.14 22.86)
+			(xy 218.44 20.32) (xy 218.44 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10242,7 +10294,7 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 22.86) (xy 233.68 22.86)
+			(xy 218.44 22.86) (xy 220.98 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10272,6 +10324,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 34.29) (xy 261.62 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7fe0267-8ab2-4608-910c-98358acea35a")
+	)
+	(wire
+		(pts
 			(xy 30.48 104.14) (xy 30.48 106.68)
 		)
 		(stroke
@@ -10282,7 +10344,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 33.02) (xy 200.66 35.56)
+			(xy 187.96 33.02) (xy 187.96 35.56)
 		)
 		(stroke
 			(width 0)
@@ -10352,13 +10414,23 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 22.86) (xy 210.82 22.86)
+			(xy 187.96 22.86) (xy 198.12 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d76cb569-9867-4504-b07d-05fa8dc0d696")
+	)
+	(wire
+		(pts
+			(xy 261.62 34.29) (xy 269.24 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d3b236-9a93-45c6-8dc9-ab55878bf9d6")
 	)
 	(wire
 		(pts
@@ -10392,7 +10464,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 30.48) (xy 149.86 30.48)
+			(xy 133.35 30.48) (xy 138.43 30.48)
 		)
 		(stroke
 			(width 0)
@@ -10442,7 +10514,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 30.48) (xy 144.78 33.02)
+			(xy 133.35 30.48) (xy 133.35 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10452,7 +10524,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 22.86) (xy 254 22.86)
+			(xy 231.14 22.86) (xy 241.3 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10472,7 +10544,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 22.86) (xy 220.98 22.86)
+			(xy 198.12 22.86) (xy 208.28 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10482,7 +10554,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 25.4) (xy 254 22.86)
+			(xy 241.3 25.4) (xy 241.3 22.86)
 		)
 		(stroke
 			(width 0)
@@ -10502,7 +10574,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 35.56) (xy 243.84 38.1)
+			(xy 231.14 35.56) (xy 231.14 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10512,7 +10584,7 @@
 	)
 	(wire
 		(pts
-			(xy 220.98 22.86) (xy 220.98 25.4)
+			(xy 208.28 22.86) (xy 208.28 25.4)
 		)
 		(stroke
 			(width 0)
@@ -10622,7 +10694,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 30.48) (xy 160.02 33.02)
+			(xy 148.59 30.48) (xy 148.59 33.02)
 		)
 		(stroke
 			(width 0)
@@ -10662,7 +10734,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 43.18) (xy 144.78 45.72)
+			(xy 133.35 43.18) (xy 133.35 45.72)
 		)
 		(stroke
 			(width 0)
@@ -10722,6 +10794,16 @@
 	)
 	(wire
 		(pts
+			(xy 261.62 21.59) (xy 269.24 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ccc129-ace9-4824-aafc-9c368a48f485")
+	)
+	(wire
+		(pts
 			(xy 68.58 104.14) (xy 73.66 104.14)
 		)
 		(stroke
@@ -10739,6 +10821,16 @@
 			(type default)
 		)
 		(uuid "fa7f7cc4-9dd8-40d6-ad4f-47f9bb2f9c8e")
+	)
+	(wire
+		(pts
+			(xy 269.24 24.13) (xy 269.24 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb248368-1cf1-4a2a-825f-4139512a519b")
 	)
 	(wire
 		(pts
@@ -10955,7 +11047,7 @@
 		(uuid "02cda5eb-09b7-4f96-951a-f12399a9614e")
 	)
 	(label "nRST"
-		(at 167.64 30.48 180)
+		(at 156.21 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11589,7 +11681,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 243.84 38.1 0)
+		(at 231.14 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11597,7 +11689,7 @@
 		(dnp no)
 		(uuid "052ba003-a589-4825-9cfd-ae72b7d1692b")
 		(property "Reference" "#PWR027"
-			(at 243.84 44.45 0)
+			(at 231.14 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11606,7 +11698,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 243.84 41.91 0)
+			(at 231.14 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11614,7 +11706,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 38.1 0)
+			(at 231.14 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11623,7 +11715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 38.1 0)
+			(at 231.14 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11632,7 +11724,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 38.1 0)
+			(at 231.14 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11647,6 +11739,154 @@
 			(project ""
 				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/8ecdbb98-5b2a-4725-a227-62b58d0c66f3"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
+		(at 269.24 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0778cc75-8dfa-4238-9b9b-69aa79149e0c")
+		(property "Reference" "C43"
+			(at 272.288 25.146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
+			(at 276.86 19.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 276.86 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
+			(at 276.86 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 269.24 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 276.86 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "CL10B104KB8NNNC"
+			(at 276.86 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 276.86 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "1276-1000-1-ND"
+			(at 276.86 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Capacitance" "0.1µF"
+			(at 272.288 26.67 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Voltage" "50V"
+			(at 272.288 28.194 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Package" "0603"
+			(at 272.288 31.242 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(property "Temp Co" "X7R"
+			(at 272.288 29.718 0)
+			(effects
+				(font
+					(size 0.762 0.762)
+				)
+				(justify left)
+			)
+		)
+		(pin "1"
+			(uuid "dfba7098-b5db-452d-9e36-ecaf3bca2fa8")
+		)
+		(pin "2"
+			(uuid "69962bc9-a75d-4507-be6e-72a2870b40ec")
+		)
+		(instances
+			(project "STM32_Nixie"
+				(path "/962b4e87-b270-45b9-b05a-9c836fe2392e/8ecdbb98-5b2a-4725-a227-62b58d0c66f3"
+					(reference "C43")
 					(unit 1)
 				)
 			)
@@ -13407,7 +13647,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 144.78 20.32 0)
+		(at 133.35 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13415,7 +13655,7 @@
 		(dnp no)
 		(uuid "4fafcaa7-4be5-4e74-b4ef-30cc56af1e65")
 		(property "Reference" "#PWR019"
-			(at 144.78 24.13 0)
+			(at 133.35 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13424,7 +13664,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 144.78 16.764 0)
+			(at 133.35 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13432,7 +13672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 20.32 0)
+			(at 133.35 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13441,7 +13681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 144.78 20.32 0)
+			(at 133.35 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13450,7 +13690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 20.32 0)
+			(at 133.35 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13537,7 +13777,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 160.02 48.26 0)
+		(at 148.59 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13545,7 +13785,7 @@
 		(dnp no)
 		(uuid "56488cfe-7d20-4cd2-9d35-2d00cff7dab5")
 		(property "Reference" "#PWR020"
-			(at 160.02 54.61 0)
+			(at 148.59 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13554,7 +13794,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 160.02 52.07 0)
+			(at 148.59 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13562,7 +13802,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 48.26 0)
+			(at 148.59 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13571,7 +13811,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 160.02 48.26 0)
+			(at 148.59 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13580,7 +13820,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 48.26 0)
+			(at 148.59 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13602,7 +13842,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 190.5 38.1 0)
+		(at 177.8 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13610,7 +13850,7 @@
 		(dnp no)
 		(uuid "56bc28fb-cd35-45b4-a3eb-9f07dc3d46d4")
 		(property "Reference" "#PWR022"
-			(at 190.5 44.45 0)
+			(at 177.8 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13619,7 +13859,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 190.5 41.91 0)
+			(at 177.8 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13627,7 +13867,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 38.1 0)
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13636,7 +13876,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 38.1 0)
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13645,7 +13885,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 38.1 0)
+			(at 177.8 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13667,7 +13907,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:SW_TACT_PTS645SM43SMTR92_LFS")
-		(at 149.86 33.02 270)
+		(at 138.43 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13675,7 +13915,7 @@
 		(dnp no)
 		(uuid "579fadfd-9e36-41ca-a5be-716267c4f8a3")
 		(property "Reference" "S2"
-			(at 152.4 38.1 0)
+			(at 140.97 38.1 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13683,7 +13923,7 @@
 			)
 		)
 		(property "Value" "SW_TACT_PTS645SM43SMTR92_LFS"
-			(at 144.78 77.47 0)
+			(at 133.35 77.47 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13692,7 +13932,7 @@
 			)
 		)
 		(property "Footprint" "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645"
-			(at 137.16 58.42 0)
+			(at 125.73 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13702,7 +13942,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
-			(at 139.7 58.42 0)
+			(at 128.27 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13712,7 +13952,7 @@
 			)
 		)
 		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-			(at 157.48 58.42 0)
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13722,7 +13962,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 152.4 63.5 0)
+			(at 140.97 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13732,7 +13972,7 @@
 			)
 		)
 		(property "VendorPN" "CKN9112CT-ND"
-			(at 142.24 58.42 0)
+			(at 130.81 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13742,7 +13982,7 @@
 			)
 		)
 		(property "Manufacturer" "C&K"
-			(at 160.02 58.42 0)
+			(at 148.59 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13752,7 +13992,7 @@
 			)
 		)
 		(property "ManufacturerPN" "PTS645SM43SMTR92 LFS"
-			(at 142.24 38.1 0)
+			(at 130.81 38.1 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -13760,7 +14000,7 @@
 			)
 		)
 		(property "Category" "Switches"
-			(at 147.32 58.42 0)
+			(at 135.89 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13770,7 +14010,7 @@
 			)
 		)
 		(property "Family" "Tactile Switches"
-			(at 149.86 58.42 0)
+			(at 138.43 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -13950,7 +14190,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 274.32 33.02 0)
+		(at 261.62 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13958,7 +14198,7 @@
 		(dnp no)
 		(uuid "61b5b415-d9d5-4aa8-a626-a1ebbc2eb033")
 		(property "Reference" "#PWR031"
-			(at 274.32 39.37 0)
+			(at 261.62 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13967,7 +14207,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 274.32 36.83 0)
+			(at 261.62 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13975,7 +14215,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 33.02 0)
+			(at 261.62 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13984,7 +14224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 33.02 0)
+			(at 261.62 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13993,7 +14233,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 274.32 33.02 0)
+			(at 261.62 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14639,7 +14879,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:BS-7")
-		(at 274.32 22.86 0)
+		(at 261.62 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14647,7 +14887,7 @@
 		(dnp no)
 		(uuid "82d4e7bc-49e8-418b-8c34-f46f3717b905")
 		(property "Reference" "BAT1"
-			(at 273.05 24.13 0)
+			(at 260.35 24.13 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14656,7 +14896,7 @@
 			)
 		)
 		(property "Value" "BS-7"
-			(at 273.05 31.75 0)
+			(at 260.35 31.75 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14665,7 +14905,7 @@
 			)
 		)
 		(property "Footprint" "arjun_footprints:Battery_Holder_Coin_2032_BS-7"
-			(at 279.4 17.78 0)
+			(at 266.7 17.78 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14675,7 +14915,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf"
-			(at 278.892 14.986 0)
+			(at 266.192 14.986 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14685,7 +14925,7 @@
 			)
 		)
 		(property "Description" "BATTERY HOLDER COIN 20MM PC PIN"
-			(at 279.4 -2.54 0)
+			(at 266.7 -2.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14695,7 +14935,7 @@
 			)
 		)
 		(property "VendorPN" "BS-7-ND"
-			(at 279.4 12.7 0)
+			(at 266.7 12.7 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14705,7 +14945,7 @@
 			)
 		)
 		(property "ManufacturerPN" "BS-7"
-			(at 279.4 10.16 0)
+			(at 266.7 10.16 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14715,7 +14955,7 @@
 			)
 		)
 		(property "Category" "Battery Products"
-			(at 279.4 7.62 0)
+			(at 266.7 7.62 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14725,7 +14965,7 @@
 			)
 		)
 		(property "Family" "Battery Holders, Clips, Contacts"
-			(at 279.4 5.08 0)
+			(at 266.7 5.08 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14735,7 +14975,7 @@
 			)
 		)
 		(property "DK_Datasheet_Link" "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf"
-			(at 279.4 2.54 0)
+			(at 266.7 2.54 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14745,7 +14985,7 @@
 			)
 		)
 		(property "DK_Detail_Page" "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447"
-			(at 279.4 0 0)
+			(at 266.7 0 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14755,7 +14995,7 @@
 			)
 		)
 		(property "Manufacturer" "MPD (Memory Protection Devices)"
-			(at 279.4 -5.08 0)
+			(at 266.7 -5.08 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14765,7 +15005,7 @@
 			)
 		)
 		(property "Status" "Active"
-			(at 279.4 -7.62 0)
+			(at 266.7 -7.62 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -14775,7 +15015,7 @@
 			)
 		)
 		(property "Battery" "CR2032"
-			(at 271.272 27.94 0)
+			(at 258.572 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -14944,7 +15184,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
-		(at 144.78 20.32 0)
+		(at 133.35 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14952,7 +15192,7 @@
 		(dnp no)
 		(uuid "89a16c4e-8f7b-4d86-8652-ecb91d13e469")
 		(property "Reference" "R10"
-			(at 141.605 24.13 90)
+			(at 130.175 24.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14961,7 +15201,7 @@
 			)
 		)
 		(property "Value" "RES_10K_1P_1/10W_0603"
-			(at 152.4 15.24 0)
+			(at 140.97 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14971,7 +15211,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 152.4 17.78 0)
+			(at 140.97 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14981,7 +15221,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 152.4 27.94 0)
+			(at 140.97 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14991,7 +15231,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 20.32 0)
+			(at 133.35 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15000,7 +15240,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 152.4 22.86 0)
+			(at 140.97 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15010,7 +15250,7 @@
 			)
 		)
 		(property "ManufacturerPN" "RC0603FR-0710KL"
-			(at 152.4 25.4 0)
+			(at 140.97 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15020,7 +15260,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 152.4 30.48 0)
+			(at 140.97 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15030,7 +15270,7 @@
 			)
 		)
 		(property "VendorPN" "311-10.0KHRCT-ND"
-			(at 152.4 33.02 0)
+			(at 140.97 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15040,7 +15280,7 @@
 			)
 		)
 		(property "Resistance" "10k"
-			(at 146.812 25.908 90)
+			(at 135.382 25.908 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15048,7 +15288,7 @@
 			)
 		)
 		(property "Tolerance" "±1% "
-			(at 146.812 21.844 90)
+			(at 135.382 21.844 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15056,7 +15296,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 148.336 25.908 90)
+			(at 136.906 25.908 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15064,7 +15304,7 @@
 			)
 		)
 		(property "Power" "1/10W"
-			(at 148.336 22.098 90)
+			(at 136.906 22.098 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15088,7 +15328,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 190.5 20.32 0)
+		(at 177.8 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15096,7 +15336,7 @@
 		(dnp no)
 		(uuid "8d0a0ca8-291c-4a00-a748-cb48ae4006bc")
 		(property "Reference" "#PWR021"
-			(at 190.5 24.13 0)
+			(at 177.8 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15105,7 +15345,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 190.5 16.764 0)
+			(at 177.8 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15113,7 +15353,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 20.32 0)
+			(at 177.8 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15122,7 +15362,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 20.32 0)
+			(at 177.8 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15131,7 +15371,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 20.32 0)
+			(at 177.8 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15427,7 +15667,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 200.66 25.4 0)
+		(at 187.96 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15435,7 +15675,7 @@
 		(dnp no)
 		(uuid "992595d2-d7c4-4039-8877-814b1c7167b1")
 		(property "Reference" "C12"
-			(at 203.708 26.416 0)
+			(at 191.008 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15444,7 +15684,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 208.28 20.955 0)
+			(at 195.58 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15454,7 +15694,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 208.28 22.86 0)
+			(at 195.58 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15464,7 +15704,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 208.28 33.02 0)
+			(at 195.58 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15474,7 +15714,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 200.66 25.4 0)
+			(at 187.96 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15483,7 +15723,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 208.28 27.94 0)
+			(at 195.58 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15493,7 +15733,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 208.28 30.48 0)
+			(at 195.58 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15503,7 +15743,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 208.28 35.56 0)
+			(at 195.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15513,7 +15753,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 208.28 38.1 0)
+			(at 195.58 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15523,7 +15763,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 203.708 27.94 0)
+			(at 191.008 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15532,7 +15772,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 203.708 29.464 0)
+			(at 191.008 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15541,7 +15781,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 203.708 32.512 0)
+			(at 191.008 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15550,7 +15790,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 203.708 30.988 0)
+			(at 191.008 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15867,7 +16107,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:FER_1K_0A6_0603")
-		(at 233.68 22.86 0)
+		(at 220.98 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15875,7 +16115,7 @@
 		(dnp no)
 		(uuid "9ff1a288-eeb2-4e85-b12c-ae7a5d737238")
 		(property "Reference" "FB1"
-			(at 237.49 19.05 0)
+			(at 224.79 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15883,7 +16123,7 @@
 			)
 		)
 		(property "Value" "FER_1K_0A6_0603"
-			(at 263.525 16.51 0)
+			(at 250.825 16.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15892,7 +16132,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 261.874 13.97 0)
+			(at 249.174 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15901,7 +16141,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/742792662.pdf"
-			(at 291.465 29.21 0)
+			(at 278.765 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15910,7 +16150,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 233.68 22.86 0)
+			(at 220.98 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15919,7 +16159,7 @@
 			)
 		)
 		(property "Manufacturer" "Würth Elektronik"
-			(at 253.365 19.05 0)
+			(at 240.665 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15929,7 +16169,7 @@
 			)
 		)
 		(property "ManufacturerPN" "742792662"
-			(at 253.365 21.59 0)
+			(at 240.665 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15939,7 +16179,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 253.365 24.13 0)
+			(at 240.665 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15949,7 +16189,7 @@
 			)
 		)
 		(property "VendorPN" "732-4670-1-ND"
-			(at 253.365 26.67 0)
+			(at 240.665 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15959,7 +16199,7 @@
 			)
 		)
 		(property "Impedance@100MHz" "1k"
-			(at 241.3 26.162 0)
+			(at 228.6 26.162 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15968,7 +16208,7 @@
 			)
 		)
 		(property "Rated Current" "0.6A"
-			(at 233.934 26.162 0)
+			(at 221.234 26.162 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -15977,7 +16217,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 241.3 24.384 0)
+			(at 228.6 24.384 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16002,7 +16242,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 231.14 20.32 0)
+		(at 218.44 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16010,7 +16250,7 @@
 		(dnp no)
 		(uuid "a26903c9-1dfa-4e16-a7e0-6c97502b1a2d")
 		(property "Reference" "#PWR026"
-			(at 231.14 24.13 0)
+			(at 218.44 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16019,7 +16259,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 231.14 16.764 0)
+			(at 218.44 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16027,7 +16267,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 231.14 20.32 0)
+			(at 218.44 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16036,7 +16276,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 231.14 20.32 0)
+			(at 218.44 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16045,7 +16285,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 231.14 20.32 0)
+			(at 218.44 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16673,7 +16913,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3VA")
-		(at 254 20.32 0)
+		(at 241.3 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16681,7 +16921,7 @@
 		(dnp no)
 		(uuid "beaef570-ffc8-4167-90af-65d0399d493d")
 		(property "Reference" "#PWR028"
-			(at 254 24.13 0)
+			(at 241.3 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16690,7 +16930,7 @@
 			)
 		)
 		(property "Value" "+3.3VA"
-			(at 254 16.764 0)
+			(at 241.3 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16698,7 +16938,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 20.32 0)
+			(at 241.3 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16707,7 +16947,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 20.32 0)
+			(at 241.3 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16716,7 +16956,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 20.32 0)
+			(at 241.3 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16738,7 +16978,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_1u_25V_X5R_0603")
-		(at 243.84 25.4 0)
+		(at 231.14 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16746,7 +16986,7 @@
 		(dnp no)
 		(uuid "c2512c6d-034a-4a53-8dc3-93098e66e98d")
 		(property "Reference" "C15"
-			(at 246.888 26.416 0)
+			(at 234.188 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16755,7 +16995,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_1u_25V_X5R_0603"
-			(at 251.46 20.955 0)
+			(at 238.76 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16765,7 +17005,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 251.46 22.86 0)
+			(at 238.76 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16775,7 +17015,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf"
-			(at 251.46 33.02 0)
+			(at 238.76 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16785,7 +17025,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 25.4 0)
+			(at 231.14 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16794,7 +17034,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 251.46 27.94 0)
+			(at 238.76 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16804,7 +17044,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CC0603KRX5R8BB105"
-			(at 251.46 30.48 0)
+			(at 238.76 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16814,7 +17054,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 251.46 35.56 0)
+			(at 238.76 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16824,7 +17064,7 @@
 			)
 		)
 		(property "VendorPN" "311-1445-1-ND"
-			(at 251.46 38.1 0)
+			(at 238.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16834,7 +17074,7 @@
 			)
 		)
 		(property "Capacitance" "1µF"
-			(at 246.888 27.94 0)
+			(at 234.188 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16843,7 +17083,7 @@
 			)
 		)
 		(property "Voltage" "25V"
-			(at 246.888 29.464 0)
+			(at 234.188 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16852,7 +17092,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 246.888 32.512 0)
+			(at 234.188 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16861,7 +17101,7 @@
 			)
 		)
 		(property "Temp Co" "X5R"
-			(at 246.888 30.988 0)
+			(at 234.188 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17016,7 +17256,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 210.82 25.4 0)
+		(at 198.12 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17024,7 +17264,7 @@
 		(dnp no)
 		(uuid "c9f019ae-0e4a-43b9-974f-84f59e0ab1ba")
 		(property "Reference" "C13"
-			(at 213.868 26.416 0)
+			(at 201.168 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17033,7 +17273,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 218.44 20.955 0)
+			(at 205.74 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17043,7 +17283,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 218.44 22.86 0)
+			(at 205.74 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17053,7 +17293,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 218.44 33.02 0)
+			(at 205.74 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17063,7 +17303,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 210.82 25.4 0)
+			(at 198.12 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17072,7 +17312,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 218.44 27.94 0)
+			(at 205.74 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17082,7 +17322,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 218.44 30.48 0)
+			(at 205.74 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17092,7 +17332,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 218.44 35.56 0)
+			(at 205.74 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17102,7 +17342,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 218.44 38.1 0)
+			(at 205.74 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17112,7 +17352,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 213.868 27.94 0)
+			(at 201.168 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17121,7 +17361,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 213.868 29.464 0)
+			(at 201.168 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17130,7 +17370,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 213.868 32.512 0)
+			(at 201.168 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17139,7 +17379,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 213.868 30.988 0)
+			(at 201.168 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17164,7 +17404,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 220.98 25.4 0)
+		(at 208.28 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17172,7 +17412,7 @@
 		(dnp no)
 		(uuid "cbae02e1-0bba-4500-9041-e30d64d4e6e7")
 		(property "Reference" "C14"
-			(at 224.028 26.416 0)
+			(at 211.328 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17181,7 +17421,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 228.6 20.955 0)
+			(at 215.9 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17191,7 +17431,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 228.6 22.86 0)
+			(at 215.9 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17201,7 +17441,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 228.6 33.02 0)
+			(at 215.9 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17211,7 +17451,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 220.98 25.4 0)
+			(at 208.28 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17220,7 +17460,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 228.6 27.94 0)
+			(at 215.9 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17230,7 +17470,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 228.6 30.48 0)
+			(at 215.9 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17240,7 +17480,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 228.6 35.56 0)
+			(at 215.9 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17250,7 +17490,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 228.6 38.1 0)
+			(at 215.9 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17260,7 +17500,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 224.028 27.94 0)
+			(at 211.328 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17269,7 +17509,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 224.028 29.464 0)
+			(at 211.328 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17278,7 +17518,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 224.028 32.512 0)
+			(at 211.328 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17287,7 +17527,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 224.028 30.988 0)
+			(at 211.328 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17586,7 +17826,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 160.02 33.02 0)
+		(at 148.59 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17594,7 +17834,7 @@
 		(dnp no)
 		(uuid "dc8f8cd9-47b5-4e16-ab1b-073ccdb18c7b")
 		(property "Reference" "C10"
-			(at 163.068 34.036 0)
+			(at 151.638 34.036 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17603,7 +17843,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 167.64 28.575 0)
+			(at 156.21 28.575 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17613,7 +17853,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 167.64 30.48 0)
+			(at 156.21 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17623,7 +17863,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 167.64 40.64 0)
+			(at 156.21 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17633,7 +17873,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 160.02 33.02 0)
+			(at 148.59 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17642,7 +17882,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 167.64 35.56 0)
+			(at 156.21 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17652,7 +17892,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 167.64 38.1 0)
+			(at 156.21 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17662,7 +17902,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 167.64 43.18 0)
+			(at 156.21 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17672,7 +17912,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 167.64 45.72 0)
+			(at 156.21 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17682,7 +17922,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 163.068 35.56 0)
+			(at 151.638 35.56 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17691,7 +17931,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 163.068 37.084 0)
+			(at 151.638 37.084 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17700,7 +17940,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 163.068 40.132 0)
+			(at 151.638 40.132 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -17709,7 +17949,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 163.068 38.608 0)
+			(at 151.638 38.608 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18008,7 +18248,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 254 25.4 0)
+		(at 241.3 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18016,7 +18256,7 @@
 		(dnp no)
 		(uuid "eab2c26d-58eb-4990-b6be-ed7ca5353e56")
 		(property "Reference" "C16"
-			(at 257.048 26.416 0)
+			(at 244.348 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18025,7 +18265,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 261.62 20.955 0)
+			(at 248.92 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18035,7 +18275,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 261.62 22.86 0)
+			(at 248.92 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18045,7 +18285,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 261.62 33.02 0)
+			(at 248.92 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18055,7 +18295,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 25.4 0)
+			(at 241.3 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18064,7 +18304,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 261.62 27.94 0)
+			(at 248.92 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18074,7 +18314,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 261.62 30.48 0)
+			(at 248.92 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18084,7 +18324,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 261.62 35.56 0)
+			(at 248.92 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18094,7 +18334,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 261.62 38.1 0)
+			(at 248.92 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18104,7 +18344,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 257.048 27.94 0)
+			(at 244.348 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18113,7 +18353,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 257.048 29.464 0)
+			(at 244.348 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18122,7 +18362,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 257.048 32.512 0)
+			(at 244.348 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18131,7 +18371,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 257.048 30.988 0)
+			(at 244.348 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18357,7 +18597,7 @@
 	)
 	(symbol
 		(lib_id "arjun_lib:+3.3VBAT")
-		(at 274.32 22.86 0)
+		(at 261.62 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18365,7 +18605,7 @@
 		(dnp no)
 		(uuid "f5a6178d-fdf0-444b-841b-157fde0a52ae")
 		(property "Reference" "#PWR025"
-			(at 274.32 26.67 0)
+			(at 261.62 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18374,7 +18614,7 @@
 			)
 		)
 		(property "Value" "+3.3VBAT"
-			(at 274.32 19.304 0)
+			(at 261.62 16.764 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18382,7 +18622,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 274.32 22.86 0)
+			(at 261.62 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18391,7 +18631,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 274.32 22.86 0)
+			(at 261.62 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18400,7 +18640,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3VBAT\""
-			(at 274.32 22.86 0)
+			(at 261.62 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18680,7 +18920,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_10u_16V_X5R_0805")
-		(at 190.5 25.4 0)
+		(at 177.8 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18688,7 +18928,7 @@
 		(dnp no)
 		(uuid "fd217264-8055-4452-98c4-5e41a64cf0d5")
 		(property "Reference" "C11"
-			(at 193.548 26.416 0)
+			(at 180.848 26.416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18697,7 +18937,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_10u_16V_X5R_0805"
-			(at 198.12 20.955 0)
+			(at 185.42 20.955 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18707,7 +18947,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 198.12 22.86 0)
+			(at 185.42 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18717,7 +18957,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL21A106KOQNNNE_Spec.pdf"
-			(at 198.12 33.02 0)
+			(at 185.42 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18727,7 +18967,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 25.4 0)
+			(at 177.8 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18736,7 +18976,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 198.12 27.94 0)
+			(at 185.42 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18746,7 +18986,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL21A106KOQNNNE"
-			(at 198.12 30.48 0)
+			(at 185.42 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18756,7 +18996,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 198.12 35.56 0)
+			(at 185.42 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18766,7 +19006,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1096-1-ND"
-			(at 198.12 38.1 0)
+			(at 185.42 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18776,7 +19016,7 @@
 			)
 		)
 		(property "Capacitance" "10µF"
-			(at 193.548 27.94 0)
+			(at 180.848 27.94 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18785,7 +19025,7 @@
 			)
 		)
 		(property "Voltage" "16V"
-			(at 193.548 29.464 0)
+			(at 180.848 29.464 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18794,7 +19034,7 @@
 			)
 		)
 		(property "Package" "0805"
-			(at 193.548 32.512 0)
+			(at 180.848 32.512 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -18803,7 +19043,7 @@
 			)
 		)
 		(property "Temp Co" "X5R"
-			(at 193.548 30.988 0)
+			(at 180.848 30.988 0)
 			(effects
 				(font
 					(size 0.762 0.762)
