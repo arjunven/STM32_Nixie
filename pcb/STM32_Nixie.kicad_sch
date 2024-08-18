@@ -960,7 +960,7 @@
 			)
 			(uuid "d5cd7857-9210-4d74-9710-ffcb41b20ee6")
 		)
-		(pin "nPOL" input
+		(pin "nPOL_12V" input
 			(at 220.98 73.66 180)
 			(effects
 				(font

@@ -8847,12 +8847,6 @@
 		)
 	)
 	(junction
-		(at 71.12 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "18a505b4-af11-4519-8ff0-14d4ef762336")
-	)
-	(junction
 		(at 261.62 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8911,6 +8905,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "46ff6e5e-a5f8-4bb1-ba5b-0f4212896a4a")
+	)
+	(junction
+		(at 73.66 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49a60998-9e20-4e41-9626-e70a0d8b28c9")
 	)
 	(junction
 		(at 138.43 45.72)
@@ -9094,7 +9094,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 152.4) (xy 241.3 152.4)
+			(xy 200.66 152.4) (xy 223.52 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9274,7 +9274,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 152.4) (xy 251.46 152.4)
+			(xy 231.14 152.4) (xy 250.19 152.4)
 		)
 		(stroke
 			(width 0)
@@ -9411,16 +9411,6 @@
 			(type default)
 		)
 		(uuid "2ddf1ffe-f0ca-470a-80e5-4ffb4125c234")
-	)
-	(wire
-		(pts
-			(xy 71.12 38.1) (xy 81.28 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f62e4d4-8377-468d-b87f-1349dd614025")
 	)
 	(wire
 		(pts
@@ -9794,7 +9784,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 142.24) (xy 241.3 142.24)
+			(xy 200.66 142.24) (xy 223.52 142.24)
 		)
 		(stroke
 			(width 0)
@@ -10164,7 +10154,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 147.32) (xy 264.16 147.32)
+			(xy 260.35 147.32) (xy 262.89 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10174,7 +10164,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 142.24) (xy 251.46 142.24)
+			(xy 231.14 142.24) (xy 250.19 142.24)
 		)
 		(stroke
 			(width 0)
@@ -10191,6 +10181,16 @@
 			(type default)
 		)
 		(uuid "ab958967-48eb-4884-beee-c065260fe140")
+	)
+	(wire
+		(pts
+			(xy 73.66 38.1) (xy 81.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac5acceb-6d53-42df-8d3f-f8f8ef32ff1b")
 	)
 	(wire
 		(pts
@@ -10394,7 +10394,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 147.32) (xy 251.46 147.32)
+			(xy 220.98 147.32) (xy 250.19 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10444,7 +10444,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 38.1) (xy 71.12 40.64)
+			(xy 73.66 38.1) (xy 73.66 40.64)
 		)
 		(stroke
 			(width 0)
@@ -10504,7 +10504,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 38.1) (xy 71.12 38.1)
+			(xy 68.58 38.1) (xy 73.66 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10664,7 +10664,7 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 144.78) (xy 264.16 147.32)
+			(xy 262.89 144.78) (xy 262.89 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10774,7 +10774,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 147.32) (xy 231.14 147.32)
+			(xy 200.66 147.32) (xy 213.36 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10834,7 +10834,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 38.1) (xy 58.42 38.1)
+			(xy 50.8 38.1) (xy 60.96 38.1)
 		)
 		(stroke
 			(width 0)
@@ -10888,7 +10888,7 @@
 	)
 	(text "1mA per"
 		(exclude_from_sim no)
-		(at 269.24 144.78 0)
+		(at 267.97 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11068,6 +11068,17 @@
 		)
 		(uuid "09594894-6121-4c9c-b173-48b69b410baa")
 	)
+	(label "BOOT0_SW"
+		(at 50.8 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ba7ebeb-ec2e-447b-84ed-c187ba7074d4")
+	)
 	(label "UART_VCP_RX"
 		(at 152.4 104.14 180)
 		(fields_autoplaced yes)
@@ -11168,7 +11179,7 @@
 		(uuid "3812f114-4f08-4e52-ac6e-79eed99b497e")
 	)
 	(label "LED_BLUE"
-		(at 218.44 152.4 0)
+		(at 200.66 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11210,6 +11221,17 @@
 			(justify right bottom)
 		)
 		(uuid "53b500d9-f989-44d5-9990-32f4fa235d58")
+	)
+	(label "LED_BLUE_R"
+		(at 234.95 152.4 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "58c27f49-14e3-4ce7-a87c-41e691a66f2c")
 	)
 	(label "HW_REV1"
 		(at 93.98 116.84 0)
@@ -11255,6 +11277,17 @@
 		)
 		(uuid "7876891a-5dd0-4d36-9f8b-63a5413f110b")
 	)
+	(label "LED_GREEN_R"
+		(at 234.95 147.32 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82a83c34-5c24-44af-a918-033fc375f0e4")
+	)
 	(label "OSC32_OUT"
 		(at 91.44 91.44 0)
 		(fields_autoplaced yes)
@@ -11276,6 +11309,17 @@
 			(justify right bottom)
 		)
 		(uuid "8a33b504-2e7d-4e35-a198-76f7a36ca4d5")
+	)
+	(label "LED_RED_R"
+		(at 234.95 142.24 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c80aa93-dc08-4602-8584-d426267b82a2")
 	)
 	(label "SPI_SCK_R"
 		(at 139.7 109.22 0)
@@ -11432,7 +11476,7 @@
 		(uuid "e9624a18-f158-4e46-b562-995314a135bb")
 	)
 	(label "LED_RED"
-		(at 218.44 142.24 0)
+		(at 200.66 142.24 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11454,7 +11498,7 @@
 		(uuid "f489da37-ed02-4238-aa45-66c07f0d4dcc")
 	)
 	(label "LED_GREEN"
-		(at 218.44 147.32 0)
+		(at 200.66 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12151,7 +12195,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:RES_499R_1P_1/10W_0603")
-		(at 238.76 147.32 270)
+		(at 220.98 147.32 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12159,7 +12203,7 @@
 		(dnp no)
 		(uuid "264b9174-9fc9-4a3c-8317-d3c783cf6260")
 		(property "Reference" "R58"
-			(at 234.95 144.145 90)
+			(at 217.17 144.145 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12168,75 +12212,6 @@
 			)
 		)
 		(property "Value" "RES_499R_1P_1/10W_0603"
-			(at 243.84 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 241.3 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 231.14 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 238.76 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 236.22 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ManufacturerPN" "RC0603FR-07499RL"
-			(at 233.68 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digi-Key"
-			(at 228.6 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "VendorPN" "311-499HRCT-ND"
 			(at 226.06 154.94 0)
 			(effects
 				(font
@@ -12246,8 +12221,77 @@
 				(hide yes)
 			)
 		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 223.52 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 213.36 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 220.98 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 218.44 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-07499RL"
+			(at 215.9 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 210.82 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-499HRCT-ND"
+			(at 208.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(property "Resistance" "499"
-			(at 233.172 149.352 90)
+			(at 215.392 149.352 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12255,7 +12299,7 @@
 			)
 		)
 		(property "Tolerance" "±1% "
-			(at 237.236 149.352 90)
+			(at 219.456 149.352 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12263,7 +12307,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 233.172 150.876 90)
+			(at 215.392 150.876 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12271,7 +12315,7 @@
 			)
 		)
 		(property "Power" "1/10W"
-			(at 236.982 150.876 90)
+			(at 219.202 150.876 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12775,7 +12819,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:RES_10K_1P_1/10W_0603")
-		(at 66.04 38.1 270)
+		(at 68.58 38.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12783,7 +12827,7 @@
 		(dnp no)
 		(uuid "40c17c28-8b97-4a5b-a7c7-599d4ea84ed5")
 		(property "Reference" "R8"
-			(at 62.23 34.925 90)
+			(at 64.77 34.925 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12792,7 +12836,7 @@
 			)
 		)
 		(property "Value" "RES_10K_1P_1/10W_0603"
-			(at 71.12 45.72 0)
+			(at 73.66 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12802,7 +12846,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 68.58 45.72 0)
+			(at 71.12 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12812,35 +12856,6 @@
 			)
 		)
 		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 58.42 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 66.04 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 63.5 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ManufacturerPN" "RC0603FR-0710KL"
 			(at 60.96 45.72 0)
 			(effects
 				(font
@@ -12850,8 +12865,37 @@
 				(hide yes)
 			)
 		)
+		(property "Description" ""
+			(at 68.58 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 66.04 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-0710KL"
+			(at 63.5 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(property "Vendor" "Digi-Key"
-			(at 55.88 45.72 0)
+			(at 58.42 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12861,7 +12905,7 @@
 			)
 		)
 		(property "VendorPN" "311-10.0KHRCT-ND"
-			(at 53.34 45.72 0)
+			(at 55.88 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12871,7 +12915,7 @@
 			)
 		)
 		(property "Resistance" "10k"
-			(at 60.452 40.132 90)
+			(at 62.992 40.132 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12879,7 +12923,7 @@
 			)
 		)
 		(property "Tolerance" "±1% "
-			(at 64.516 40.132 90)
+			(at 67.056 40.132 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12887,7 +12931,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 60.452 41.656 90)
+			(at 62.992 41.656 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12895,7 +12939,7 @@
 			)
 		)
 		(property "Power" "1/10W"
-			(at 64.262 41.656 90)
+			(at 66.802 41.656 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -12919,7 +12963,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:RES_698R_1P_1/10W_0603")
-		(at 248.92 152.4 270)
+		(at 231.14 152.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12927,7 +12971,7 @@
 		(dnp no)
 		(uuid "4143ced6-45e0-4620-957a-8e689e753100")
 		(property "Reference" "R60"
-			(at 245.11 149.225 90)
+			(at 227.33 149.225 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12936,75 +12980,6 @@
 			)
 		)
 		(property "Value" "RES_698R_1P_1/10W_0603"
-			(at 254 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 251.46 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 241.3 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 248.92 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 246.38 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ManufacturerPN" "RC0603FR-07698RL"
-			(at 243.84 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digi-Key"
-			(at 238.76 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "VendorPN" "311-698HRCT-ND"
 			(at 236.22 160.02 0)
 			(effects
 				(font
@@ -13014,8 +12989,77 @@
 				(hide yes)
 			)
 		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 233.68 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 223.52 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 228.6 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-07698RL"
+			(at 226.06 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 220.98 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-698HRCT-ND"
+			(at 218.44 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(property "Resistance" "698"
-			(at 243.332 154.432 90)
+			(at 225.552 154.432 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13023,7 +13067,7 @@
 			)
 		)
 		(property "Tolerance" "±1% "
-			(at 247.396 154.432 90)
+			(at 229.616 154.432 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13031,7 +13075,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 243.332 155.956 90)
+			(at 225.552 155.956 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13039,7 +13083,7 @@
 			)
 		)
 		(property "Power" "1/10W"
-			(at 247.142 155.956 90)
+			(at 229.362 155.956 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -13063,7 +13107,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:LED_RGB_0606")
-		(at 251.46 147.32 0)
+		(at 250.19 147.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13071,7 +13115,7 @@
 		(dnp no)
 		(uuid "44d0a881-4349-41e6-b0de-4b62c2fab965")
 		(property "Reference" "D7"
-			(at 253.365 137.795 0)
+			(at 252.095 137.795 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13080,7 +13124,7 @@
 			)
 		)
 		(property "Value" "LED_RGB_0606"
-			(at 271.78 139.7 0)
+			(at 270.51 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13090,7 +13134,7 @@
 			)
 		)
 		(property "Footprint" "arjun_footprints:EAST1616RGBB2_EVE"
-			(at 271.78 154.94 0)
+			(at 270.51 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13100,7 +13144,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/everlight-electronics-co-ltd/EAST1616RGBB2/8510360"
-			(at 271.78 152.4 0)
+			(at 270.51 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13110,7 +13154,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 251.46 147.32 0)
+			(at 250.19 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13119,7 +13163,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 271.78 147.32 0)
+			(at 270.51 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13129,7 +13173,7 @@
 			)
 		)
 		(property "VendorPN" "1080-1551-1-ND"
-			(at 271.78 149.86 0)
+			(at 270.51 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13139,7 +13183,7 @@
 			)
 		)
 		(property "Manufacturer" "Everlight"
-			(at 271.78 142.24 0)
+			(at 270.51 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13149,7 +13193,7 @@
 			)
 		)
 		(property "ManufacturerPN" "EAST1616RGBB2"
-			(at 271.78 144.78 0)
+			(at 270.51 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13712,7 +13756,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 264.16 144.78 0)
+		(at 262.89 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13720,7 +13764,7 @@
 		(dnp no)
 		(uuid "5167f26f-8bd8-40cb-a2a9-9eb859561930")
 		(property "Reference" "#PWR0106"
-			(at 264.16 148.59 0)
+			(at 262.89 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13729,7 +13773,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 264.16 141.224 0)
+			(at 262.89 141.224 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13737,7 +13781,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 264.16 144.78 0)
+			(at 262.89 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13746,7 +13790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 144.78 0)
+			(at 262.89 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13755,7 +13799,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 264.16 144.78 0)
+			(at 262.89 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15393,7 +15437,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 71.12 48.26 0)
+		(at 73.66 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15401,7 +15445,7 @@
 		(dnp no)
 		(uuid "8e9ef6c4-b6d2-45ca-9b50-75ad599ebd08")
 		(property "Reference" "#PWR016"
-			(at 71.12 54.61 0)
+			(at 73.66 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15410,7 +15454,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 71.12 52.07 0)
+			(at 73.66 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15418,7 +15462,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 48.26 0)
+			(at 73.66 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15427,7 +15471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 48.26 0)
+			(at 73.66 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15436,7 +15480,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 48.26 0)
+			(at 73.66 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15959,7 +16003,7 @@
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_0u1_50V_X7R_0603")
-		(at 71.12 40.64 0)
+		(at 73.66 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15967,7 +16011,7 @@
 		(dnp no)
 		(uuid "9e9ff7d2-38cb-45c3-9b1f-d939af03c0dc")
 		(property "Reference" "C9"
-			(at 74.168 41.656 0)
+			(at 76.708 41.656 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15976,7 +16020,7 @@
 			)
 		)
 		(property "Value" "CAP_CER_0u1_50V_X7R_0603"
-			(at 78.74 36.195 0)
+			(at 81.28 36.195 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15986,7 +16030,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 78.74 38.1 0)
+			(at 81.28 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15996,7 +16040,7 @@
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Samsung%20PDFs/CL10B104KB8NNNC_Spec.pdf"
-			(at 78.74 48.26 0)
+			(at 81.28 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16006,7 +16050,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 40.64 0)
+			(at 73.66 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16015,7 +16059,7 @@
 			)
 		)
 		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 78.74 43.18 0)
+			(at 81.28 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16025,7 +16069,7 @@
 			)
 		)
 		(property "ManufacturerPN" "CL10B104KB8NNNC"
-			(at 78.74 45.72 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16035,7 +16079,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 78.74 50.8 0)
+			(at 81.28 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16045,7 +16089,7 @@
 			)
 		)
 		(property "VendorPN" "1276-1000-1-ND"
-			(at 78.74 53.34 0)
+			(at 81.28 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16055,7 +16099,7 @@
 			)
 		)
 		(property "Capacitance" "0.1µF"
-			(at 74.168 43.18 0)
+			(at 76.708 43.18 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16064,7 +16108,7 @@
 			)
 		)
 		(property "Voltage" "50V"
-			(at 74.168 44.704 0)
+			(at 76.708 44.704 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16073,7 +16117,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 74.168 47.752 0)
+			(at 76.708 47.752 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16082,7 +16126,7 @@
 			)
 		)
 		(property "Temp Co" "X7R"
-			(at 74.168 46.228 0)
+			(at 76.708 46.228 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16455,7 +16499,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:RES_1K5_1P_1/10W_0603")
-		(at 248.92 142.24 270)
+		(at 231.14 142.24 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16463,7 +16507,7 @@
 		(dnp no)
 		(uuid "a7482b2b-e350-4873-b2e0-d0f133abf36b")
 		(property "Reference" "R59"
-			(at 245.11 139.065 90)
+			(at 227.33 139.065 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16472,75 +16516,6 @@
 			)
 		)
 		(property "Value" "RES_1K5_1P_1/10W_0603"
-			(at 254 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 251.46 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
-			(at 241.3 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 248.92 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 246.38 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ManufacturerPN" "RC0603FR-071K5L"
-			(at 243.84 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Vendor" "Digi-Key"
-			(at 238.76 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "VendorPN" "311-1.50KHRCT-ND"
 			(at 236.22 149.86 0)
 			(effects
 				(font
@@ -16550,8 +16525,77 @@
 				(hide yes)
 			)
 		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 233.68 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
+			(at 223.52 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 231.14 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 228.6 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "ManufacturerPN" "RC0603FR-071K5L"
+			(at 226.06 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Vendor" "Digi-Key"
+			(at 220.98 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "VendorPN" "311-1.50KHRCT-ND"
+			(at 218.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 		(property "Resistance" "1.5k"
-			(at 243.332 144.272 90)
+			(at 225.552 144.272 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16559,7 +16603,7 @@
 			)
 		)
 		(property "Tolerance" "±1% "
-			(at 247.396 144.272 90)
+			(at 229.616 144.272 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16567,7 +16611,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 243.332 145.796 90)
+			(at 225.552 145.796 90)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -16575,7 +16619,7 @@
 			)
 		)
 		(property "Power" "1/10W"
-			(at 247.142 145.796 90)
+			(at 229.362 145.796 90)
 			(effects
 				(font
 					(size 0.762 0.762)
