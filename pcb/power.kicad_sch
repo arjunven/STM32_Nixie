@@ -10883,16 +10883,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 35.56) (xy 63.5 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1a8f9c6b-e105-4a33-abc0-22d48568402b")
-	)
-	(wire
-		(pts
 			(xy 215.9 86.36) (xy 229.87 86.36)
 		)
 		(stroke
@@ -11393,7 +11383,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 35.56) (xy 50.8 35.56)
+			(xy 48.26 35.56) (xy 55.88 35.56)
 		)
 		(stroke
 			(width 0)
@@ -21764,7 +21754,7 @@
 	)
 	(symbol
 		(lib_id ".arjun:FER_120R_2A_0603")
-		(at 50.8 35.56 0)
+		(at 55.88 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21772,7 +21762,7 @@
 		(dnp no)
 		(uuid "b579e372-dc26-4b16-85c9-f1d1483f9c21")
 		(property "Reference" "FB3"
-			(at 54.61 31.75 0)
+			(at 59.69 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21780,7 +21770,7 @@
 			)
 		)
 		(property "Value" "FER_120R_2A_0603"
-			(at 80.645 29.21 0)
+			(at 85.725 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21789,7 +21779,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 78.994 26.67 0)
+			(at 84.074 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21798,7 +21788,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.murata.com/en-us/products/productdetail?partno=BLM18PG121SH1%23"
-			(at 108.585 41.91 0)
+			(at 113.665 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21807,7 +21797,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 50.8 35.56 0)
+			(at 55.88 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21816,7 +21806,7 @@
 			)
 		)
 		(property "Manufacturer" "Murata Electronics"
-			(at 70.485 31.75 0)
+			(at 75.565 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21826,7 +21816,7 @@
 			)
 		)
 		(property "ManufacturerPN" "BLM18PG121SH1D"
-			(at 70.485 34.29 0)
+			(at 75.565 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21836,7 +21826,7 @@
 			)
 		)
 		(property "Vendor" "Digi-Key"
-			(at 70.485 36.83 0)
+			(at 75.565 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21846,7 +21836,7 @@
 			)
 		)
 		(property "VendorPN" "490-7815-1-ND"
-			(at 70.485 39.37 0)
+			(at 75.565 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21856,7 +21846,7 @@
 			)
 		)
 		(property "Impedance@100MHz" "120R"
-			(at 58.42 38.862 0)
+			(at 63.5 38.862 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -21865,7 +21855,7 @@
 			)
 		)
 		(property "Rated Current" "2A"
-			(at 51.054 38.862 0)
+			(at 56.134 38.862 0)
 			(effects
 				(font
 					(size 0.762 0.762)
@@ -21874,7 +21864,7 @@
 			)
 		)
 		(property "Package" "0603"
-			(at 58.42 37.084 0)
+			(at 63.5 37.084 0)
 			(effects
 				(font
 					(size 0.762 0.762)

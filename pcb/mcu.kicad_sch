@@ -10875,6 +10875,16 @@
 		)
 		(uuid "1eddf0d3-9406-440e-a810-3877153103d7")
 	)
+	(text "!! maybe replace the doube push button with a single action circuit? Can you get to bootloader via UART command instead (i.e. not need pushbutton)"
+		(exclude_from_sim no)
+		(at 93.472 57.404 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "57791aab-637f-40e7-967a-251641637e13")
+	)
 	(text "Boot from system memory (bootloader)"
 		(exclude_from_sim no)
 		(at 78.74 22.86 0)
