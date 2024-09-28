@@ -3408,319 +3408,6 @@
 				)
 			)
 		)
-		(symbol "SW_TACT_PTS645SM43SMTR92_LFS_1"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "SW_TACT_PTS645SM43SMTR92_LFS_1"
-				(at 44.45 -5.08 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645"
-				(at 25.4 -12.7 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
-				(at 25.4 -10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Vendor" "Digi-Key"
-				(at 30.48 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "VendorPN" "CKN9112CT-ND"
-				(at 25.4 -7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "C&K"
-				(at 25.4 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ManufacturerPN" "PTS645SM43SMTR92LFS"
-				(at 5.08 -7.62 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Category" "Switches"
-				(at 25.4 -2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Family" "Tactile Switches"
-				(at 25.4 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "SWITCH TACTILE SPST-NO 0.05A 12V"
-				(at 25.4 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "CKN9112CT-ND PTS645"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_TACT_PTS645SM43SMTR92_LFS_1_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -1.27) (xy 6.858 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 7.62 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 6.858 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.556 -2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.604 -2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_TACT_PTS645SM43SMTR92_LFS_1_1_1"
-				(polyline
-					(pts
-						(xy 4.064 0.254) (xy 5.969 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0.254) (xy 5.08 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "SolderJumper_3_Bridged12_1"
 			(pin_names
 				(offset 0) hide)
@@ -4089,6 +3776,319 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "arjun_lib:SW_TACT_KMR211NG LFS"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 5.08 2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "SW_TACT_KMR211NG LFS"
+				(at 44.45 -5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "arjun_footprints:SW_Push_1P1T_NO_CK_KMR2"
+				(at 25.4 -12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ckswitches.com/media/1479/kmr2.pdf"
+				(at 25.4 -10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "SWITCH TACTILE SPST-NO 0.05A 32V"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Vendor" "Digi-Key"
+				(at 30.48 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "VendorPN" "CKN10243CT-ND"
+				(at 25.4 -7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "C&K"
+				(at 25.4 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ManufacturerPN" "KMR211NG LFS"
+				(at 5.08 -7.62 0)
+				(effects
+					(font
+						(size 1.016 1.016)
+					)
+				)
+			)
+			(property "Category" "Switches"
+				(at 25.4 -2.54 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Tactile Switches"
+				(at 25.4 0 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "SWITCH TACTILE SPST-NO 0.05A 12V"
+				(at 25.4 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "KMR211NG LFS"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_TACT_KMR211NG LFS_0_1"
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 2.54 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.302 -1.27) (xy 6.858 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -5.08) (xy 7.62 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 -2.54) (xy 6.858 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 3.556 -2.54)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 6.604 -2.54)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_TACT_KMR211NG LFS_1_1"
+				(polyline
+					(pts
+						(xy 4.064 0.254) (xy 5.969 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 5.08 0.254) (xy 5.08 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8045,319 +8045,6 @@
 				)
 			)
 		)
-		(symbol "arjun_symbols:SW_TACT_PTS645SM43SMTR92_LFS"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "S"
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "SW_TACT_PTS645SM43SMTR92_LFS"
-				(at 44.45 -5.08 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645"
-				(at 25.4 -12.7 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
-				(at 25.4 -10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Vendor" "Digi-Key"
-				(at 30.48 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "VendorPN" "CKN9112CT-ND"
-				(at 25.4 -7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "C&K"
-				(at 25.4 10.16 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ManufacturerPN" "PTS645SM43SMTR92 LFS"
-				(at 5.08 -7.62 0)
-				(effects
-					(font
-						(size 1.016 1.016)
-					)
-				)
-			)
-			(property "Category" "Switches"
-				(at 25.4 -2.54 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Family" "Tactile Switches"
-				(at 25.4 0 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description_1" "SWITCH TACTILE SPST-NO 0.05A 12V"
-				(at 25.4 7.62 0)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "CKN9112CT-ND PTS645"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_TACT_PTS645SM43SMTR92_LFS_0_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 2.54 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 -1.27) (xy 6.858 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 7.62 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 6.858 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.556 -2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.604 -2.54)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SW_TACT_PTS645SM43SMTR92_LFS_1_1"
-				(polyline
-					(pts
-						(xy 4.064 0.254) (xy 5.969 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0.254) (xy 5.08 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 -5.08 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "arjun_symbols:TP_KEYSTONE_5019"
 			(pin_numbers hide)
 			(pin_names
@@ -11089,7 +10776,7 @@
 		)
 		(uuid "0ba7ebeb-ec2e-447b-84ed-c187ba7074d4")
 	)
-	(label "UART_VCP_RX"
+	(label "UART2_VCP_RX"
 		(at 152.4 104.14 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11408,7 +11095,7 @@
 		)
 		(uuid "be04057c-e7df-44be-96cd-10c1921f1005")
 	)
-	(label "UART_VCP_TX"
+	(label "UART2_VCP_TX"
 		(at 152.4 101.6 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11452,7 +11139,7 @@
 		)
 		(uuid "d9e7f6db-003f-4c74-963f-0b7a4f92e873")
 	)
-	(label "UART_VCP_RX"
+	(label "UART2_VCP_RX"
 		(at 33.02 160.02 0)
 		(fields_autoplaced yes)
 		(effects
@@ -11463,7 +11150,7 @@
 		)
 		(uuid "dc1ff198-f5d7-42d9-8126-6a88a05cc3fd")
 	)
-	(label "UART_VCP_TX"
+	(label "UART2_VCP_TX"
 		(at 76.2 160.02 180)
 		(fields_autoplaced yes)
 		(effects
@@ -11661,7 +11348,7 @@
 		)
 		(uuid "d8d20712-1715-4d87-97ee-35f8dde78366")
 	)
-	(hierarchical_label "UART_BL_TX"
+	(hierarchical_label "UART1_BL_TX"
 		(shape output)
 		(at 154.94 119.38 0)
 		(fields_autoplaced yes)
@@ -11685,7 +11372,7 @@
 		)
 		(uuid "e67565ce-ee7a-43d6-a833-650a5efe04d1")
 	)
-	(hierarchical_label "UART_BL_RX"
+	(hierarchical_label "UART1_BL_RX"
 		(shape input)
 		(at 154.94 121.92 0)
 		(fields_autoplaced yes)
@@ -13960,7 +13647,7 @@
 		)
 	)
 	(symbol
-		(lib_id "arjun_symbols:SW_TACT_PTS645SM43SMTR92_LFS")
+		(lib_id "arjun_lib:SW_TACT_KMR211NG LFS")
 		(at 138.43 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13976,7 +13663,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_TACT_PTS645SM43SMTR92_LFS"
+		(property "Value" "SW_TACT_KMR211NG LFS"
 			(at 133.35 77.47 0)
 			(effects
 				(font
@@ -13985,7 +13672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645"
+		(property "Footprint" "arjun_footprints:SW_Push_1P1T_NO_CK_KMR2"
 			(at 125.73 58.42 0)
 			(effects
 				(font
@@ -13995,7 +13682,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
+		(property "Datasheet" "https://www.ckswitches.com/media/1479/kmr2.pdf"
 			(at 128.27 58.42 0)
 			(effects
 				(font
@@ -14005,13 +13692,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-			(at 146.05 58.42 0)
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 32V"
+			(at 138.43 33.02 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -14025,7 +13711,7 @@
 				(hide yes)
 			)
 		)
-		(property "VendorPN" "CKN9112CT-ND"
+		(property "VendorPN" "CKN10243CT-ND"
 			(at 130.81 58.42 0)
 			(effects
 				(font
@@ -14045,7 +13731,7 @@
 				(hide yes)
 			)
 		)
-		(property "ManufacturerPN" "PTS645SM43SMTR92 LFS"
+		(property "ManufacturerPN" "KMR211NG LFS"
 			(at 130.81 38.1 0)
 			(effects
 				(font
@@ -14065,6 +13751,16 @@
 		)
 		(property "Family" "Tactile Switches"
 			(at 138.43 58.42 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "SWITCH TACTILE SPST-NO 0.05A 12V"
+			(at 146.05 58.42 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -18449,8 +18145,7 @@
 		)
 	)
 	(symbol
-		(lib_name "SW_TACT_PTS645SM43SMTR92_LFS_1")
-		(lib_id "arjun_symbols:SW_TACT_PTS645SM43SMTR92_LFS")
+		(lib_id "arjun_lib:SW_TACT_KMR211NG LFS")
 		(at 50.8 25.4 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18466,7 +18161,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_TACT_PTS645SM43SMTR92_LFS"
+		(property "Value" "SW_TACT_KMR211NG LFS"
 			(at 45.72 69.85 0)
 			(effects
 				(font
@@ -18475,7 +18170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "arjun_footprints:Switch_Tactile_SMD_6x6mm_PTS645"
+		(property "Footprint" "arjun_footprints:SW_Push_1P1T_NO_CK_KMR2"
 			(at 38.1 50.8 0)
 			(effects
 				(font
@@ -18485,7 +18180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ckswitches.com/media/1471/pts645.pdf"
+		(property "Datasheet" "https://www.ckswitches.com/media/1479/kmr2.pdf"
 			(at 40.64 50.8 0)
 			(effects
 				(font
@@ -18495,13 +18190,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 12V"
-			(at 58.42 50.8 0)
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 32V"
+			(at 50.8 25.4 0)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -18515,7 +18209,7 @@
 				(hide yes)
 			)
 		)
-		(property "VendorPN" "CKN9112CT-ND"
+		(property "VendorPN" "CKN10243CT-ND"
 			(at 43.18 50.8 0)
 			(effects
 				(font
@@ -18535,7 +18229,7 @@
 				(hide yes)
 			)
 		)
-		(property "ManufacturerPN" "PTS645SM43SMTR92LFS"
+		(property "ManufacturerPN" "KMR211NG LFS"
 			(at 43.18 30.48 0)
 			(effects
 				(font
@@ -18555,6 +18249,16 @@
 		)
 		(property "Family" "Tactile Switches"
 			(at 50.8 50.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "SWITCH TACTILE SPST-NO 0.05A 12V"
+			(at 58.42 50.8 0)
 			(effects
 				(font
 					(size 1.524 1.524)

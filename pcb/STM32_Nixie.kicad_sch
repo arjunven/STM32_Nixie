@@ -596,7 +596,7 @@
 			)
 			(uuid "b9d1e5a9-2ab6-4ec9-bf71-ab76589cb38a")
 		)
-		(pin "UART_BL_TX" output
+		(pin "UART1_BL_TX" output
 			(at 86.36 104.14 180)
 			(effects
 				(font
@@ -606,7 +606,7 @@
 			)
 			(uuid "4b89ae1a-e867-435e-9948-d12ccd2036c5")
 		)
-		(pin "UART_BL_RX" input
+		(pin "UART1_BL_RX" input
 			(at 86.36 106.68 180)
 			(effects
 				(font
@@ -882,7 +882,7 @@
 				(justify left top)
 			)
 		)
-		(pin "UART_BL_TX" input
+		(pin "UART1_BL_TX" input
 			(at 60.96 104.14 0)
 			(effects
 				(font
@@ -892,7 +892,7 @@
 			)
 			(uuid "6ec50c0e-bf6d-4dfd-bc41-754f23f32dd1")
 		)
-		(pin "UART_BL_RX" output
+		(pin "UART1_BL_RX" output
 			(at 60.96 106.68 0)
 			(effects
 				(font

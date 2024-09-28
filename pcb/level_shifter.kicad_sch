@@ -1811,6 +1811,18 @@
 		)
 		(uuid "f4c2ac38-ce4f-45d4-bc18-cd7e2a3fc326")
 	)
+	(hierarchical_label "DATA_12V"
+		(shape output)
+		(at 172.72 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1bb3c107-bb01-4b79-8c26-369769ac6ed2")
+	)
 	(hierarchical_label "nLE_3V3"
 		(shape input)
 		(at 111.76 83.82 180)
@@ -1823,19 +1835,7 @@
 		)
 		(uuid "3279382c-438b-4a71-84ba-2412b37fe7b5")
 	)
-	(hierarchical_label "DATA_12V"
-		(shape output)
-		(at 172.72 81.28 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b960bde-068f-47cd-9d26-b14987cd3430")
-	)
-	(hierarchical_label "CLK_3V3"
+	(hierarchical_label "DATA_3V3"
 		(shape input)
 		(at 111.76 78.74 180)
 		(fields_autoplaced yes)
@@ -1845,7 +1845,19 @@
 			)
 			(justify right)
 		)
-		(uuid "52ab7f40-8d2f-4bfa-8539-d0318c0be652")
+		(uuid "4264c98d-1c13-423a-8db4-f4373ed530e2")
+	)
+	(hierarchical_label "CLK_3V3"
+		(shape input)
+		(at 111.76 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53406528-ae20-4264-9355-d58f4dcc61a6")
 	)
 	(hierarchical_label "nPOL_3V3"
 		(shape input)
@@ -1858,30 +1870,6 @@
 			(justify right)
 		)
 		(uuid "5579650c-5d38-477b-80ea-5375ae617e9e")
-	)
-	(hierarchical_label "CLK_12V"
-		(shape output)
-		(at 172.72 78.74 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7a7e8db5-22cb-4b33-92e5-2d2c3d72f60b")
-	)
-	(hierarchical_label "DATA_3V3"
-		(shape input)
-		(at 111.76 81.28 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b7c7c3a3-c898-48f3-be3a-2e3925b224da")
 	)
 	(hierarchical_label "nLE_12V"
 		(shape output)
@@ -1930,6 +1918,18 @@
 			(justify left)
 		)
 		(uuid "def36245-d2ad-40d9-8ae8-24d86cb4763b")
+	)
+	(hierarchical_label "CLK_12V"
+		(shape output)
+		(at 172.72 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fc453094-2f5d-4e94-b7ac-4350bbea32d0")
 	)
 	(symbol
 		(lib_id "arjun_symbols:CAP_CER_1u_25V_X5R_0603")

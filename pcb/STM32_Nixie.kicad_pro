@@ -189,7 +189,9 @@
         0.2,
         0.25,
         0.3,
-        0.4
+        0.4,
+        0.5,
+        0.6
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -520,6 +522,23 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.1575,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "USB",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(51, 126, 255)",
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -538,6 +557,10 @@
       "/Power/D_SNUB": "HV_SW",
       "/Power/Q_SNUB": "HV_SW",
       "/Power/SW_180V": "HV_SW",
+      "/USB Connector/USB_D_N": "USB",
+      "/USB Connector/USB_D_P": "USB",
+      "/USB Connector/USB_D_R_N": "USB",
+      "/USB Connector/USB_D_R_P": "USB",
       "180V": "HV"
     },
     "netclass_patterns": []

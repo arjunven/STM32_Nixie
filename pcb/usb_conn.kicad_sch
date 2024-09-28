@@ -10226,7 +10226,7 @@
 		)
 		(uuid "4e113d9f-000e-4fcd-9571-f6c6b7f4635e")
 	)
-	(hierarchical_label "UART_BL_TX"
+	(hierarchical_label "UART1_BL_TX"
 		(shape input)
 		(at 248.92 116.84 0)
 		(fields_autoplaced yes)
@@ -10238,7 +10238,7 @@
 		)
 		(uuid "5a31e8b9-7de0-4338-a5a2-6f5521f10718")
 	)
-	(hierarchical_label "UART_BL_RX"
+	(hierarchical_label "UART1_BL_RX"
 		(shape output)
 		(at 248.92 114.3 0)
 		(fields_autoplaced yes)
@@ -10249,6 +10249,98 @@
 			(justify left)
 		)
 		(uuid "adb0ccad-9823-442e-9b9b-2bceb2ac5c11")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 82.55 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6f79e340-0edc-4953-8aab-7c3b2d10b279")
+		(property "Netclass" "USB"
+			(at 83.2485 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 82.55 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7d5171d8-42f1-495e-87a3-dc116032794b")
+		(property "Netclass" "USB"
+			(at 83.2485 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 176.53 124.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7df3cedc-2b40-4e71-891e-095464ef6daf")
+		(property "Netclass" "USB"
+			(at 177.2285 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 176.53 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9401fbe8-8c2a-41f8-a5e2-346d5beeb461")
+		(property "Netclass" "USB"
+			(at 177.2285 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id ".arjun:RES_27R_1P_1/10W_0603")
