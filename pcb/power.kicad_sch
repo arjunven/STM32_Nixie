@@ -6425,253 +6425,6 @@
 				)
 			)
 		)
-		(symbol ".arjun:RES_499K_1P_1/4W_0805"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at -3.175 -3.81 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify top)
-				)
-			)
-			(property "Value" "RES_499K_1P_1{slash}4W_0805"
-				(at 7.62 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-				(at 7.62 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
-				(at 7.62 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "499 kOhms ±1% 0.25W, 1/4W Chip Resistor 0805 (2012 Metric) Automotive AEC-Q200 Thick Film"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "KOA Speer Electronics, Inc."
-				(at 7.62 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "ManufacturerPN" "RK73H2ATTD4993F"
-				(at 7.62 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Vendor" "Digi-Key"
-				(at 7.62 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "VendorPN" "2019-RK73H2ATTD4993FCT-ND"
-				(at 7.62 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Resistance" "499k"
-				(at 2.032 -5.588 90)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Tolerance" "±1% "
-				(at 2.032 -1.524 90)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Package" "0805"
-				(at 3.556 -5.588 90)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "Power" "1/4W"
-				(at 3.556 -1.778 90)
-				(effects
-					(font
-						(size 0.762 0.762)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "RES_499K_1P_1/4W_0805_0_1"
-				(polyline
-					(pts
-						(xy 0 -6.096) (xy 0 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.524) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -4.572) (xy 1.016 -4.953) (xy 0 -5.334) (xy -1.016 -5.715) (xy 0 -6.096)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.048) (xy 1.016 -3.429) (xy 0 -3.81) (xy -1.016 -4.191) (xy 0 -4.572)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.524) (xy 1.016 -1.905) (xy 0 -2.286) (xy -1.016 -2.667) (xy 0 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "RES_499K_1P_1/4W_0805_1_1"
-				(pin passive line
-					(at 0 0 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol ".arjun:RES_4K7_1P_1/10W_0603"
 			(pin_numbers hide)
 			(pin_names
@@ -23670,7 +23423,7 @@
 		)
 	)
 	(symbol
-		(lib_id ".arjun:RES_499K_1P_1/4W_0805")
+		(lib_id "arjun_lib:RES_499K_1P_1/4W_1206")
 		(at 208.28 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -23697,7 +23450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 215.9 233.68 0)
 			(effects
 				(font
@@ -23707,7 +23460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/RK73H.pdf"
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/products/datasheet/rchip/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 215.9 243.84 0)
 			(effects
 				(font
@@ -23717,7 +23470,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "499 kOhms ±1% 0.25W, 1/4W Chip Resistor 1206 (3216 Metric) Moisture Resistant Thick Film"
 			(at 208.28 236.22 0)
 			(effects
 				(font
@@ -23726,7 +23479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KOA Speer Electronics, Inc."
+		(property "Manufacturer" "YAGEO"
 			(at 215.9 238.76 0)
 			(effects
 				(font
@@ -23736,7 +23489,7 @@
 				(hide yes)
 			)
 		)
-		(property "ManufacturerPN" "RK73H2ATTD4993F"
+		(property "ManufacturerPN" "RC1206FR-07499KL"
 			(at 215.9 241.3 0)
 			(effects
 				(font
@@ -23756,7 +23509,7 @@
 				(hide yes)
 			)
 		)
-		(property "VendorPN" "2019-RK73H2ATTD4993FCT-ND"
+		(property "VendorPN" "311-499KFRCT-ND"
 			(at 215.9 248.92 0)
 			(effects
 				(font
@@ -23782,7 +23535,7 @@
 				)
 			)
 		)
-		(property "Package" "0805"
+		(property "Package" "1206"
 			(at 211.836 241.808 90)
 			(effects
 				(font
