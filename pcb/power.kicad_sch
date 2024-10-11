@@ -14146,7 +14146,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_KEYSTONE_5019"
+		(property "Value" "180V"
 			(at 354.33 22.86 0)
 			(effects
 				(font
@@ -17153,7 +17153,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_KEYSTONE_5019"
+		(property "Value" "12V"
 			(at 148.59 154.94 0)
 			(effects
 				(font
@@ -21361,7 +21361,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_KEYSTONE_5019"
+		(property "Value" "3V3"
 			(at 339.09 157.48 0)
 			(effects
 				(font

@@ -11029,7 +11029,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_KEYSTONE_5019"
+		(property "Value" "VBUS"
 			(at 105.41 22.86 0)
 			(effects
 				(font
@@ -13813,7 +13813,7 @@
 				)
 			)
 		)
-		(property "Value" "TP_KEYSTONE_5019"
+		(property "Value" "5V"
 			(at 199.39 22.86 0)
 			(effects
 				(font

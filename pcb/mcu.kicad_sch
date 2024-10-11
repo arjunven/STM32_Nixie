@@ -12937,14 +12937,13 @@
 				)
 			)
 		)
-		(property "Value" "RTC_OUT"
-			(at 31.75 17.78 0)
+		(property "Value" "RTC"
+			(at 20.574 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "arjun_footprints:TestPoint_Keystone_5019_Minature"
@@ -12981,6 +12980,7 @@
 					(size 0.762 0.762)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Manufacturer" "Keystone Electronics"
