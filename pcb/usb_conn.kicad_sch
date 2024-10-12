@@ -13215,7 +13215,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "617a12ad-07dd-47b7-85cc-1fe0e233ce85")
 		(property "Reference" "R52"
 			(at 121.285 44.45 90)

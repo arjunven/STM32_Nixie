@@ -1230,7 +1230,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "592da241-0f55-4f7a-a38f-5ee5a4570347")
 		(property "Reference" "N7"
 			(at 137.16 83.82 0)
