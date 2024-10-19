@@ -101,3 +101,99 @@ local.properties
 *.plt
 *.log
 *.net
+
+
+# Build output directories
+/build/
+/Debug/
+/Release/
+/out/
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# STM32CubeIDE specific
+.settings/
+.project
+.cproject
+.mxproject
+
+# STM32CubeMX generated files
+Drivers/
+Middlewares/
+Src/system_stm32*.*
+Inc/system_stm32*.*
+
+# Keil MDK-ARM specific
+*.uvguix.*
+*.uvoptx
+*.uvprojx
+JLinkLog.txt
+JLinkSettings.ini
+
+# IAR Embedded Workbench specific
+*.ewd
+*.ewp
+*.eww
+
+# Visual Studio Code specific
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Backup files
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# Eclipse specific
+.metadata/
+
+# Temporary files
+*.swp
+*~
