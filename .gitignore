@@ -104,10 +104,10 @@ local.properties
 
 
 # Build output directories
-/build/
-/Debug/
-/Release/
-/out/
+*/build/
+*/Debug/
+*/Release/
+*/out/
 
 # Object files
 *.o
@@ -161,10 +161,10 @@ dkms.conf
 .mxproject
 
 # STM32CubeMX generated files
-Drivers/
-Middlewares/
-Src/system_stm32*.*
-Inc/system_stm32*.*
+*Drivers/
+*Middlewares/
+*Src/system_stm32*.*
+*Inc/system_stm32*.*
 
 # Keil MDK-ARM specific
 *.uvguix.*
