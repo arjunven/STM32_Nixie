@@ -215,6 +215,11 @@ local.properties
 # Logs
 **/*.log
 
+# Ignore Ninja build files
+**/.ninja_deps
+**/.ninja_log
+**/build.ninja
+
 # But don't ignore these files and directories
 !**/src/
 !**/inc/
