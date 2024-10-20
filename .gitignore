@@ -102,98 +102,134 @@ local.properties
 *.log
 *.net
 
+#### STM32 with Cmake in Vscode
 
 # Build output directories
-*/build/
-*/Debug/
-*/Release/
-*/out/
+**/build/
+**/Debug/
+**/Release/
+**/out/
+**/cmake-build-*/
 
 # Object files
-*.o
-*.ko
-*.obj
-*.elf
+**/*.o
+**/*.ko
+**/*.obj
+**/*.elf
+
+# Linker output
+**/*.ilk
+**/*.map
+**/*.exp
 
 # Precompiled Headers
-*.gch
-*.pch
+**/*.gch
+**/*.pch
 
 # Libraries
-*.lib
-*.a
-*.la
-*.lo
+**/*.lib
+**/*.a
+**/*.la
+**/*.lo
 
 # Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+**/*.dll
+**/*.so
+**/*.so.*
+**/*.dylib
 
 # Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+**/*.exe
+**/*.out
+**/*.app
+**/*.i*86
+**/*.x86_64
+**/*.hex
 
 # Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+**/*.dSYM/
+**/*.su
+**/*.idb
+**/*.pdb
 
 # Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+**/*.mod*
+**/*.cmd
+**/.tmp_versions/
+**/modules.order
+**/Module.symvers
+**/Mkfile.old
+**/dkms.conf
 
-# STM32CubeIDE specific
-.settings/
-.project
-.cproject
-.mxproject
+# IDE specific files
+**/.vscode/
+**/.settings/
+**/.idea/
+**/*.swp
+**/*~
+**/.project
+**/.cproject
+**/.mxproject
 
 # STM32CubeMX generated files
-*Drivers/
-*Middlewares/
-*Src/system_stm32*.*
-*Inc/system_stm32*.*
+# Uncomment if you choose to ignore these
+#**/Src/system_stm32*.*
+#**/Inc/system_stm32*.*
+#**/Inc/stm32*_hal_conf.h
 
-# Keil MDK-ARM specific
-*.uvguix.*
-*.uvoptx
-*.uvprojx
-JLinkLog.txt
-JLinkSettings.ini
+# CMake specific ignores
+**/CMakeCache.txt
+**/CMakeFiles/
+**/CMakeScripts/
+**/Testing/
+**/Makefile
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
+**/CTestTestfile.cmake
+**/_deps/
 
-# IAR Embedded Workbench specific
-*.ewd
-*.ewp
-*.eww
+# Toolchain specific
+**/JLinkLog.txt
+**/JLinkSettings.ini
+**/*.uvguix.*
+**/*.uvoptx
+**/*.uvprojx
+**/*.ewd
+**/*.ewp
+**/*.eww
 
-# Visual Studio Code specific
-.vscode/
-
-# macOS specific
-.DS_Store
+# OS generated files
+**/.DS_Store
+**/.DS_Store?
+**/._*
+**/.Spotlight-V100
+**/.Trashes
+**/ehthumbs.db
+**/Thumbs.db
 
 # Backup files
-*.bak
-*.tmp
+**/*.bak
+**/*.tmp
 
 # Logs
-*.log
+**/*.log
 
-# Eclipse specific
-.metadata/
+# But don't ignore these files and directories
+!**/src/
+!**/inc/
+!**/lib/
+!**/Drivers/
+!**/CMakeLists.txt
+!**/Makefile
+!**/*.ld
+!**/*.ioc
+!**/.gitignore
 
-# Temporary files
-*.swp
-*~
+# Specific files to keep
+!**/main.cpp
+!**/main.c
+!**/stm32*_it.c
+!**/stm32*_hal_msp.c
+!**/main.h
+!**/stm32*_it.h
