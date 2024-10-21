@@ -1,17 +1,14 @@
 // hv5622_driver.cpp
 #include "hv5622_driver.h"
 
-Hv5622_driver::Hv5622_driver(int data_pin,
-                             int clock_pin,
-                             int latch_pin,
-                             int blanking_pin,
-                             int polarity_pin)
-    : data_pin_(data_pin),
-      clock_pin_(clock_pin),
-      latch_pin_(latch_pin),
+Hv5622_driver::Hv5622_driver(SPI_HandleTypeDef *hspi,
+                             GPIO_TypeDef *blanking_pin_port, uint16_t blanking_pin,
+                             GPIO_TypeDef *polarity_pin_port, uint16_t polarity_pin)
+    : hspi_(hspi),
+      blanking_pin_port_(blanking_pin_port),
       blanking_pin_(blanking_pin),
+      polarity_pin_port_(polarity_pin_port),
       polarity_pin_(polarity_pin)
 {
-    // setup gpio?
-
+  // setup gpio?
 }

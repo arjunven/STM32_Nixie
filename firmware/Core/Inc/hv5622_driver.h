@@ -4,26 +4,26 @@
 #define HV5622_DRIVER_H
 
 #include <cstdint>
+#include "spi.h"
+#include "gpio.h"
 
 class Hv5622_driver
 {
 public:
     Hv5622_driver(
-        int data_pin,
-        int clock_pin,
-        int latch_pin,
-        int blanking_pin,
-        int polarity_pin);
+        SPI_HandleTypeDef *hspi,
+        GPIO_TypeDef *blanking_pin_port, uint16_t blankin_ping,
+        GPIO_TypeDef *polarity_pin_port, uint16_t polarity_pin);
 
     void clear_display();
     void set_digit(int position, int digit);
 
 private:
-    int data_pin_;
-    int clock_pin_;
-    int latch_pin_;
-    int blanking_pin_;
-    int polarity_pin_;
+    SPI_HandleTypeDef *hspi_;
+    GPIO_TypeDef *blanking_pin_port_;
+    uint16_t blanking_pin_;
+    GPIO_TypeDef *polarity_pin_port_;
+    uint16_t polarity_pin_;
 
     void shift_out(uint32_t data);
 };
