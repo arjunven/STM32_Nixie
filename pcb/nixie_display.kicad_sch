@@ -4511,6 +4511,38 @@
 		)
 		(uuid "ff24b957-e15a-4fe7-893a-589eeb61cf21")
 	)
+	(text_box "Also realizing I made a booboo with the layout! I put hours on the \"left\" and seconds on the \"right\" in layout... but the layout is \"looking outward\" meaning the order is actually inverterted.\n\nH1 == S2\nH2 == S1\nM1 == M2\nM2 == M1\nS1 == H2\nS2 == H1"
+		(exclude_from_sim no)
+		(at 309.88 20.32 0)
+		(size 38.1 33.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8134dbbe-6077-4532-94a2-37137c584cab")
+	)
+	(text "H2\nTUBE 1"
+		(exclude_from_sim no)
+		(at 265.684 215.392 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "06c1645f-dae0-4a96-afd0-b17942faa428")
+	)
 	(text "CLK transitions on falling edge\nTransfer of data from the Shift register to the latch occurs when the nLE input is high. (When active low the data is latched and not shown to the output.)\nThe data in the latch is stored when nLE is low i.e. outputs are Latched (active low)\nnBL LOW sets all outputs off - pulled down to ensure all Nixie's off by default.\n	- Can PWM this to dim the Nixies\nnPOL LOW inverts all outputs (keep HI for normal operation)\n"
 		(exclude_from_sim no)
 		(at 15.24 25.4 0)
@@ -4521,6 +4553,42 @@
 			(justify left bottom)
 		)
 		(uuid "091b97e3-380b-45d1-9cb3-53c19b920371")
+	)
+	(text "Also realizing I made a booboo with the layout! I put hours on the \"left\" and seconds on the \"right\" in layout"
+		(exclude_from_sim no)
+		(at 0 0 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "581cd8d9-8bdf-48ac-b5b2-b34b1ab0a16f")
+	)
+	(text "H1\nTUBE 0"
+		(exclude_from_sim no)
+		(at 266.446 173.99 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "6b3509df-10c6-426f-91fe-22f2228877a7")
+	)
+	(text "M2\nTUBE 3"
+		(exclude_from_sim no)
+		(at 265.43 54.356 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "71a016c1-dc47-420b-a0df-9c3f0c732bad")
 	)
 	(text "Ra =  (180-60)/0.8mA = 150kΩ\nP_Ra = 0.8mA^2 * 150k = 96mW\n"
 		(exclude_from_sim no)
@@ -4553,6 +4621,45 @@
 			(justify left bottom)
 		)
 		(uuid "a00c3058-9439-4fd8-9789-12365961e4f0")
+	)
+	(text "S2\nTUBE 5"
+		(exclude_from_sim no)
+		(at 265.684 136.906 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "d039d7a8-381a-45c7-a61d-b50ad4d44814")
+	)
+	(text "S1\nTUBE 4"
+		(exclude_from_sim no)
+		(at 265.684 95.758 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "e08921da-a64e-40bc-b97c-67949ec5d9e9")
+	)
+	(text "M1\nTUBE 2"
+		(exclude_from_sim no)
+		(at 266.192 253.746 0)
+		(effects
+			(font
+				(size 3.81 3.81)
+				(thickness 5.08)
+				(bold yes)
+				(color 255 65 243 1)
+			)
+		)
+		(uuid "eff36e6b-9a55-48f0-bf6a-4db0e45ef948")
 	)
 	(label "M2_3"
 		(at 243.84 246.38 0)

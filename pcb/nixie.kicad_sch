@@ -1068,7 +1068,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c1d90db-8415-4384-b3f9-69eaa7068eef")
-		(property "Reference" "R15"
+		(property "Reference" "R16"
 			(at 166.37 98.425 90)
 			(effects
 				(font
@@ -1232,7 +1232,7 @@
 		(on_board yes)
 		(dnp yes)
 		(uuid "592da241-0f55-4f7a-a38f-5ee5a4570347")
-		(property "Reference" "N7"
+		(property "Reference" "N8"
 			(at 137.16 83.82 0)
 			(effects
 				(font
@@ -1370,7 +1370,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d423e5f8-be0e-4aa8-aab2-8d638af3da06")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR036"
 			(at 180.34 97.79 0)
 			(effects
 				(font
