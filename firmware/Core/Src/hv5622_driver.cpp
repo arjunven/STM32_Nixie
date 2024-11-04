@@ -32,6 +32,13 @@ void Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
   // Send data for each driver
   for (int i = 0; i < num_drivers_; i++) {
     uint32_t word = data[i];
+
+    // SPI Periph set to MSB so this will shift out starting with MSB 
+    // e.g. if sending a word with only MSB set high - HVOUT32 will be high and all others low
+    // It's nice since the data words bits are mapped directly to the (pin_name - 1) i.e
+    // bit0  -> HVOUT1
+    // bit15 -> HVOUT16
+    // bit31 -> HVOUT32
     uint8_t bytes[BYTES_PER_WORD] = {
         static_cast<uint8_t>((word >> BYTE3_SHIFT) & BYTE_MASK),  // MSB
         static_cast<uint8_t>((word >> BYTE2_SHIFT) & BYTE_MASK),
