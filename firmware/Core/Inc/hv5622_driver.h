@@ -48,15 +48,6 @@ class Hv5622_driver {
   void dimming(uint8_t level);
 
  private:
-  static constexpr uint8_t BITS_PER_BYTE = 8;
-  static constexpr uint8_t BYTES_PER_WORD = 4;
-  static constexpr uint8_t BYTE_MASK = 0xFF;
-
-  static constexpr uint8_t BYTE3_SHIFT = BITS_PER_BYTE * 3;
-  static constexpr uint8_t BYTE2_SHIFT = BITS_PER_BYTE * 2;
-  static constexpr uint8_t BYTE1_SHIFT = BITS_PER_BYTE * 1;
-  static constexpr uint8_t BYTE0_SHIFT = 0;
-
   SPI_HandleTypeDef* hspi_;
   GPIO_TypeDef* blanking_n_port_;
   uint16_t blanking_n_pin_;

@@ -2,15 +2,14 @@
 #ifndef NIXIE_DISPLAY_H
 #define NIXIE_DISPLAY_H
 
-// TODO: check naming convention for classes in C++
+#include "hv5622_driver.h"
 
 class Nixie_display {
  public:
-  Nixie_display();
+  Nixie_display(Hv5622_driver& hv_driver);
 
   /** @brief Write a single 0-9 digit for a given tube position 0-7 */
   void set_digit(uint8_t tube_position, uint8_t digit);
-  // TODO: think about data validation for position and digit
 
   void set_display(); // TODO: think about datatype to hold the values for the display
 
@@ -19,6 +18,9 @@ class Nixie_display {
   
   /** @brief Turn off the display */
   void clear();
+
+private:
+ Hv5622_driver& hv_driver_;
 };
 
 #endif

@@ -1,7 +1,12 @@
 #include "nixie_display.h"
 
+#include <cassert>
+
+#include "hv5622_driver.h"
+
+namespace {
 /** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board */
-static const uint64_t DIGIT_MAP[60] = {
+static constexpr uint64_t DIGIT_MAP[60] = {
     // Tube 0 = Hours 1
     0x0000020000000000ULL,  // 0
     0x0000000100000000ULL,  // 1
@@ -73,8 +78,35 @@ static const uint64_t DIGIT_MAP[60] = {
     0x0000000010000000ULL,  // 7
     0x0000000020000000ULL,  // 8
     0x0000000040000000ULL,  // 9
-
-
 };
 
-Nixie_display::Nixie_display() {}
+static constexpr uint8_t MAX_POSITION = 5;
+static constexpr uint8_t MAX_DIGIT = 9;
+static constexpr uint8_t POSITION_MAPPING = 10;
+
+static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
+static constexpr uint8_t BITS_PER_WORD = 32;
+
+static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
+  assert(position <= MAX_POSITION && "Tube position must be 0-5");
+  assert(digit <= MAX_DIGIT && "Digits must be 0-9");
+
+  return DIGIT_MAP[position * POSITION_MAPPING + digit];
+}
+}  // namespace
+
+Nixie_display::Nixie_display(Hv5622_driver& hv_driver)
+    : hv_driver_(hv_driver) {}
+
+void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
+  assert(position <= MAX_POSITION && "Tube position must be 0-5");
+  assert(digit <= MAX_DIGIT && "Digits must be 0-9");
+
+  uint64_t digit_pattern = get_digit_pattern(position, digit);
+  
+  // Split digit pattern to array of 32 bit words
+  uint32_t data[2];
+  // TODO: how to store the fact that there are 2 drivers? Hardcode or set as a private variable of class?
+
+  Nixie_display::hv_driver_.write_data(data, 2);
+}
