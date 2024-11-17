@@ -5,7 +5,12 @@
 #include "hv5622_driver.h"
 
 namespace {
-/** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board */
+/** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board.
+ *
+ * Mapped so that MSB corresponds to highest output of second driver i.e.
+ * MSB high would set HVOUT32 of driver 2 high and LSB high would set HVOUT1 of
+ * first driver high.
+ */
 static constexpr uint64_t DIGIT_MAP[60] = {
     // Tube 0 = Hours 1
     0x0000020000000000ULL,  // 0
@@ -96,17 +101,24 @@ static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
 }  // namespace
 
 Nixie_display::Nixie_display(Hv5622_driver& hv_driver)
-    : hv_driver_(hv_driver) {}
+    : hv_driver_(hv_driver), is_enabled_(false) {
+  clear();
+}
+
+void Nixie_display::clear() { hv_driver_.blank_outputs(true); }
+
+// TODO: implement is_enabled()
 
 void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
   assert(position <= MAX_POSITION && "Tube position must be 0-5");
   assert(digit <= MAX_DIGIT && "Digits must be 0-9");
 
   uint64_t digit_pattern = get_digit_pattern(position, digit);
-  
-  // Split digit pattern to array of 32 bit words
-  uint32_t data[2];
-  // TODO: how to store the fact that there are 2 drivers? Hardcode or set as a private variable of class?
 
-  Nixie_display::hv_driver_.write_data(data, 2);
+  // Split digit pattern to array of 32 bit words
+  uint32_t data[NUM_DRIVERS] = {
+      static_cast<uint32_t>(digit_pattern >> BITS_PER_WORD),  // MSB
+      static_cast<uint32_t>(digit_pattern & WORD_MASK)};      // LSB
+
+  hv_driver_.write_data(data, NUM_DRIVERS);
 }
