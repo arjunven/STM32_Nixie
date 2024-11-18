@@ -104,6 +104,16 @@ local.properties
 
 #### STM32 with Cmake in Vscode
 
+# VS Code specific - allow certain config files
+.vscode/*
+!.vscode/launch.json
+
+# VS Code - ignore local files
+.vscode/ipch/
+.vscode/*.db
+.vscode/browse.vc*
+.vscode/settings.json
+
 # Build output directories
 **/build/
 **/Debug/
@@ -162,7 +172,6 @@ local.properties
 **/dkms.conf
 
 # IDE specific files
-**/.vscode/
 **/.settings/
 **/.idea/
 **/*.swp
@@ -200,7 +209,7 @@ local.properties
 **/*.eww
 
 # OS generated files
-**/.DS_Storeg
+**/.DS_Store
 **/.DS_Store?
 **/._*
 **/.Spotlight-V100
