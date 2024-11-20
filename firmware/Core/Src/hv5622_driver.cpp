@@ -59,6 +59,7 @@ void Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
 }
 
 void Hv5622_driver::blank_outputs(bool state) {
+  // Active Low pin so low = blanked, high = active
   if (state) {
     HAL_GPIO_WritePin(blanking_n_port_, blanking_n_pin_, GPIO_PIN_RESET);
   } else {
