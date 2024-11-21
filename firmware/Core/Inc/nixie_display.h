@@ -24,14 +24,13 @@ class Nixie_display {
 
   /** @brief Sets the whole display with the contents of the 6 elements of the
    * digits array. */
-  void set_display(const std::array<uint8_t, NUM_DRIVERS>& digits);
+  void set_display(const std::array<uint8_t, NUM_TUBES>& digits);
 
   /** @brief Control the dots */
   void set_colon(bool left_on, bool right_on);
 
  private:
   Hv5622_driver& hv_driver_;
-  bool is_enabled_;
 };
 
 #endif

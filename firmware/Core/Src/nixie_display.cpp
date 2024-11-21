@@ -91,12 +91,23 @@ static constexpr uint8_t POSITION_MAPPING = 10;
 static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
 static constexpr uint8_t BITS_PER_WORD = 32;
 
+// Get the digit pattern from the digit map using the tube position and the
+// digit number
 static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
-  assert(position < Nixie_display::NUM_TUBES && "Tube position must be 0-5");
-  assert(digit <= MAX_DIGIT && "Digits must be 0-9");
+  assert(position < Nixie_display::NUM_TUBES && "Tube position must be [0,5]");
+  assert(digit <= MAX_DIGIT && "Digits must be in range [0,9]");
 
   return DIGIT_MAP[position * POSITION_MAPPING + digit];
 }
+
+// Split the 64bit digit pattern into a 2 element array of 32bit words for the
+// driver
+static std::array<uint32_t, Nixie_display::NUM_DRIVERS> split_digit_pattern(
+    uint64_t digit_pattern) {
+  return {static_cast<uint32_t>(digit_pattern >> BITS_PER_WORD),  // MSB
+          static_cast<uint32_t>(digit_pattern & WORD_MASK)};      // LSB
+}
+
 }  // namespace
 
 Nixie_display::Nixie_display(Hv5622_driver& hv_driver) : hv_driver_(hv_driver) {
@@ -108,15 +119,27 @@ void Nixie_display::disable() { hv_driver_.blank_outputs(true); }
 void Nixie_display::enable() { hv_driver_.blank_outputs(false); }
 
 void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
-  assert(position < NUM_TUBES && "Tube position must be 0-5");
-  assert(digit <= MAX_DIGIT && "Digits must be 0-9");
+  assert(position < NUM_TUBES && "Tube position must be [0,5]");
+  assert(digit <= MAX_DIGIT && "Digits must be in range [0,9]");
 
   uint64_t digit_pattern = get_digit_pattern(position, digit);
 
-  // Split digit pattern to array of 32 bit words
-  uint32_t data[NUM_DRIVERS] = {
-      static_cast<uint32_t>(digit_pattern >> BITS_PER_WORD),  // MSB
-      static_cast<uint32_t>(digit_pattern & WORD_MASK)};      // LSB
+  std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
 
-  hv_driver_.write_data(data, NUM_DRIVERS);
+  hv_driver_.write_data(data.data(), NUM_DRIVERS);
+}
+
+void Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
+  uint64_t digit_pattern = 0;
+
+  // Build the full digit pattern by OR'ing all the individual digit patterns
+  // together
+  for (uint8_t i = 0; i < NUM_TUBES; i++) {
+    assert(digits[i] <= MAX_DIGIT && "Digits must be in range [0,9]");
+    digit_pattern = digit_pattern | get_digit_pattern(i, digits[i]);
+  }
+
+  std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
+
+  hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
