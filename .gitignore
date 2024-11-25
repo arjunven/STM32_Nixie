@@ -94,7 +94,7 @@ local.properties
 #.project
 
 # Mac specific
-.DS_Store
+**/.DS_Store
 
 # LTSpice Results
 *.raw
