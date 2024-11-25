@@ -573,7 +573,7 @@
       "plot": "outputs/arjy-nix-v1-gerbers/",
       "pos_files": "outputs/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "outputs/STM32_Nixie.step",
       "svg": "",
       "vrml": ""
     },
