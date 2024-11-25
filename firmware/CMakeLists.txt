@@ -49,11 +49,14 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     Core/Src/main_app.cpp
+    Core/Src/hv5622_driver.cpp
+    Core/Src/nixie_display.cpp
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    Core/Inc
 )
 
 # Add project symbols (macros)
@@ -66,4 +69,9 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
     stm32cubemx
 
     # Add user defined libraries
+)
+
+target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
+    -Os     # Optimize for size
+    -flto   # Link-time optimization
 )

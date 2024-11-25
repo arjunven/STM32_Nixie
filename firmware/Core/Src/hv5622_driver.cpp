@@ -1,5 +1,6 @@
 // hv5622_driver.cpp
 #include "hv5622_driver.h"
+#include "gpio.h"
 
 #include <cassert>
 
@@ -35,6 +36,8 @@ void Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
   assert(num_words == num_drivers_ &&
          "Number of words must match number of drivers!");
 
+  HAL_StatusTypeDef status;
+
   // Data is shifted from the Shift register to the latches on logic input high.
   // Hold the latch pin (also chip select) low to load up the shift registers
   // Rising edge on latch transfers contents of shift register to the outputs
@@ -54,7 +57,11 @@ void Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
         static_cast<uint8_t>((word >> BYTE1_SHIFT) & BYTE_MASK),
         static_cast<uint8_t>((word >> BYTE0_SHIFT) & BYTE_MASK)};  // LSB
 
-    HAL_SPI_Transmit(hspi_, bytes, BYTES_PER_WORD, HAL_MAX_DELAY);
+    status = HAL_SPI_Transmit(hspi_, bytes, BYTES_PER_WORD, 10);
+    if (status != HAL_OK ) {
+      HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_RESET);
+      break;
+    }
   }
 }
 

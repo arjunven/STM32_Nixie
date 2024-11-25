@@ -2,7 +2,7 @@
 
 #include <cassert>
 
-#include "hv5622_driver.h"
+#include "gpio.h"
 
 namespace {
 /** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board.
@@ -126,7 +126,11 @@ void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
 
   std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
 
+  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
+
   hv_driver_.write_data(data.data(), NUM_DRIVERS);
+
+  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
 }
 
 void Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
