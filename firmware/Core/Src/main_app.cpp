@@ -1,6 +1,6 @@
-#include "main_app.h"
-#include "nixie_display.h"
-#include "hv5622_driver.h"
+#include "main_app.hh"
+#include "nixie_display.hh"
+#include "hv5622_driver.hh"
 
 #include "adc.h"
 #include "gpio.h"

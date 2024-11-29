@@ -1,5 +1,5 @@
 // hv5622_driver.cpp
-#include "hv5622_driver.h"
+#include "hv5622_driver.hh"
 #include "gpio.h"
 
 #include <cassert>

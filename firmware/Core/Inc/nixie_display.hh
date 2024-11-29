@@ -4,7 +4,7 @@
 
 #include <array>
 
-#include "hv5622_driver.h"
+#include "hv5622_driver.hh"
 
 class Nixie_display {
  public:
