@@ -73,5 +73,5 @@ target_link_libraries(${CMAKE_PROJECT_NAME}
 
 target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
     -Os     # Optimize for size
-    -flto   # Link-time optimization
+    # -flto   # Link-time optimization
 )
