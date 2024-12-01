@@ -51,27 +51,27 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, PWM_nBL_Pin|LED_GREEN_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, SPI_nCS_nLE_Pin|PWM_nBL_Pin|LED_GREEN_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, DITHOFF_180V_Pin|EN_180V_Pin|nPOL_Pin|EN_12V_Pin
                           |LED_RED_Pin|LED_BLUE_Pin|SET_ILIM_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : PAPin PAPin */
-  GPIO_InitStruct.Pin = PWM_nBL_Pin|LED_GREEN_Pin;
+  /*Configure GPIO pins : SPI_nCS_nLE_Pin PWM_nBL_Pin LED_GREEN_Pin */
+  GPIO_InitStruct.Pin = SPI_nCS_nLE_Pin|PWM_nBL_Pin|LED_GREEN_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin */
+  /*Configure GPIO pins : BOOT1_Pin PG_180V_Pin ENC_PB_Pin */
   GPIO_InitStruct.Pin = BOOT1_Pin|PG_180V_Pin|ENC_PB_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin PBPin
-                           PBPin PBPin PBPin */
+  /*Configure GPIO pins : DITHOFF_180V_Pin EN_180V_Pin nPOL_Pin EN_12V_Pin
+                           LED_RED_Pin LED_BLUE_Pin SET_ILIM_Pin */
   GPIO_InitStruct.Pin = DITHOFF_180V_Pin|EN_180V_Pin|nPOL_Pin|EN_12V_Pin
                           |LED_RED_Pin|LED_BLUE_Pin|SET_ILIM_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
@@ -79,7 +79,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin */
+  /*Configure GPIO pins : HW_REV2_Pin HW_REV1_Pin HW_REV0_Pin */
   GPIO_InitStruct.Pin = HW_REV2_Pin|HW_REV1_Pin|HW_REV0_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;

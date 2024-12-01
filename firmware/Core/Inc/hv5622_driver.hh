@@ -25,6 +25,8 @@ class Hv5622_driver {
    * @param num_drivers Number of cascaded chips
    */
   Hv5622_driver(SPI_HandleTypeDef* hspi,
+                GPIO_TypeDef* nCS_port,
+                uint16_t nCS_pin,
                 GPIO_TypeDef* blanking_n_port,
                 uint16_t blanking_n_pin,
                 GPIO_TypeDef* polarity_n_port,
@@ -35,8 +37,9 @@ class Hv5622_driver {
    * @brief Writes data to shift registers
    * @param data Array of 32-bit words
    * @param num_words Must match num_drivers
+   * @return True if writing data was succesful returns false if writing data was unseccesful
    */
-  void write_data(const uint32_t* data, uint8_t num_words);
+  bool write_data(const uint32_t* data, uint8_t num_words);
 
   /** @brief Controls output blanking (true = blank) */
   void blank_outputs(bool state);
@@ -49,11 +52,17 @@ class Hv5622_driver {
 
  private:
   SPI_HandleTypeDef* hspi_;
+  GPIO_TypeDef* nCS_port_;
+  uint16_t nCS_pin_;
   GPIO_TypeDef* blanking_n_port_;
   uint16_t blanking_n_pin_;
   GPIO_TypeDef* polarity_n_port_;
   uint16_t polarity_n_pin_;
   uint8_t num_drivers_;
+
+  void select();
+
+  void deselect();
 };
 
 #endif

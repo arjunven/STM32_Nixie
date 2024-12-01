@@ -1,4 +1,4 @@
-#include "nixie_display.h"
+#include "nixie_display.hh"
 
 #include <cassert>
 
@@ -85,7 +85,6 @@ static constexpr uint64_t DIGIT_MAP[60] = {
     0x0000000040000000ULL,  // 9
 };
 
-static constexpr uint8_t MAX_DIGIT = 9;
 static constexpr uint8_t POSITION_MAPPING = 10;
 
 static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
@@ -95,7 +94,7 @@ static constexpr uint8_t BITS_PER_WORD = 32;
 // digit number
 static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
   assert(position < Nixie_display::NUM_TUBES && "Tube position must be [0,5]");
-  assert(digit <= MAX_DIGIT && "Digits must be in range [0,9]");
+  assert(digit <= Nixie_display::MAX_DIGIT && "Digits must be in range [0,9]");
 
   return DIGIT_MAP[position * POSITION_MAPPING + digit];
 }
@@ -118,7 +117,7 @@ void Nixie_display::disable() { hv_driver_.blank_outputs(true); }
 
 void Nixie_display::enable() { hv_driver_.blank_outputs(false); }
 
-void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
+bool Nixie_display::set_digit(uint8_t position, uint8_t digit) {
   assert(position < NUM_TUBES && "Tube position must be [0,5]");
   assert(digit <= MAX_DIGIT && "Digits must be in range [0,9]");
 
@@ -126,14 +125,10 @@ void Nixie_display::set_digit(uint8_t position, uint8_t digit) {
 
   std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
 
-  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
-
-  hv_driver_.write_data(data.data(), NUM_DRIVERS);
-
-  HAL_GPIO_TogglePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin);
+  return hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
 
-void Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
+bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
   uint64_t digit_pattern = 0;
 
   // Build the full digit pattern by OR'ing all the individual digit patterns
@@ -145,5 +140,5 @@ void Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
 
   std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
 
-  hv_driver_.write_data(data.data(), NUM_DRIVERS);
+  return hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
