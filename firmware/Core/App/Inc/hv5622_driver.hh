@@ -1,4 +1,4 @@
-// hv5622_driver.h
+// hv5622_driver.hh
 
 #ifndef HV5622_DRIVER_H
 #define HV5622_DRIVER_H

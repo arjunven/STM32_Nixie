@@ -1,4 +1,4 @@
-// nixie_display.h
+// nixie_display.hh
 #ifndef NIXIE_DISPLAY_H
 #define NIXIE_DISPLAY_H
 

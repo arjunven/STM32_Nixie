@@ -51,6 +51,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/App/Src/main_app.cpp
     Core/App/Src/hv5622_driver.cpp
     Core/App/Src/nixie_display.cpp
+    Core/App/Src/system_control.cpp
 )
 
 # Add include paths
