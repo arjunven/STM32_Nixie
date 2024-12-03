@@ -16,6 +16,8 @@
 
 uint16_t LED_DELAY = 1000;  // ms
 uint8_t TUBE_S2 = 5;
+uint8_t TUBE_S1 = 4;
+uint8_t TUBE_H2 = 3;
 
 int main_app() {
   /* Initialization */
@@ -25,6 +27,8 @@ int main_app() {
   HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(SPI_nCS_nLE_GPIO_Port, SPI_nCS_nLE_Pin, GPIO_PIN_SET);
+
+   HAL_Delay(1000);
 
   HAL_GPIO_WritePin(SET_ILIM_GPIO_Port, SET_ILIM_Pin, GPIO_PIN_SET);
   HAL_Delay(100);
@@ -47,13 +51,20 @@ int main_app() {
   static Nixie_display display(hv_driver);
   display.disable();
 
+  std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
+
   HAL_GPIO_WritePin(EN_180V_GPIO_Port, EN_180V_Pin, GPIO_PIN_SET);
   HAL_Delay(100);
   display.enable();
 
-  for (uint8_t time = 0; time <= Nixie_display::MAX_DIGIT; time++) {
-    display.set_digit(TUBE_S2, time);
-    HAL_Delay(1000);
+  for (int i = 0; i <= 10; i++) {
+    for (uint8_t time = 0; time <= Nixie_display::MAX_DIGIT; time++) {
+      numbers[TUBE_H2] = time;
+      numbers[TUBE_S1] = time;
+      numbers[TUBE_S2] = time;
+      display.set_display(numbers);
+      HAL_Delay(100);
+    }
   }
 
   HAL_Delay(1000);
