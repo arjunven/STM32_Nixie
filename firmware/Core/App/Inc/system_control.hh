@@ -4,6 +4,7 @@
 #define SYSTEM_CONTROL_H
 
 #include "gpio.h"
+#include "nixie_display.hh"
 
 namespace system_control {
 bool power_up();
