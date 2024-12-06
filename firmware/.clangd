@@ -1,0 +1,20 @@
+CompileFlags:
+  Add: 
+    - "-std=c++11"
+    - "-DDEBUG"
+    - "-DSTM32F100xB"
+    - "-DUSE_HAL_DRIVER"
+  Remove:
+    - "-mthumb"
+    - "-mcpu=*"
+    - "-mfloat*"
+    - "-mabi*"
+  Compiler: g++
+
+Index:
+  StandardLibrary: Yes
+
+Diagnostics:
+  Suppress: 
+    - "*"
+  UnusedIncludes: Strict
