@@ -1,79 +1,73 @@
 cmake_minimum_required(VERSION 3.22)
 
-#
-# This file is generated only once,
-# and is not re-generated if converter is called multiple times.
-#
-# User is free to modify the file as much as necessary
-#
-
-# Setup compiler settings
-set(CMAKE_C_STANDARD 11)
-set(CMAKE_C_STANDARD_REQUIRED ON)
-set(CMAKE_C_EXTENSIONS ON)
-
-
-# Define the build type
+# Define the build type early
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE "Debug")
 endif()
 
-# Set the project name
-set(CMAKE_PROJECT_NAME stm32_nixie)
+# Set project name
+set(PROJECT_NAME stm32_nixie)
 
-# Include toolchain file
+# Include toolchain file before project() command
 include("cmake/gcc-arm-none-eabi.cmake")
 
-# Enable compile command to ease indexing with e.g. clangd
-set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
+# Project definition
+project(${PROJECT_NAME} C CXX ASM)
 
-# Enable CMake support for ASM and C languages
-enable_language(C ASM)
+# Enable compile command generation for tooling
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-# Core project settings
-project(${CMAKE_PROJECT_NAME})
-message("Build type: " ${CMAKE_BUILD_TYPE})
+# Global compiler settings - these complement the toolchain file settings
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+set(CMAKE_C_EXTENSIONS ON)
 
-# Create an executable object type
-add_executable(${CMAKE_PROJECT_NAME})
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Add STM32CubeMX generated sources
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+
+# Create target
+add_executable(${PROJECT_NAME})
+
+# Add sources
+target_sources(${PROJECT_NAME}
+    PRIVATE
+        Core/App/Src/main_app.cpp
+        Core/App/Src/hv5622_driver.cpp
+        Core/App/Src/nixie_display.cpp
+        Core/App/Src/system_control.cpp
+)
+
+# Configure includes
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        Core/Inc
+        Core/App/Inc
+)
+
+# Add STM32CubeMX generated code
 add_subdirectory(cmake/stm32cubemx)
 
-# Link directories setup
-target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined library search paths
+# Compile options - using generator expressions for language-specific flags
+target_compile_options(${PROJECT_NAME}
+    PRIVATE
+        $<$<CONFIG:Debug>:-Og -g3>
+        $<$<CONFIG:Release>:-Os -g0>
+        $<$<COMPILE_LANGUAGE:CXX>:
+            -fno-rtti
+            -fno-exceptions
+            -fno-threadsafe-statics
+        >
 )
 
-# Add sources to executable
-target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
-    Core/App/Src/main_app.cpp
-    Core/App/Src/hv5622_driver.cpp
-    Core/App/Src/nixie_display.cpp
-    Core/App/Src/system_control.cpp
+# Link libraries
+target_link_libraries(${PROJECT_NAME}
+    PRIVATE
+        stm32cubemx
 )
 
-# Add include paths
-target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined include paths
-    Core/Inc
-    Core/App/Inc
-)
-
-# Add project symbols (macros)
-target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined symbols
-)
-
-# Add linked libraries
-target_link_libraries(${CMAKE_PROJECT_NAME}
-    stm32cubemx
-
-    # Add user defined libraries
-)
-
-target_compile_options(${CMAKE_PROJECT_NAME} PRIVATE
-    -Os     # Optimize for size
-    # -flto   # Link-time optimization
-)
+# Print final settings
+get_target_property(TARGET_COMPILE_OPTIONS ${PROJECT_NAME} COMPILE_OPTIONS)
+message(STATUS "Compile options: ${TARGET_COMPILE_OPTIONS}")
