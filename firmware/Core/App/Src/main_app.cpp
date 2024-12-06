@@ -25,14 +25,7 @@ uint8_t TUBE_H1 = 0;
 
 int main_app() {
   /* Initialization */
-  // TODO: Check pin states on startup
-  // TODO: Set pin pulls
-  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(LED_RED_GPIO_Port, LED_RED_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(LED_BLUE_GPIO_Port, LED_BLUE_Pin, GPIO_PIN_SET);
-  HAL_GPIO_WritePin(SPI_nCS_nLE_GPIO_Port, SPI_nCS_nLE_Pin, GPIO_PIN_SET);
-
-  HAL_Delay(1000);
+  system_control::gpio_init();
 
   // Initialize HV5622
   static Hv5622_driver hv_driver(&hspi1,
@@ -47,7 +40,7 @@ int main_app() {
   // Initialize display
   static Nixie_display display(hv_driver);
 
-  bool power_good = system_control::power_up();
+  volatile bool power_good = system_control::power_up();
 
   std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
   display.set_display(numbers);
