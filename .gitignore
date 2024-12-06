@@ -247,3 +247,6 @@ local.properties
 !**/stm32*_hal_msp.c
 !**/main.h
 !**/stm32*_it.h
+
+# Clangd cache
+**/.cache
