@@ -51,16 +51,16 @@ target_include_directories(${PROJECT_NAME}
 add_subdirectory(cmake/stm32cubemx)
 
 # Compile options - using generator expressions for language-specific flags
-target_compile_options(${PROJECT_NAME}
-    PRIVATE
-        $<$<CONFIG:Debug>:-Og -g3>
-        $<$<CONFIG:Release>:-Os -g0>
-        $<$<COMPILE_LANGUAGE:CXX>:
-            -fno-rtti
-            -fno-exceptions
-            -fno-threadsafe-statics
-        >
-)
+# target_compile_options(${PROJECT_NAME}
+#     PRIVATE
+#         $<$<CONFIG:Debug>:-Og -g3>
+#         $<$<CONFIG:Release>:-Os -g0>
+#         $<$<COMPILE_LANGUAGE:CXX>:
+#             -fno-rtti
+#             -fno-exceptions
+#             -fno-threadsafe-statics
+#         >
+# )
 
 # Link libraries
 target_link_libraries(${PROJECT_NAME}

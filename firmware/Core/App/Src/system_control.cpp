@@ -85,7 +85,7 @@ void enable_status_led() {
 }
 
 void disable_status_led() {
-  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_SET)
+  HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_SET);
 }
 
 } // namespace system_control

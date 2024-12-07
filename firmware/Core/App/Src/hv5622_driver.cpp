@@ -45,8 +45,6 @@ bool Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
   assert(num_words == num_drivers_ &&
          "Number of words must match number of drivers!");
 
-  HAL_StatusTypeDef status;
-
   // Data is shifted from the Shift register to the latches on logic input high.
   // Hold the latch pin (also chip select) low to load up the shift registers
   // Rising edge on latch transfers contents of shift register to the outputs

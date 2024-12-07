@@ -43,7 +43,7 @@ set(COMMON_FLAGS
 
 # Debug/Release specific flags
 if(CMAKE_BUILD_TYPE MATCHES Debug)
-    list(APPEND COMMON_FLAGS "-O0" "-g3")
+    list(APPEND COMMON_FLAGS "-Os" "-g3")
 else()
     list(APPEND COMMON_FLAGS "-Os" "-g0")
 endif()
@@ -73,3 +73,8 @@ string(REPLACE ";" " " CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS_INIT}")
 # Set nano spec through proper CMake variable
 set(CMAKE_C_STANDARD_LIBRARIES "--specs=nano.specs")
 set(CMAKE_CXX_STANDARD_LIBRARIES "--specs=nano.specs -Wl,--start-group -lstdc++ -lsupc++ -Wl,--end-group")
+
+# After setting flags
+message(STATUS "TOOLCHAIN: C++ FLAGS: ${CMAKE_CXX_FLAGS}")
+message(STATUS "TOOLCHAIN: C FLAGS: ${CMAKE_C_FLAGS}")
+message(STATUS "TOOLCHAIN: COMMON FLAGS: ${COMMON_FLAGS_STR}")

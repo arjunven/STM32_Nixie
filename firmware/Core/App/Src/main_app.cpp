@@ -1,5 +1,7 @@
 #include "main_app.hh"
 
+#include <array>
+
 #include "adc.h"
 #include "gpio.h"
 #include "hv5622_driver.hh"
@@ -11,7 +13,7 @@
 #include "tim.h"
 #include "usart.h"
 
-// Using the seperate main_app because CubeMX code generation will keep making a
+// Using the separate main_app because CubeMX code generation will keep making a
 // new main.c and clobbers the main.cpp. Instead this main_app gets called in
 // main.c so CubeMX can happily keep generating code.
 
@@ -22,6 +24,16 @@ uint8_t TUBE_M2 = 3;
 uint8_t TUBE_M1 = 2;
 uint8_t TUBE_H2 = 1;
 uint8_t TUBE_H1 = 0;
+
+// These tell the C++ compiler that these symbols come from C code
+extern "C" {
+extern SPI_HandleTypeDef hspi1;    // Defined in spi.c
+extern ADC_HandleTypeDef hadc1;    // Defined in adc.c
+extern RTC_HandleTypeDef hrtc;     // Defined in rtc.c
+extern TIM_HandleTypeDef htim2;    // Defined in tim.c
+extern UART_HandleTypeDef huart1;  // Defined in usart.c
+extern UART_HandleTypeDef huart2;  // Defined in usart.c
+}
 
 int main_app() {
   /* Initialization */
@@ -41,6 +53,11 @@ int main_app() {
   static Nixie_display display(hv_driver);
 
   volatile bool power_good = system_control::power_up();
+
+  if (!power_good) {
+    system_control::power_down();
+    system_control::enable_fault_led();
+  }
 
   std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
   display.set_display(numbers);
