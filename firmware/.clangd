@@ -15,6 +15,15 @@ Index:
   StandardLibrary: Yes
 
 Diagnostics:
-  Suppress: 
-    - "*"
-  UnusedIncludes: Strict
+  UnusedIncludes: None
+  ClangTidy:
+    Add: 
+      - modernize-*
+      # - performance-*
+    Remove:
+      - modernize-use-trailing-return-type
+
+InlayHints:
+  Enabled: Yes
+  ParameterNames: Yes
+  DeducedTypes: Yes
