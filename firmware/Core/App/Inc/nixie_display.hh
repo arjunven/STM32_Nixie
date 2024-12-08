@@ -1,4 +1,5 @@
 // nixie_display.hh
+
 #ifndef NIXIE_DISPLAY_H
 #define NIXIE_DISPLAY_H
 
@@ -13,6 +14,7 @@ class Nixie_display {
   static constexpr uint8_t NUM_DRIVERS = 2;
   static constexpr uint8_t NUM_TUBES = 6;
   static constexpr uint8_t MAX_DIGIT = 9;
+  static constexpr uint8_t BLANK_DIGIT = 0xFF;
 
   /** @brief Turn off the display*/
   void disable();
@@ -20,14 +22,38 @@ class Nixie_display {
   /** @brief Turn on the display */
   void enable();
 
-  /** @brief Write a single 0-9 digit for a given tube position 0-6
-   * Tube position 0 -> Hours 1
-   * Tube position 6 -> Seconds 2
+  // test
+
+  // test
+
+  /** @brief Write a single digit for a given tube position
+   * @param tube_position Position of the nixie tube (0-5):
+   *                     - 0: Hours tens
+   *                     - 1: Hours ones
+   *                     - 2: Minutes tens
+   *                     - 3: Minutes ones
+   *                     - 4: Seconds tens
+   *                     - 5: Seconds ones
+   * @param digit Value to display:
+   *              - 0-9: Display the digit
+   *              - 0xFF: Blank (all cathodes off)
+   * @return true if successful, false on error
    */
   bool set_digit(uint8_t tube_position, uint8_t digit);
 
-  /** @brief Sets the whole display with the contents of the 6 elements of the
-   * digits array. */
+  /** @brief Sets all nixie tubes with the provided digit values
+   * @param digits Array of values for each tube position:
+   *               - 0-9: Display the digit
+   *               - 0xFF: Blank (all cathodes off)
+   *               Array index maps to tube position:
+   *               [0] Hours tens
+   *               [1] Hours ones
+   *               [2] Minutes tens
+   *               [3] Minutes ones
+   *               [4] Seconds tens
+   *               [5] Seconds ones
+   * @return true if successful, false on error
+   */
   bool set_display(const std::array<uint8_t, NUM_TUBES>& digits);
 
   /** @brief Control the dots */

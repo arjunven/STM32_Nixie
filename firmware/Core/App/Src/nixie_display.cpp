@@ -1,3 +1,5 @@
+// nixie_display.cpp
+
 #include "nixie_display.hh"
 
 #include <cassert>
@@ -83,6 +85,8 @@ static constexpr uint64_t DIGIT_MAP[60] = {
     0x0000000040000000ULL,  // 9
 };
 
+static constexpr uint64_t BLANK_DIGIT_PATTERN = 0;
+
 static constexpr uint8_t POSITION_MAPPING = 10;
 
 static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
@@ -92,9 +96,15 @@ static constexpr uint8_t BITS_PER_WORD = 32;
 // digit number
 static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
   assert(position < Nixie_display::NUM_TUBES && "Tube position must be [0,5]");
-  assert(digit <= Nixie_display::MAX_DIGIT && "Digits must be in range [0,9]");
+  assert((digit <= Nixie_display::MAX_DIGIT ||
+          digit == Nixie_display::BLANK_DIGIT) &&
+         "Digits must be in range [0,9]");
 
-  return DIGIT_MAP[position * POSITION_MAPPING + digit];
+  if (digit == Nixie_display::BLANK_DIGIT) {
+    return BLANK_DIGIT_PATTERN;
+  } else {
+    return DIGIT_MAP[position * POSITION_MAPPING + digit];
+  }
 }
 
 // Split the 64bit digit pattern into a 2 element array of 32bit words for the
@@ -117,7 +127,8 @@ void Nixie_display::enable() { hv_driver_.blank_outputs(false); }
 
 bool Nixie_display::set_digit(uint8_t position, uint8_t digit) {
   assert(position < NUM_TUBES && "Tube position must be [0,5]");
-  assert(digit <= MAX_DIGIT && "Digits must be in range [0,9]");
+  assert((digit <= MAX_DIGIT || digit == BLANK_DIGIT) &&
+         "Digits must be in range [0,9] or the blank digit value.");
 
   uint64_t digit_pattern = get_digit_pattern(position, digit);
 
@@ -132,7 +143,8 @@ bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
   // Build the full digit pattern by OR'ing all the individual digit patterns
   // together
   for (uint8_t i = 0; i < NUM_TUBES; i++) {
-    assert(digits[i] <= MAX_DIGIT && "Digits must be in range [0,9]");
+    assert((digits[i] <= MAX_DIGIT || digits[i] == BLANK_DIGIT) &&
+           "Digits must be in range [0,9]");
     digit_pattern = digit_pattern | get_digit_pattern(i, digits[i]);
   }
 

@@ -1,4 +1,5 @@
 // hv5622_driver.cpp
+
 #include "hv5622_driver.hh"
 
 #include <cassert>
@@ -93,8 +94,6 @@ void Hv5622_driver::invert_output_polarity(bool state) {
     HAL_GPIO_WritePin(polarity_n_port_, polarity_n_pin_, GPIO_PIN_SET);
   }
 }
-
-void Hv5622_driver::dimming(uint8_t level) {}
 
 void Hv5622_driver::select() {
   HAL_GPIO_WritePin(nCS_port_, nCS_pin_, GPIO_PIN_RESET);
