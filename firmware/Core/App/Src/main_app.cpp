@@ -2,16 +2,10 @@
 
 #include <array>
 
-#include "adc.h"
-#include "gpio.h"
 #include "hv5622_driver.hh"
 #include "main.h"
 #include "nixie_display.hh"
-#include "rtc.h"
-#include "spi.h"
 #include "system_control.hh"
-#include "tim.h"
-#include "usart.h"
 
 // Using the separate main_app because CubeMX code generation will keep making a
 // new main.c and clobbers the main.cpp. Instead this main_app gets called in

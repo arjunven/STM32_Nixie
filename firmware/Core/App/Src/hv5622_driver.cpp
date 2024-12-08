@@ -3,8 +3,6 @@
 
 #include <cassert>
 
-#include "gpio.h"
-
 namespace {
 static constexpr uint8_t BITS_PER_BYTE = 8;
 static constexpr uint8_t BYTES_PER_WORD = 4;

@@ -37,7 +37,8 @@ class Hv5622_driver {
    * @brief Writes data to shift registers
    * @param data Array of 32-bit words
    * @param num_words Must match num_drivers
-   * @return True if writing data was succesful returns false if writing data was unseccesful
+   * @return True if writing data was succesful returns false if writing data
+   * was unseccesful
    */
   bool write_data(const uint32_t* data, uint8_t num_words);
 

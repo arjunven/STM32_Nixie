@@ -1,8 +1,8 @@
 #include "system_control.hh"
-#include "main.h"
-#include "stm32f1xx_hal.h"
-#include "stm32f1xx_hal_gpio.h"
+
 #include <cstdint>
+
+#include "main.h"
 
 namespace system_control {
 // TODO: add analog voltage check in system control
@@ -19,7 +19,7 @@ bool power_up() {
 
   // Turn on 12V rail
   enable_12v();
-  HAL_Delay(DELAY_12V); // Wait for rail to stabilize
+  HAL_Delay(DELAY_12V);  // Wait for rail to stabilize
   // TODO: read 12V rail voltage and check it looks good
 
   enable_180v();
@@ -88,4 +88,4 @@ void disable_status_led() {
   HAL_GPIO_WritePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin, GPIO_PIN_SET);
 }
 
-} // namespace system_control
+}  // namespace system_control

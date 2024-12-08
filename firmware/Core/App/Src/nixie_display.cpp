@@ -2,8 +2,6 @@
 
 #include <cassert>
 
-#include "gpio.h"
-
 namespace {
 /** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board.
  *
