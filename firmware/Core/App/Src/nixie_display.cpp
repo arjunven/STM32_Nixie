@@ -152,3 +152,10 @@ bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
 
   return hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
+
+bool Nixie_display::set_blank_digits() {
+  std::array<uint8_t, NUM_TUBES> blank_digits;
+  std::fill(blank_digits.begin(), blank_digits.end(), BLANK_DIGIT);
+
+  set_display(blank_digits);
+}

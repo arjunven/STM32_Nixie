@@ -56,8 +56,11 @@ class Nixie_display {
    */
   bool set_display(const std::array<uint8_t, NUM_TUBES>& digits);
 
+  /** @brief Write all blanks to the display */
+  bool set_blank_digits();
+
   /** @brief Control the dots */
-  bool set_colon(bool left_on, bool right_on);
+  // bool set_colon(bool left_on, bool right_on);
 
   // TODO: Dimming function
 

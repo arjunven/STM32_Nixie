@@ -59,7 +59,7 @@ int main_app() {
   display.set_display(numbers);
   display.enable();
 
-  while (1) {
+  while (true) {
     /* Super loop */
     for (uint8_t time = 0; time <= Nixie_display::MAX_DIGIT; time++) {
       numbers[TUBE_H1] = time;
