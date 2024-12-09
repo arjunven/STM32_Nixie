@@ -8,6 +8,7 @@
 #include "main.h"
 #include "nixie_display.hh"
 #include "system_control.hh"
+#include "time_lord.hh"
 
 // Using the separate main_app because CubeMX code generation will keep making a
 // new main.c and clobbers the main.cpp. Instead this main_app gets called in
@@ -55,21 +56,22 @@ int main_app() {
     system_control::enable_fault_led();
   }
 
-  std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
-  display.set_display(numbers);
-  display.enable();
+  // hard coded initial time for now
+  RTC_TimeTypeDef initial_time;
+  initial_time.Hours = 0x22;
+  initial_time.Minutes = 0x17;
+  initial_time.Seconds = 0x00;
 
+  static Time_lord chronos(display, &hrtc, initial_time);
+
+  // std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
+  // display.set_display(numbers);
+  // display.enable();
+
+  volatile bool status;
+
+  /* Super loop */
   while (true) {
-    /* Super loop */
-    for (uint8_t time = 0; time <= Nixie_display::MAX_DIGIT; time++) {
-      numbers[TUBE_H1] = time;
-      numbers[TUBE_H2] = time;
-      numbers[TUBE_M1] = time;
-      numbers[TUBE_M2] = time;
-      numbers[TUBE_S1] = time;
-      numbers[TUBE_S2] = time;
-      display.set_display(numbers);
-      HAL_Delay(1000);
-    }
+    status = chronos.update_display();
   }
 }

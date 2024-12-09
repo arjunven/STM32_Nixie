@@ -157,5 +157,5 @@ bool Nixie_display::set_blank_digits() {
   std::array<uint8_t, NUM_TUBES> blank_digits;
   std::fill(blank_digits.begin(), blank_digits.end(), BLANK_DIGIT);
 
-  set_display(blank_digits);
+  return set_display(blank_digits);
 }
