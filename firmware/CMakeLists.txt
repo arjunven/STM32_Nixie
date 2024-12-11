@@ -39,6 +39,7 @@ target_sources(${PROJECT_NAME}
         Core/App/Src/nixie_display.cpp
         Core/App/Src/system_control.cpp
         Core/App/Src/time_lord.cpp
+        Core/App/Src/debug.cpp
 )
 
 # Configure includes

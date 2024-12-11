@@ -4,6 +4,7 @@
 
 #include <array>
 
+#include "debug.hh"
 #include "hv5622_driver.hh"
 #include "main.h"
 #include "nixie_display.hh"
@@ -35,6 +36,8 @@ extern UART_HandleTypeDef huart2;  // Defined in usart.c
 int main_app() {
   /* Initialization */
   system_control::gpio_init();
+
+  Debug::printf("Hello %s! Count %d\n", "World", 44);
 
   // Initialize HV5622
   static Hv5622_driver hv_driver(&hspi1,
