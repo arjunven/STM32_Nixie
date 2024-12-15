@@ -13,6 +13,8 @@ static constexpr uint8_t MINUTES_ONES_INDEX = 3;
 static constexpr uint8_t SECONDS_TENS_INDEX = 4;
 static constexpr uint8_t SECONDS_ONES_INDEX = 5;
 
+// TODO: add slot machine roll over every hours to prevent cathode poisoning
+
 }  // namespace
 
 Time_lord::Time_lord(Nixie_display& display,

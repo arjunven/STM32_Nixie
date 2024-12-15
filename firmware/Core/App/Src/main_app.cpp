@@ -10,6 +10,7 @@
 #include "nixie_display.hh"
 #include "system_control.hh"
 #include "time_lord.hh"
+#include "user_input.hh"
 
 // Using the separate main_app because CubeMX code generation will keep making a
 // new main.c and clobbers the main.cpp. Instead this main_app gets called in
@@ -37,7 +38,7 @@ int main_app() {
   /* Initialization */
   system_control::gpio_init();
 
-  Debug::printf("Hello %s! Count %d\n", "World", 44);
+  // Debug::printf("Hello %s! Count %d\n", "World", 44);
 
   // Initialize HV5622
   static Hv5622_driver hv_driver(&hspi1,
@@ -62,19 +63,17 @@ int main_app() {
   // hard coded initial time for now
   RTC_TimeTypeDef initial_time;
   initial_time.Hours = 0x22;
-  initial_time.Minutes = 0x17;
+  initial_time.Minutes = 0x37;
   initial_time.Seconds = 0x00;
 
   static Time_lord chronos(display, &hrtc, initial_time);
+  static User_input input(&htim2, ENC_PB_GPIO_Port, ENC_PB_Pin);
 
-  // std::array<uint8_t, Nixie_display::NUM_TUBES> numbers = {0, 0, 0, 0, 0, 0};
-  // display.set_display(numbers);
-  // display.enable();
-
-  volatile bool status;
-
+  volatile int8_t movement;
   /* Super loop */
   while (true) {
-    status = chronos.update_display();
+    input.update();
+    movement = input.get_encoder_movement();
+    chronos.update_display();
   }
 }

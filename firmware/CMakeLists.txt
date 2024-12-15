@@ -40,6 +40,7 @@ target_sources(${PROJECT_NAME}
         Core/App/Src/system_control.cpp
         Core/App/Src/time_lord.cpp
         Core/App/Src/debug.cpp
+        Core/App/Src/user_input.cpp
 )
 
 # Configure includes
