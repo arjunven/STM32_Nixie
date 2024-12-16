@@ -27,10 +27,18 @@ class User_input {
   TIM_HandleTypeDef* htim_;
   GPIO_TypeDef* button_port_;
   uint16_t button_pin_;
-  bool button_input_;
+
+  static constexpr uint32_t LONG_PRESS_TIME_MS = 750;
+  static constexpr uint32_t SHORT_PRESS_TIME_MS = 50;
+
+  bool current_button_pressed_;
+  bool last_button_pressed_;
+  uint32_t button_press_start_tick_;
+  uint32_t time_pressed_;  // ms
+  Button_state button_state_;
+
   uint16_t current_encoder_count_;
   uint16_t last_encoder_count_;
-  int8_t encoder_clicks_difference_;
 };
 
 #endif
