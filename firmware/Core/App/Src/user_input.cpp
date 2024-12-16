@@ -2,8 +2,6 @@
 
 #include "user_input.hh"
 
-#include "system_control.hh"
-
 namespace {
 static constexpr uint8_t ENCODER_COUNTS_PER_CLICK = 4;
 }  // namespace
