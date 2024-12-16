@@ -31,6 +31,8 @@ class User_input {
   static constexpr uint32_t LONG_PRESS_TIME_MS = 750;
   static constexpr uint32_t SHORT_PRESS_TIME_MS = 50;
 
+  // TODO: should I have initialized values for these?
+
   bool current_button_pressed_;
   bool last_button_pressed_;
   uint32_t button_press_start_tick_;
