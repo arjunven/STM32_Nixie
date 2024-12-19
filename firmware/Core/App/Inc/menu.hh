@@ -10,7 +10,7 @@ class Menu {
  public:
   explicit Menu(Time_lord& chronos);
 
-  /** Updates the menu state based on the  */
+  /** Updates the menu state based on the state of the inputs  */
   void update(const User_input& input);
 
  private:
@@ -20,7 +20,6 @@ class Menu {
     NORMAL,
     SETTING_TIME,
     SETTING_DATE,
-    SETTING_DIMMING,
   };
 
   enum class Time_field { HOURS, MINUTES };
@@ -30,6 +29,10 @@ class Menu {
   uint32_t last_activity_time_ = 0;
 
   static constexpr uint32_t TIMOUT_MS = 10000;  // 10s timeout
+
+  void handle_normal_state(const User_input& input);
+  void handle_setting_time(const User_input& input);
+  void handle_setting_date(const User_input& input);
 };
 
 #endif

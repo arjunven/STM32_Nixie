@@ -17,11 +17,11 @@ class User_input {
   void update();
 
   /** @brief Returns buttons state based on state changes since last update */
-  Button_state get_button_state();
+  Button_state get_button_state() const;
 
   /** @brief Returns how much the encoder has moved since last update with a
    * singed int8 */
-  int8_t get_encoder_movement();
+  int8_t get_encoder_movement() const;
 
  private:
   TIM_HandleTypeDef* htim_;

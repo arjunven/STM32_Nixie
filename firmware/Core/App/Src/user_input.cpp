@@ -55,11 +55,11 @@ void User_input::update() {
   current_encoder_count_ = __HAL_TIM_GET_COUNTER(htim_);
 }
 
-int8_t User_input::get_encoder_movement() {
+int8_t User_input::get_encoder_movement() const {
   return static_cast<int8_t>((current_encoder_count_ - last_encoder_count_) /
                              ENCODER_COUNTS_PER_CLICK);
 }
 
-User_input::Button_state User_input::get_button_state() {
+User_input::Button_state User_input::get_button_state() const {
   return button_state_;
 }
