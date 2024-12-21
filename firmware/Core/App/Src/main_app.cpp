@@ -70,10 +70,13 @@ int main_app() {
   static User_input input(&htim2, ENC_PB_GPIO_Port, ENC_PB_Pin);
 
   volatile int8_t movement;
+  display.set_blinking_digit(2);
+
   /* Super loop */
   while (true) {
     input.update();
     movement = input.get_encoder_movement();
-    chronos.update_display();
+    chronos.update();
+    display.update();
   }
 }

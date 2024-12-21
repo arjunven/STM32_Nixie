@@ -2,8 +2,6 @@
 
 #include "hv5622_driver.hh"
 
-#include <cassert>
-
 namespace {
 static constexpr uint8_t BITS_PER_BYTE = 8;
 static constexpr uint8_t BYTES_PER_WORD = 4;
@@ -41,8 +39,15 @@ Hv5622_driver::Hv5622_driver(SPI_HandleTypeDef* hspi,
 }
 
 bool Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
-  assert(num_words == num_drivers_ &&
-         "Number of words must match number of drivers!");
+  // Check num words
+  if (num_words != num_drivers_) {
+    return false;
+  }
+
+  // Check data is not null
+  if (!data) {
+    return false;
+  }
 
   // Data is shifted from the Shift register to the latches on logic input high.
   // Hold the latch pin (also chip select) low to load up the shift registers

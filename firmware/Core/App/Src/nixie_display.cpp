@@ -3,6 +3,7 @@
 #include "nixie_display.hh"
 
 #include <cassert>
+// TODO: get rid of the asserts
 
 namespace {
 /** @brief Maps Nixie tube digits to 64 bit ints, based on layout of board.
@@ -126,9 +127,13 @@ void Nixie_display::disable() { hv_driver_.blank_outputs(true); }
 void Nixie_display::enable() { hv_driver_.blank_outputs(false); }
 
 bool Nixie_display::set_digit(uint8_t position, uint8_t digit) {
-  assert(position < NUM_TUBES && "Tube position must be [0,5]");
-  assert((digit <= MAX_DIGIT || digit == BLANK_DIGIT) &&
-         "Digits must be in range [0,9] or the blank digit value.");
+  if (position >= NUM_TUBES) {
+    return false;
+  }
+
+  if (digit > MAX_DIGIT && digit != BLANK_DIGIT) {
+    return false;
+  }
 
   uint64_t digit_pattern = get_digit_pattern(position, digit);
 
@@ -137,14 +142,29 @@ bool Nixie_display::set_digit(uint8_t position, uint8_t digit) {
   return hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
 
+bool Nixie_display::set_current_digits(std::array<uint8_t, NUM_TUBES> digits) {
+  for (uint8_t i = 0; i < NUM_TUBES; i++) {
+    if (digits[i] > MAX_DIGIT && digits[i]) {
+      return false;
+    }
+  }
+
+  current_digits_ = digits;
+  return true;
+}
+
 bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
   uint64_t digit_pattern = 0;
+
+  // Update internal state
+  current_digits_ = digits;
 
   // Build the full digit pattern by OR'ing all the individual digit patterns
   // together
   for (uint8_t i = 0; i < NUM_TUBES; i++) {
-    assert((digits[i] <= MAX_DIGIT || digits[i] == BLANK_DIGIT) &&
-           "Digits must be in range [0,9]");
+    if (digits[i] > MAX_DIGIT && digits[i] != BLANK_DIGIT) {
+      return false;
+    }
     digit_pattern = digit_pattern | get_digit_pattern(i, digits[i]);
   }
 
@@ -158,4 +178,44 @@ bool Nixie_display::set_blank_digits() {
   std::fill(blank_digits.begin(), blank_digits.end(), BLANK_DIGIT);
 
   return set_display(blank_digits);
+}
+
+bool Nixie_display::set_blinking_digit(uint8_t position) {
+  if (position >= NUM_TUBES) {
+    return false;
+  }
+
+  blinking_position_ = position;
+  blink_state_ = true;
+  return true;
+}
+
+void Nixie_display::stop_blinking() {
+  blinking_position_ = NO_BLINKING_PATTERN;
+}
+
+void Nixie_display::update() {
+  // Use the blinking position to check if blinking is enabled
+  if (blinking_position_ != NO_BLINKING_PATTERN) {
+    // Check if it's time to toggle the blink state
+    if ((HAL_GetTick() - last_blink_time_) > BLINK_INTERVAL) {
+      blink_state_ = !blink_state_;
+      last_blink_time_ = HAL_GetTick();
+    }
+
+    // Blank the digit if it's blinking time
+    if (!blink_state_) {
+      auto blink_digits = current_digits_;
+      blink_digits[blinking_position_] = BLANK_DIGIT;
+      set_display(blink_digits);
+    }
+
+    else {
+      set_display(current_digits_);
+    }
+  }
+
+  else {
+    set_display(current_digits_);
+  }
 }

@@ -39,7 +39,7 @@ class Nixie_display {
    *              - 0xFF: Blank (all cathodes off)
    * @return true if successful, false on error
    */
-  bool set_digit(uint8_t tube_position, uint8_t digit);
+  bool set_digit(uint8_t position, uint8_t digit);
 
   /** @brief Sets all nixie tubes with the provided digit values
    * @param digits Array of values for each tube position:
@@ -59,13 +59,40 @@ class Nixie_display {
   /** @brief Write all blanks to the display */
   bool set_blank_digits();
 
+  /** @brief Update the current digits field of the display
+   *   @return false if inputs are not valid */
+  bool set_current_digits(const std::array<uint8_t, NUM_TUBES> digits);
+
+  /** @brief Used to update display if blinking is enabled or not. Does nothing
+   * if blinking disabled */
+  void update();
+
   /** @brief Control the dots */
   // bool set_colon(bool left_on, bool right_on);
 
   // TODO: Dimming function
 
+  /** @brief Specify which digit to blink during the update command
+   * @return True if blanking digit set successfully, false if position out of
+   * range */
+  bool set_blinking_digit(uint8_t position);
+
+  /** @brief Specify stop blinking for the update command */
+  void stop_blinking();
+
  private:
   Hv5622_driver& hv_driver_;
+
+  std::array<uint8_t, NUM_TUBES> current_digits_{0, 0, 0, 0, 0, 0};
+
+  static constexpr uint8_t NO_BLINKING_PATTERN = 0xFF;
+  static constexpr uint32_t BLINK_INTERVAL = 400;
+
+  // Used to enable blinking
+  uint8_t blinking_position_{NO_BLINKING_PATTERN};
+  // True is show digit, false is blank the digit
+  bool blink_state_{true};
+  uint32_t last_blink_time_{0};
 };
 
 #endif

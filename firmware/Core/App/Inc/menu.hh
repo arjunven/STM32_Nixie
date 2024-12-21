@@ -24,9 +24,9 @@ class Menu {
 
   enum class Time_field { HOURS, MINUTES };
 
-  State current_state_ = State::NORMAL;
-  Time_field current_time_field_ = Time_field::HOURS;
-  uint32_t last_activity_time_ = 0;
+  State current_state_{State::NORMAL};
+  Time_field current_time_field_{Time_field::HOURS};
+  uint32_t last_activity_time_{0};
 
   static constexpr uint32_t TIMOUT_MS = 10000;  // 10s timeout
 

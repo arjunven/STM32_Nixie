@@ -30,7 +30,7 @@ Time_lord::Time_lord(Nixie_display& display,
   display.enable();
 }
 
-bool Time_lord::update_display() {
+bool Time_lord::update() {
   HAL_StatusTypeDef status = HAL_RTC_GetTime(hrtc_, &time_, RTC_FORMAT_BCD);
   bool display_status;
 
@@ -38,19 +38,11 @@ bool Time_lord::update_display() {
     return false;
   }
 
-  // Only update display if the time has changed since last check
-  if (time_.Seconds != previous_time_.Seconds ||
-      time_.Minutes != previous_time_.Minutes ||
-      time_.Hours != previous_time_.Hours) {
-    auto digits = bcd_time_to_display_array(time_);
+  // Convert current time to digits and set display's internal state
+  auto digits = bcd_time_to_display_array(time_);
+  display_status = display_.set_current_digits(digits);
 
-    display_status = display_.set_display(digits);
-
-    previous_time_ = time_;
-    return display_status;
-  }
-
-  return true;  // No update needed (not an error condition)
+  return display_status;
 }
 
 std::array<uint8_t, Nixie_display::NUM_TUBES>

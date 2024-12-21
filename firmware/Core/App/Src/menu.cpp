@@ -35,6 +35,8 @@ void Menu::handle_normal_state(const User_input& input) {
   int8_t movement = input.get_encoder_movement();
   User_input::Button_state button_state = input.get_button_state();
 
+  // Short press is show date for some amount of time
+
   // Long press is going to time setting mode
   if (button_state == User_input::Button_state::LONG_PRESS) {
     current_state_ = Menu::State::SETTING_TIME;

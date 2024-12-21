@@ -15,7 +15,7 @@ class Time_lord {
             RTC_TimeTypeDef initial_time);
 
   /** @brief Gets time from RTC and updates the display to the current time  */
-  bool update_display();
+  bool update();
 
   // TODO: add a set time command
 
@@ -23,7 +23,6 @@ class Time_lord {
   Nixie_display& display_;
   RTC_HandleTypeDef* hrtc_;
   RTC_TimeTypeDef time_;
-  RTC_TimeTypeDef previous_time_;
 
   /** @brief Convert the HAL RTC Time representation to the array required to
    * set the display */
