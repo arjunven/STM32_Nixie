@@ -45,6 +45,17 @@ bool Time_lord::update() {
   return display_status;
 }
 
+bool Time_lord::set_time(RTC_TimeTypeDef time_to_set) {
+  HAL_StatusTypeDef status =
+      HAL_RTC_SetTime(hrtc_, &time_to_set, RTC_FORMAT_BCD);
+
+  if (status == HAL_OK) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 std::array<uint8_t, Nixie_display::NUM_TUBES>
 Time_lord::bcd_time_to_display_array(RTC_TimeTypeDef time) {
   std::array<uint8_t, Nixie_display::NUM_TUBES> digits;

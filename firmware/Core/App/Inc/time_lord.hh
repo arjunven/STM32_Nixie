@@ -17,7 +17,8 @@ class Time_lord {
   /** @brief Gets time from RTC and updates the display to the current time  */
   bool update();
 
-  // TODO: add a set time command
+  /** @brief Sets the current time */
+  bool set_time(RTC_TimeTypeDef time_to_set);
 
  private:
   Nixie_display& display_;

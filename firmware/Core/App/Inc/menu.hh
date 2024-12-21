@@ -8,13 +8,14 @@
 
 class Menu {
  public:
-  explicit Menu(Time_lord& chronos);
+  explicit Menu(Time_lord& chronos, Nixie_display& display);
 
   /** Updates the menu state based on the state of the inputs  */
   void update(const User_input& input);
 
  private:
   Time_lord& chronos_;
+  Nixie_display& display_;
 
   enum class State {
     NORMAL,

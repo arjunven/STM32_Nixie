@@ -4,7 +4,17 @@
 
 #include "user_input.hh"
 
-Menu::Menu(Time_lord& chronos) : chronos_(chronos) {}
+namespace {
+static constexpr uint8_t SECONDS_ONES_POS = 5;
+static constexpr uint8_t SECONDS_TENS_POS = 4;
+static constexpr uint8_t MINUTES_ONES_POS = 3;
+static constexpr uint8_t MINUTES_TENS_POS = 2;
+static constexpr uint8_t HOURS_ONES_POS = 1;
+static constexpr uint8_t HOURS_TENS_POS = 0;
+}  // namespace
+
+Menu::Menu(Time_lord& chronos, Nixie_display& display)
+    : chronos_(chronos), display_(display) {}
 
 void Menu::update(const User_input& input) {
   // First handle timeout check for all state except NORMAL
@@ -50,13 +60,27 @@ void Menu::handle_setting_time(const User_input& input) {
   int8_t movement = input.get_encoder_movement();
   User_input::Button_state button_state = input.get_button_state();
 
+  switch (current_time_field_) {
+    case Menu::Time_field::HOURS:
+      // handle hours
+      // display_.set_blinking_digit(HOURS_TENS_POS);
+      break;
+
+    case Menu::Time_field::MINUTES:
+      // handle h1s
+      // display_.set_blinking_digit(HOURS_ONES_POS);
+      break;
+  }
+
   // Encoder movement increments the digit in the range of valid values (this
   // depends on which digit we're on)
 
   // Short button press, confirms current digit and goes to the next digit to
   // set time
 
-  // long button press goes to next menu item
+  // For now, long press exits menu
+
+  // Later: long button press goes to next menu item
   // Maybe make make a structure that orders the menu items and then have a next
   // menu item function that cycles to the next one?
 }

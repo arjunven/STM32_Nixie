@@ -17,12 +17,6 @@
 // main.c so CubeMX can happily keep generating code.
 
 uint16_t LED_DELAY = 1000;  // ms
-uint8_t TUBE_S2 = 5;
-uint8_t TUBE_S1 = 4;
-uint8_t TUBE_M2 = 3;
-uint8_t TUBE_M1 = 2;
-uint8_t TUBE_H2 = 1;
-uint8_t TUBE_H1 = 0;
 
 // These tell the C++ compiler that these symbols come from C code
 extern "C" {
@@ -70,7 +64,10 @@ int main_app() {
   static User_input input(&htim2, ENC_PB_GPIO_Port, ENC_PB_Pin);
 
   volatile int8_t movement;
-  display.set_blinking_digit(2);
+
+  std::array<bool, Nixie_display::NUM_TUBES> blinky = {
+      false, false, true, true, false, false};
+  display.set_blinking_positions(blinky);
 
   /* Super loop */
   while (true) {

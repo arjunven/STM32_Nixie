@@ -2,6 +2,7 @@
 
 #include "nixie_display.hh"
 
+#include <algorithm>
 #include <cassert>
 // TODO: get rid of the asserts
 
@@ -156,17 +157,17 @@ bool Nixie_display::set_current_digits(std::array<uint8_t, NUM_TUBES> digits) {
 bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
   uint64_t digit_pattern = 0;
 
-  // Update internal state
-  current_digits_ = digits;
-
   // Build the full digit pattern by OR'ing all the individual digit patterns
-  // together
+  // together and check the the digits are valid
   for (uint8_t i = 0; i < NUM_TUBES; i++) {
     if (digits[i] > MAX_DIGIT && digits[i] != BLANK_DIGIT) {
       return false;
     }
     digit_pattern = digit_pattern | get_digit_pattern(i, digits[i]);
   }
+
+  // Update internal state
+  current_digits_ = digits;
 
   std::array<uint32_t, NUM_DRIVERS> data = split_digit_pattern(digit_pattern);
 
@@ -180,23 +181,25 @@ bool Nixie_display::set_blank_digits() {
   return set_display(blank_digits);
 }
 
-bool Nixie_display::set_blinking_digit(uint8_t position) {
-  if (position >= NUM_TUBES) {
-    return false;
-  }
-
-  blinking_position_ = position;
+bool Nixie_display::set_blinking_positions(
+    std::array<bool, NUM_TUBES> positions) {
+  blinking_positions_ = positions;
   blink_state_ = true;
   return true;
 }
 
 void Nixie_display::stop_blinking() {
-  blinking_position_ = NO_BLINKING_PATTERN;
+  // Set all to false to indicate no blinking
+  std::fill(blinking_positions_.begin(), blinking_positions_.end(), false);
 }
 
 void Nixie_display::update() {
-  // Use the blinking position to check if blinking is enabled
-  if (blinking_position_ != NO_BLINKING_PATTERN) {
+  // Check if any positions should blink
+  bool any_blinks = std::any_of(blinking_positions_.begin(),
+                                blinking_positions_.end(),
+                                [](bool x) { return x; });
+
+  if (any_blinks) {
     // Check if it's time to toggle the blink state
     if ((HAL_GetTick() - last_blink_time_) > BLINK_INTERVAL) {
       blink_state_ = !blink_state_;
@@ -206,7 +209,14 @@ void Nixie_display::update() {
     // Blank the digit if it's blinking time
     if (!blink_state_) {
       auto blink_digits = current_digits_;
-      blink_digits[blinking_position_] = BLANK_DIGIT;
+
+      // Blank the digits we want to blink
+      for (uint8_t i = 0; i < NUM_TUBES; i++) {
+        if (blinking_positions_[i]) {
+          blink_digits[i] = BLANK_DIGIT;
+        }
+      }
+
       set_display(blink_digits);
     }
 

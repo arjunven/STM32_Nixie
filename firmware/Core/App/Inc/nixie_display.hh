@@ -75,7 +75,7 @@ class Nixie_display {
   /** @brief Specify which digit to blink during the update command
    * @return True if blanking digit set successfully, false if position out of
    * range */
-  bool set_blinking_digit(uint8_t position);
+  bool set_blinking_positions(const std::array<bool, NUM_TUBES> positions);
 
   /** @brief Specify stop blinking for the update command */
   void stop_blinking();
@@ -85,11 +85,10 @@ class Nixie_display {
 
   std::array<uint8_t, NUM_TUBES> current_digits_{0, 0, 0, 0, 0, 0};
 
-  static constexpr uint8_t NO_BLINKING_PATTERN = 0xFF;
   static constexpr uint32_t BLINK_INTERVAL = 400;
 
   // Used to enable blinking
-  uint8_t blinking_position_{NO_BLINKING_PATTERN};
+  std::array<bool, NUM_TUBES> blinking_positions_{};
   // True is show digit, false is blank the digit
   bool blink_state_{true};
   uint32_t last_blink_time_{0};
