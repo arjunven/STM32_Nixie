@@ -3,8 +3,6 @@
 #include "time_utils.hh"
 
 namespace {
-static constexpr uint8_t NIBBLE_MASK = 0xF;
-static constexpr uint8_t BITS_PER_NIBBLE = 4;
 
 static constexpr uint8_t HOURS_TENS_INDEX = 0;
 static constexpr uint8_t HOURS_ONES_INDEX = 1;
@@ -26,16 +24,28 @@ std::array<uint8_t, Nixie_display::NUM_TUBES> rtc_bcd_time_display_digits(
   uint8_t minutes = time.Minutes;
   uint8_t seconds = time.Seconds;
 
-  digits[HOURS_TENS_INDEX] = (hours >> BITS_PER_NIBBLE) & NIBBLE_MASK;
-  digits[HOURS_ONES_INDEX] = hours & NIBBLE_MASK;
+  digits[HOURS_TENS_INDEX] = (hours >> 4) & 0xF;
+  digits[HOURS_ONES_INDEX] = hours & 0xF;
 
-  digits[MINUTES_TENS_INDEX] = (minutes >> BITS_PER_NIBBLE) & NIBBLE_MASK;
-  digits[MINUTES_ONES_INDEX] = minutes & NIBBLE_MASK;
+  digits[MINUTES_TENS_INDEX] = (minutes >> 4) & 0xF;
+  digits[MINUTES_ONES_INDEX] = minutes & 0xF;
 
-  digits[SECONDS_TENS_INDEX] = (seconds >> BITS_PER_NIBBLE) & NIBBLE_MASK;
-  digits[SECONDS_ONES_INDEX] = seconds & NIBBLE_MASK;
+  digits[SECONDS_TENS_INDEX] = (seconds >> 4) & 0xF;
+  digits[SECONDS_ONES_INDEX] = seconds & 0xF;
 
   return digits;
+}
+
+uint8_t bcd_to_binary(uint8_t bcd) {
+  uint8_t tens = (bcd >> 4) * 10;
+  uint8_t ones = bcd & 0xF;
+  return tens + ones;
+}
+
+uint8_t binary_to_bcd(uint8_t binary) {
+  uint8_t tens = binary / 10;
+  uint8_t ones = binary % 10;
+  return (tens << 4) | ones;
 }
 
 }  // namespace time_utils

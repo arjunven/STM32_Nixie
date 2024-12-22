@@ -28,12 +28,15 @@ class Menu {
   State current_state_{State::NORMAL};
   Time_field current_time_field_{Time_field::HOURS};
   uint32_t last_activity_time_{0};
+  RTC_TimeTypeDef draft_time_;
 
   static constexpr uint32_t TIMOUT_MS = 10000;  // 10s timeout
 
   void handle_normal_state(const User_input& input);
   void handle_setting_time(const User_input& input);
   void handle_setting_date(const User_input& input);
+  void adjust_hours(int8_t change);
+  void adjust_minutes(int8_t change);
 };
 
 #endif

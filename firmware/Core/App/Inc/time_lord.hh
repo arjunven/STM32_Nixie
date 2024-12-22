@@ -20,15 +20,13 @@ class Time_lord {
   /** @brief Sets the current time */
   bool set_time(RTC_TimeTypeDef time_to_set);
 
+  /** @brief Returns the current time */
+  RTC_TimeTypeDef get_time();
+
  private:
   Nixie_display& display_;
   RTC_HandleTypeDef* hrtc_;
   RTC_TimeTypeDef time_;
-
-  /** @brief Convert the HAL RTC Time representation to the array required to
-   * set the display */
-  std::array<uint8_t, Nixie_display::NUM_TUBES> bcd_time_to_display_array(
-      RTC_TimeTypeDef time);
 };
 
 #endif
