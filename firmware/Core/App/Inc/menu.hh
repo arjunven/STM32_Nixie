@@ -30,7 +30,7 @@ class Menu {
   uint32_t last_activity_time_{0};
   RTC_TimeTypeDef draft_time_;
 
-  static constexpr uint32_t TIMOUT_MS = 10000;  // 10s timeout
+  static constexpr uint32_t TIMOUT_MS = 100000;  // 10s timeout
 
   void handle_normal_state(const User_input& input);
   void handle_setting_time(const User_input& input);

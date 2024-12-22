@@ -39,8 +39,11 @@ void User_input::update() {
     }
   }
 
-  // Short press is only registered on a short press and a release
-  else if (last_button_pressed_ && time_pressed_ > SHORT_PRESS_TIME_MS) {
+  // Short press is only registered on a short press and a release and we are
+  // currently None state
+  else if (last_button_pressed_ &&
+           button_state_ == User_input::Button_state::NONE &&
+           time_pressed_ > SHORT_PRESS_TIME_MS) {
     button_state_ = Button_state::SHORT_PRESS;
   }
 

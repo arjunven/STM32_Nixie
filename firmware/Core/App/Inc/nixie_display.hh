@@ -85,7 +85,7 @@ class Nixie_display {
 
   std::array<uint8_t, NUM_TUBES> current_digits_{0, 0, 0, 0, 0, 0};
 
-  static constexpr uint32_t BLINK_INTERVAL = 400;
+  static constexpr uint32_t BLINK_INTERVAL = 200;
 
   // Used to enable blinking
   std::array<bool, NUM_TUBES> blinking_positions_{};

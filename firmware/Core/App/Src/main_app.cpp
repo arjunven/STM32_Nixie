@@ -7,6 +7,7 @@
 #include "debug.hh"
 #include "hv5622_driver.hh"
 #include "main.h"
+#include "menu.hh"
 #include "nixie_display.hh"
 #include "system_control.hh"
 #include "time_lord.hh"
@@ -60,20 +61,23 @@ int main_app() {
   initial_time.Minutes = 0x37;
   initial_time.Seconds = 0x00;
 
+  // Initialize time keeper, user input, and menu
   static Time_lord chronos(display, &hrtc, initial_time);
   static User_input input(&htim2, ENC_PB_GPIO_Port, ENC_PB_Pin);
+  static Menu menu(chronos, display);
 
   volatile int8_t movement;
 
-  std::array<bool, Nixie_display::NUM_TUBES> blinky = {
-      false, false, true, true, false, false};
-  display.set_blinking_positions(blinky);
+  // std::array<bool, Nixie_display::NUM_TUBES> blinky = {
+  //     false, false, true, true, false, false};
+  // display.set_blinking_positions(blinky);
 
   /* Super loop */
   while (true) {
     input.update();
-    movement = input.get_encoder_movement();
     chronos.update();
+    menu.update(input);
     display.update();
+    HAL_Delay(400);
   }
 }

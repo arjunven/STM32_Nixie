@@ -184,7 +184,6 @@ bool Nixie_display::set_blank_digits() {
 bool Nixie_display::set_blinking_positions(
     std::array<bool, NUM_TUBES> positions) {
   blinking_positions_ = positions;
-  blink_state_ = true;
   return true;
 }
 

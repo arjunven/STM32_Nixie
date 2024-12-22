@@ -19,11 +19,11 @@ Menu::Menu(Time_lord& chronos, Nixie_display& display)
 
 void Menu::update(const User_input& input) {
   // First handle timeout check for all state except NORMAL
-  if (current_state_ != State::NORMAL &&
-      (HAL_GetTick() - last_activity_time_) > TIMOUT_MS) {
-    current_state_ = State::NORMAL;
-    return;
-  }
+  // if (current_state_ != State::NORMAL &&
+  //     (HAL_GetTick() - last_activity_time_) > TIMOUT_MS) {
+  //   current_state_ = State::NORMAL;
+  //   return;
+  // }
 
   // Dispatch to appropriate state handler
   switch (current_state_) {
@@ -42,6 +42,9 @@ void Menu::update(const User_input& input) {
 }
 
 void Menu::handle_normal_state(const User_input& input) {
+  // Disable blinking once we're back in the normal state
+  display_.stop_blinking();
+
   // Do some dimming if the encoder movement is from his state
   int8_t movement = input.get_encoder_movement();
   User_input::Button_state button_state = input.get_button_state();
@@ -50,6 +53,9 @@ void Menu::handle_normal_state(const User_input& input) {
 
   // Long press is going to time setting mode
   if (button_state == User_input::Button_state::LONG_PRESS) {
+    // Start the draft time at the current time
+    draft_time_ = chronos_.get_time();
+
     current_state_ = Menu::State::SETTING_TIME;
     // TODO: replace this with a go to next menu item function? That way menu
     // item order can be handled with a single datastructure and order can be
@@ -58,15 +64,13 @@ void Menu::handle_normal_state(const User_input& input) {
 }
 
 void Menu::handle_setting_time(const User_input& input) {
-  // Always start by setting hours
-  current_time_field_ = Menu::Time_field::HOURS;
-
   // Get inputs
   int8_t movement = input.get_encoder_movement();
   User_input::Button_state button_state = input.get_button_state();
 
-  // Start the draft time at the current time
-  draft_time_ = chronos_.get_time();
+  // Always display draft time while in time setting mode
+  auto digits = time_utils::rtc_bcd_time_display_digits(draft_time_);
+  display_.set_current_digits(digits);
 
   switch (current_time_field_) {
     case Menu::Time_field::HOURS: {
@@ -75,10 +79,6 @@ void Menu::handle_setting_time(const User_input& input) {
 
       // Adjust the hours
       adjust_hours(movement);
-
-      // Display what you've adjusted
-      auto digits = time_utils::rtc_bcd_time_display_digits(draft_time_);
-      display_.set_current_digits(digits);
 
       // Short press moves to minutes
       if (button_state == User_input::Button_state::SHORT_PRESS) {
@@ -94,12 +94,9 @@ void Menu::handle_setting_time(const User_input& input) {
       // Adjust the minutes
       adjust_minutes(movement);
 
-      // Display what you've adjusted
-      auto digits = time_utils::rtc_bcd_time_display_digits(draft_time_);
-      display_.set_current_digits(digits);
-
       // Short press actually sets time_lords time and exits the menu
       chronos_.set_time(draft_time_);
+      current_time_field_ = Menu::Time_field::HOURS;  // Reset to hours
       current_state_ = Menu::State::NORMAL;
       // TODO: long press exits menu? and short press continues to set date?
 
@@ -113,6 +110,8 @@ void Menu::handle_setting_time(const User_input& input) {
   // Maybe make make a structure that orders the menu items and then have a next
   // menu item function that cycles to the next one?
 }
+
+void Menu::handle_setting_date(const User_input& input) {}
 
 void Menu::adjust_hours(int8_t change) {
   // Convert BCD hours to binary to add our change
