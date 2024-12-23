@@ -70,6 +70,10 @@ void Menu::handle_setting_time(const User_input& input) {
   int8_t movement = input.get_encoder_movement();
   User_input::Button_state button_state = input.get_button_state();
 
+  // We set seconds to 0 when setting time so when we're done we start on the
+  // minute
+  draft_time_.Seconds = 0;
+
   // Always display draft time while in time setting mode
   auto digits = time_utils::rtc_bcd_time_display_digits(draft_time_);
   display_.set_current_digits(digits);
@@ -97,9 +101,11 @@ void Menu::handle_setting_time(const User_input& input) {
       adjust_minutes(movement);
 
       // Short press actually sets time_lords time and exits the menu
-      chronos_.set_time(draft_time_);
-      current_time_field_ = Menu::Time_field::HOURS;  // Reset to hours
-      current_state_ = Menu::State::NORMAL;
+      if (button_state == User_input::Button_state::SHORT_PRESS) {
+        chronos_.set_time(draft_time_);
+        current_time_field_ = Menu::Time_field::HOURS;  // Reset to hours
+        current_state_ = Menu::State::NORMAL;
+      }
       // TODO: long press exits menu? and short press continues to set date?
 
       break;

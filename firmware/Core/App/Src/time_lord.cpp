@@ -6,13 +6,8 @@
 
 // TODO: add slot machine roll over every hours to prevent cathode poisoning
 
-Time_lord::Time_lord(Nixie_display& display,
-                     RTC_HandleTypeDef* hrtc,
-                     RTC_TimeTypeDef initial_time)
-    : display_(display), hrtc_(hrtc), time_(initial_time) {
-  // Set initial time
-  HAL_RTC_SetTime(hrtc_, &time_, RTC_FORMAT_BCD);
-
+Time_lord::Time_lord(Nixie_display& display, RTC_HandleTypeDef* hrtc)
+    : display_(display), hrtc_(hrtc) {
   // Start with blank display and then enable it
   display.disable();
   display.set_blank_digits();
