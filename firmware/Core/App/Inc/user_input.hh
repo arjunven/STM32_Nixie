@@ -28,19 +28,26 @@ class User_input {
   GPIO_TypeDef* button_port_;
   uint16_t button_pin_;
 
+  // Button stuff
   static constexpr uint32_t LONG_PRESS_TIME_MS = 750;
   static constexpr uint32_t SHORT_PRESS_TIME_MS = 50;
 
-  // TODO: should I have initialized values for these?
+  void handle_button();
 
-  bool current_button_pressed_;
-  bool last_button_pressed_;
-  uint32_t button_press_start_tick_;
-  uint32_t time_pressed_;  // ms
-  Button_state button_state_;
+  bool current_button_pressed_{false};
+  bool last_button_pressed_{false};
+  uint32_t button_press_start_tick_{0};
+  uint32_t time_pressed_{0};  // ms
+  Button_state button_state_{Button_state::NONE};
 
-  uint16_t current_encoder_count_;
-  uint16_t last_encoder_count_;
+  // Encoder stuff
+  static constexpr uint32_t COUNT_ACCUMULATION_TIME_MS = 10;
+
+  void handle_encoder();
+
+  uint16_t current_encoder_count_{0};
+  uint16_t last_encoder_count_{0};
+  int8_t encoder_movement_{0};
 };
 
 #endif

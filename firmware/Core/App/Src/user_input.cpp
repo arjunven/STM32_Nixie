@@ -16,6 +16,19 @@ User_input::User_input(TIM_HandleTypeDef* htim,
 
 void User_input::update() {
   // Button state update
+  handle_button();
+
+  // Encoder state update
+  handle_encoder();
+}
+
+int8_t User_input::get_encoder_movement() const { return encoder_movement_; }
+
+User_input::Button_state User_input::get_button_state() const {
+  return button_state_;
+}
+
+void User_input::handle_button() {
   last_button_pressed_ = current_button_pressed_;
 
   current_button_pressed_ =
@@ -39,7 +52,7 @@ void User_input::update() {
     }
   }
 
-  // Short press is only registered on a short press and a release and we are
+  // Short press is only registered on a short press and a release while we are
   // currently None state
   else if (last_button_pressed_ &&
            button_state_ == User_input::Button_state::NONE &&
@@ -52,17 +65,15 @@ void User_input::update() {
     // Reset button press timer
     button_state_ = Button_state::NONE;
   }
+}
 
-  // Encoder state update
-  last_encoder_count_ = current_encoder_count_;
+void User_input::handle_encoder() {
   current_encoder_count_ = __HAL_TIM_GET_COUNTER(htim_);
-}
+  encoder_movement_ =
+      (current_encoder_count_ - last_encoder_count_) / ENCODER_COUNTS_PER_CLICK;
 
-int8_t User_input::get_encoder_movement() const {
-  return static_cast<int8_t>((current_encoder_count_ - last_encoder_count_) /
-                             ENCODER_COUNTS_PER_CLICK);
-}
-
-User_input::Button_state User_input::get_button_state() const {
-  return button_state_;
+  // Only update last position if we've made a movement
+  if (encoder_movement_ != 0) {
+    last_encoder_count_ = current_encoder_count_;
+  }
 }

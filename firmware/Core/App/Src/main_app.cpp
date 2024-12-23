@@ -75,9 +75,10 @@ int main_app() {
   /* Super loop */
   while (true) {
     input.update();
+    movement = input.get_encoder_movement();  // debug
     chronos.update();
     menu.update(input);
     display.update();
-    HAL_Delay(400);
+    HAL_Delay(1);
   }
 }

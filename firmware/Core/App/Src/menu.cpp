@@ -5,6 +5,8 @@
 #include "time_utils.hh"
 #include "user_input.hh"
 
+// TODO: add slot machine effect after setting menu!
+
 namespace {
 static constexpr std::array<bool, Nixie_display::NUM_TUBES> HOUR_BLINK_POS = {
     true, true, false, false, false, false};
