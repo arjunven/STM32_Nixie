@@ -22,10 +22,6 @@ class Nixie_display {
   /** @brief Turn on the display */
   void enable();
 
-  // test
-
-  // test
-
   /** @brief Write a single digit for a given tube position
    * @param tube_position Position of the nixie tube (0-5):
    *                     - 0: Hours tens
@@ -56,6 +52,9 @@ class Nixie_display {
    */
   bool set_display(const std::array<uint8_t, NUM_TUBES>& digits);
 
+  /** @brief Sets all digits to the same number. */
+  bool set_display(uint8_t digit);
+
   /** @brief Write all blanks to the display */
   bool set_blank_digits();
 
@@ -79,6 +78,10 @@ class Nixie_display {
 
   /** @brief Specify stop blinking for the update command */
   void stop_blinking();
+
+  /** @brief Does a slot machine effect. Looks cool and helps prevent cathode
+   * poisoning! */
+  void slot_machine();
 
  private:
   Hv5622_driver& hv_driver_;

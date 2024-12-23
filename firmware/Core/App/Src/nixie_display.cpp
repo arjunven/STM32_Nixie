@@ -94,6 +94,8 @@ static constexpr uint8_t POSITION_MAPPING = 10;
 static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
 static constexpr uint8_t BITS_PER_WORD = 32;
 
+static constexpr uint32_t SLOT_MACHINE_DELAY = 50;  // ms
+
 // Get the digit pattern from the digit map using the tube position and the
 // digit number
 static uint64_t get_digit_pattern(uint8_t position, uint8_t digit) {
@@ -145,7 +147,7 @@ bool Nixie_display::set_digit(uint8_t position, uint8_t digit) {
 
 bool Nixie_display::set_current_digits(std::array<uint8_t, NUM_TUBES> digits) {
   for (uint8_t i = 0; i < NUM_TUBES; i++) {
-    if (digits[i] > MAX_DIGIT && digits[i]) {
+    if (digits[i] > MAX_DIGIT && digits[i] != BLANK_DIGIT) {
       return false;
     }
   }
@@ -174,15 +176,21 @@ bool Nixie_display::set_display(const std::array<uint8_t, NUM_TUBES>& digits) {
   return hv_driver_.write_data(data.data(), NUM_DRIVERS);
 }
 
-bool Nixie_display::set_blank_digits() {
-  std::array<uint8_t, NUM_TUBES> blank_digits;
-  std::fill(blank_digits.begin(), blank_digits.end(), BLANK_DIGIT);
+bool Nixie_display::set_display(uint8_t digit) {
+  if (digit > MAX_DIGIT && digit != BLANK_DIGIT) {
+    return false;
+  }
 
-  return set_display(blank_digits);
+  std::array<uint8_t, NUM_TUBES> digits;
+  digits.fill(digit);
+
+  return set_display(digits);
 }
 
+bool Nixie_display::set_blank_digits() { return set_display(BLANK_DIGIT); }
+
 bool Nixie_display::set_blinking_positions(
-    std::array<bool, NUM_TUBES> positions) {
+    const std::array<bool, NUM_TUBES> positions) {
   blinking_positions_ = positions;
   return true;
 }
@@ -226,5 +234,12 @@ void Nixie_display::update() {
 
   else {
     set_display(current_digits_);
+  }
+}
+
+void Nixie_display::slot_machine() {
+  for (uint8_t i = 0; i <= MAX_DIGIT; i++) {
+    set_display(i);
+    HAL_Delay(SLOT_MACHINE_DELAY);
   }
 }
