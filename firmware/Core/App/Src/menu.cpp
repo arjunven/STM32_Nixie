@@ -105,6 +105,7 @@ void Menu::handle_setting_time(const User_input& input) {
         chronos_.set_time(draft_time_);
         current_time_field_ = Menu::Time_field::HOURS;  // Reset to hours
         current_state_ = Menu::State::NORMAL;
+        display_.slot_machine();  // Animation on time set :)
       }
       // TODO: long press exits menu? and short press continues to set date?
 
