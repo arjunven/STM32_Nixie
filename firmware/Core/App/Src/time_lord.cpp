@@ -4,8 +4,6 @@
 
 #include "time_utils.hh"
 
-// TODO: add slot machine roll over every hours to prevent cathode poisoning
-
 Time_lord::Time_lord(Nixie_display& display, RTC_HandleTypeDef* hrtc)
     : display_(display), hrtc_(hrtc) {
   // Start with blank display and then enable it
@@ -20,6 +18,12 @@ bool Time_lord::update() {
 
   if (status != HAL_OK) {
     return false;
+  }
+
+  // Every hour roll over play an slot machine animation to help prevent cathode
+  // poisoning
+  if (time_.Minutes == 0 && time_.Seconds == 0) {
+    display_.slot_machine();
   }
 
   // Convert current time to digits and set display's internal state

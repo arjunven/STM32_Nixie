@@ -17,8 +17,6 @@
 // new main.c and clobbers the main.cpp. Instead this main_app gets called in
 // main.c so CubeMX can happily keep generating code.
 
-uint16_t LED_DELAY = 1000;  // ms
-
 // These tell the C++ compiler that these symbols come from C code
 extern "C" {
 extern SPI_HandleTypeDef hspi1;    // Defined in spi.c
@@ -48,6 +46,7 @@ int main_app() {
   // Initialize display
   static Nixie_display display(hv_driver);
 
+  // Power up and verify things are dandy
   volatile bool power_good = system_control::power_up();
 
   if (!power_good) {
@@ -55,27 +54,17 @@ int main_app() {
     system_control::enable_fault_led();
   }
 
-  // hard coded initial time for now
-  RTC_TimeTypeDef initial_time;
-  initial_time.Hours = 0x22;
-  initial_time.Minutes = 0x37;
-  initial_time.Seconds = 0x00;
-
   // Initialize time keeper, user input, and menu
-  static Time_lord chronos(display, &hrtc, initial_time);
+  static Time_lord chronos(display, &hrtc);
   static User_input input(&htim2, ENC_PB_GPIO_Port, ENC_PB_Pin);
   static Menu menu(chronos, display);
 
-  volatile int8_t movement;
-
-  // std::array<bool, Nixie_display::NUM_TUBES> blinky = {
-  //     false, false, true, true, false, false};
-  // display.set_blinking_positions(blinky);
+  // Fun boot up animation?
+  display.slot_machine();
 
   /* Super loop */
   while (true) {
     input.update();
-    movement = input.get_encoder_movement();  // debug
     chronos.update();
     menu.update(input);
     display.update();

@@ -94,7 +94,7 @@ static constexpr uint8_t POSITION_MAPPING = 10;
 static constexpr uint32_t WORD_MASK = 0xFFFFFFFF;
 static constexpr uint8_t BITS_PER_WORD = 32;
 
-static constexpr uint32_t SLOT_MACHINE_DELAY = 50;  // ms
+static constexpr uint32_t SLOT_MACHINE_DELAY = 100;  // ms
 
 // Get the digit pattern from the digit map using the tube position and the
 // digit number
