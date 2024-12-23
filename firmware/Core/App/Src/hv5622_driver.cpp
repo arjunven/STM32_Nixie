@@ -56,7 +56,7 @@ bool Hv5622_driver::write_data(const uint32_t* data, uint8_t num_words) {
 
   select();
   // Send data for each driver
-  for (int i = 0; i < num_drivers_; i++) {
+  for (uint8_t i = 0; i < num_drivers_; i++) {
     uint32_t word = data[i];
 
     // SPI Periph set to MSB so this will shift out starting with MSB
