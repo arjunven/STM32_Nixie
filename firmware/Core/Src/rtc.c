@@ -1,4 +1,5 @@
 /* USER CODE BEGIN Header */
+// clang-format off
 /**
   ******************************************************************************
   * @file    rtc.c
@@ -52,7 +53,15 @@ void MX_RTC_Init(void)
   }
 
   /* USER CODE BEGIN Check_RTC_BKUP */
+    // clag-format on
 
+  // Check if RTC is already running by checking the magic number in the backup
+  if (BKP->DR1 == 0x32F2) {
+    // RTC is already running, no need to initialize it
+    return;
+  }
+
+  // clang-format off
   /* USER CODE END Check_RTC_BKUP */
 
   /** Initialize RTC and set the Time and Date
@@ -75,7 +84,12 @@ void MX_RTC_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN RTC_Init 2 */
+  // clang-format on
 
+  // Magic number to indicate RTC has been initialized
+  BKP->DR1 = 0x32F2;
+
+  // clang-format off
   /* USER CODE END RTC_Init 2 */
 
 }
