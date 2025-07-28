@@ -23,4 +23,4 @@ A [Nixie](http://en.wikipedia.org/wiki/Nixie_tube) clock that's powered by USB-C
 
 ![IMG_3918](https://github.com/user-attachments/assets/79d7169a-acb0-4275-b93e-1e199e8c3650)
 
-- Bring up of HV shift registers with assistance of Merlin
+- Bring up of HV shift register driver with assistance from Merlin
