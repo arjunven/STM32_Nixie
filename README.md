@@ -17,7 +17,16 @@ A [Nixie](http://en.wikipedia.org/wiki/Nixie_tube) clock that's powered by USB-C
 <img width="1334" height="650" alt="image" src="https://github.com/user-attachments/assets/2eb64b77-7491-4165-9526-051c6a704a1e" />
 
 
-- 4 Layer board, nothing exotic
+- 4 Layer board
+
+## Schematics
+### 5V to 180V Boost Converter
+<img width="1467" height="555" alt="image" src="https://github.com/user-attachments/assets/874b31fc-9460-4884-9e37-c6cf0e07cb47" />
+
+### Full Schematics
+[Full Schematics here
+](https://github.com/arjunven/STM32_Nixie/blob/main/pcb/outputs/STM32_Nixie_Schematics.pdf
+)
 
 ## Bringup/Development
 
