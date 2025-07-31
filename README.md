@@ -1,9 +1,10 @@
 # STM32 and USB-C Based Nixie Clock
-A [Nixie](http://en.wikipedia.org/wiki/Nixie_tube) clock that's powered by USB-C and based on a STM32 microcontroller. Designed schematic, layout, and firmware from scratch! Main Features:
+A [Nixie](http://en.wikipedia.org/wiki/Nixie_tube) clock that's powered by USB-C and based on a STM32 microcontroller. Designed schematic, layout, and firmware from scratch! Fun mix of retro tech with modern electronics. Main Features:
   - Custom 5V to 180V boost converter that operates in discontinous conduction mode to power the Nixie tubes
   - USB-C Power input + bootloader
   - Push button dial that's used to set time and interface with the menu
   - Used high voltage shift registers to run the tube display
+  - STM32F100 micro controller with abysmal flash storage ... because that's all that was in stock during the great covid parts shortage of 2021 when I started this project 
 
 ## Mostly Finished Product
 <img width="945" height="455" alt="image" src="https://github.com/user-attachments/assets/0f391c93-6ed3-4038-959f-34b74184fadf" />
